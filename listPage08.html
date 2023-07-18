@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LADURÉE</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <div class="cartPanel have" id="cartHave">
+        <input type="button" class="material-icons-outlined close" value="close">
+
+        <ul>
+            <li>
+                <div>
+                    COFFRET DE 42 MACARONS "NUIT"
+                    <b>Coffret à composer</b>
+                    <input type="button" class="material-icons-outlined btn_delete" value="delete" data-panelName="cartEmpty">
+                </div>
+
+                <div>
+                    <div class="countComponent">
+                        <input type="button" value="-">
+                        <span>1</span>
+                        <input type="button" value="+">
+                    </div>
+                    <mark>112,00 €</mark>
+                </div>
+            </li>
+        </ul>
+
+        <div>
+            <strong>TOTAL</strong>
+            <output>112,00</output>€
+        </div>
+        <a href="pageCart.html" class="btn oliveGreen">COMMANDER</a>
+    </div>
+
+    <div class="cartPanel empty" id="cartEmpty">
+        <input type="button" class="material-icons-outlined close" value="close">
+        <h2>Votre panier est vide</h2>
+        <p>Identifiez-vous pour retrouver votre panier enregistré,ou poursuivez vos achats sur le site</p>
+        <input type="button" class="btn oliveGreen close" value="POURSUIVRE MES ACHATS">
+    </div>
+
+    <div class="searchPanel" id="search">
+        <input type="button" class="material-icons-outlined close" value="close">
+        
+        <form>
+            <label for="searchField">SEARCH</label>
+            <input type="search" id="searchField" placeholder="MACARONS">
+        </form>
+        
+        <div>
+            <h3>Nos suggestions</h3>
+            <ul>
+                <li><a href="listPage03.html">MACARONS</a></li>
+                <li><a href="listPage07.html">PÂTISSERIES</a></li>
+                <li><a href="listPage08.html">CHCOLATS</a></li>
+                <li><a href="listPage10.html">THÉS</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- popup -->
+
+    <header>
+        <div class="headBanner">
+            <a href="listPage02.html">CALENDRIER DE L'AVENT 2022 | 24 raisons gourmandes de succomber. Commandez le vôtre</a>
+            <input type="button" class="material-icons-outlined close" value="close">
+        </div>
+
+        <div>
+            <h1>
+                <a href="index_after.html">
+                    <img src="images/logo.svg" alt="welcome to LADUREE">
+                </a>
+            </h1>
+
+            <nav>
+                <ul>
+                    <li><a href="listPage01.html">NOËL</a></li>
+
+                    <li>
+                        MACARONS
+                        <ol>
+                            <li><a href="listPage03.html">Coffrets - Expédition à Domicile</a></li>
+                            <li><a href="listPage04.html">Coffrets - Click&Collect et Coursier</a></li>
+                            <li><a href="listPage05.html">MACARONS EN EXPÉDITION</a></li>
+                            <li><a href="listPage06.html">Parfums iconiques et exclusifs</a></li>
+                        </ol>
+                    </li>
+
+                    <li><a href="listPage07.html">PÂTISSERIES</a></li>
+
+                    <li>
+                        EPICERIE FINE
+                        <ol>
+                            <li><a href="listPage08.html">Chocolats et Confiseries</a></li>
+                            <li><a href="listPage09.html">Cakes et Biscuits</a></li>
+                            <li><a href="listPage10.html">Thés Signature</a></li>
+                            <li><a href="listPage11.html">Confitures et Miels</a></li>
+                        </ol>
+                    </li>
+
+                    <li><a href="listPage12.html">VIENNOISERIES</a></li>
+
+                    <li>
+                        CADEAUX
+                        <ol>
+                            <li><a href="listPage13.html">Toutes nos idées cadeaux</a></li>
+                            <li><a href="listPage14.html">Le nouveau menu de Ladurée</a></li>
+                            <li><a href="listPage15.html">Occasions spéciales</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+    
+            <ul>
+                <li>
+                    <a href="myPage.html">Alan<span class="material-icons-outlined">person</span></a>
+                </li>
+                <li><input type="button" value="shopping_bag" class="material-icons-outlined" data-panelName="cartHave"></li>
+                <li><input type="button" value="search" class="material-icons-outlined" data-panelName="search"></li>
+                <li class="mui"><input type="button" value="menu" class="material-icons-outlined"></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="listContainer type02">
+        <div class="titleBox list08">
+            <h2>
+                EPICERIE FINE
+                <small>Chocolats et Confiseries</small>
+            </h2>
+        </div>
+
+        <div>
+            <mark>NOS CHOCOLATS ET CONFISERIES</mark>
+            <p>Croquants, onctueux, gourmands... Succombez pour nos chocolats et nos confiseries, disponibles en livraison à domicile. Des gourmandises à partager, pour se faire plaisir ou à offrir !</p>
+
+            <div class="component select">
+                <select>
+                    <option>Trier par</option>
+                    <option>Du - au + cher</option>
+                    <option>Du + au - cher</option>
+                    <option>Recommandation</option>
+                </select>
+            </div>
+            
+            <ul class="itemBox">
+                <li>
+                    <img src="images/transparent_item51.png" alt="COFFRET DE MARRONS GLACÉS - 4 PIÈCES">
+                    <b>COFFRET DE MARRONS GLACÉS - 4 PIÈCES</b>
+                    <small>92g</small>
+                    <mark>
+                        16,50 €
+                    </mark>
+                    <div>
+                        <div>
+                            <span class="icon new" aria-hidden="true" title="new menu">N</span>
+                            <input type="button" class="material-icons-outlined" value="shopping_bag" title="delivery menu" data-panelName="cartHave">
+                        </div>
+                        <a href="itemDetail51.html" class="btn pink">En savoir plus</a>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/transparent_item52.png" alt="COFFRET DE MARRONS GLACÉS - 9 PIÈCES">
+                    <b>COFFRET DE MARRONS GLACÉS - 9 PIÈCES</b>
+                    <small>207g</small>
+                    <mark>
+                        36,00 €
+                    </mark>
+                    <div>
+                        <div>
+                            <span class="icon new" aria-hidden="true" title="new menu">N</span>
+                            <input type="button" class="material-icons-outlined" value="shopping_bag" title="delivery menu" data-panelName="cartHave">
+                        </div>
+                        <a href="itemDetail52.html" class="btn pink">En savoir plus</a>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/transparent_item53.png" alt="COFFRET DE MARRONS GLACÉS - 16 PIÈCES">
+                    <b>COFFRET DE MARRONS GLACÉS - 16 PIÈCES</b>
+                    <small>368g</small>
+                    <mark>
+                        64,00 €
+                    </mark>
+                    <div>
+                        <div>
+                            <span class="icon new" aria-hidden="true" title="new menu">N</span>
+                            <input type="button" class="material-icons-outlined" value="shopping_bag" title="delivery menu" data-panelName="cartHave">
+                        </div>
+                        <a href="itemDetail53.html" class="btn pink">En savoir plus</a>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/transparent_item54.png" alt="COFFRET DE CHOCOLATS « 75 CHAMPS ELYSÉES »">
+                    <b>COFFRET DE CHOCOLATS « 75 CHAMPS ELYSÉES »</b>
+                    <small>130g</small>
+                    <mark>
+                        26,00 €
+                    </mark>
+                    <div>
+                        <div>
+                            <input type="button" class="material-icons-outlined" value="shopping_bag" title="delivery menu" data-panelName="cartHave">
+                        </div>
+                        <a href="itemDetail54.html" class="btn pink">En savoir plus</a>
+                    </div>
+                </li>
+
+                <li>
+                    <img src="images/transparent_item55.png" alt="COFFRET DE CHOCOLATS « 16 ROYALE »">
+                    <b>COFFRET DE CHOCOLATS « 16 ROYALE »</b>
+                    <small>140g</small>
+                    <mark>
+                        24,00 €
+                    </mark>
+                    <div>
+                        <div>
+                            <input type="button" class="material-icons-outlined" value="shopping_bag" title="delivery menu" data-panelName="cartHave">
+                        </div>
+                        <a href="itemDetail55.html" class="btn pink">En savoir plus</a>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/transparent_item56.png" alt="COFFRET DE CHOCOLATS « LES INCOMPARABLES »">
+                    <b>COFFRET DE CHOCOLATS « LES INCOMPARABLES »</b>
+                    <small>104g</small>
+                    <mark>
+                        22,00 €
+                    </mark>
+                    <div>
+                        <div>
+                            <input type="button" class="material-icons-outlined" value="shopping_bag" title="delivery menu" data-panelName="cartHave">
+                        </div>
+                        <a href="itemDetail56.html" class="btn pink">En savoir plus</a>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/transparent_item57.png" alt="COFFRET DE BISCUITS « LANGUE DE CHAT »">
+                    <b>COFFRET DE BISCUITS « LANGUE DE CHAT »</b>
+                    <small>148g</small>
+                    <mark>
+                        20,00 €
+                    </mark>
+                    <div>
+                        <div>
+                            <input type="button" class="material-icons-outlined" value="shopping_bag" title="delivery menu" data-panelName="cartHave">
+                        </div>
+                        <a href="itemDetail57.html" class="btn pink">En savoir plus</a>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/transparent_item58.png" alt="COFFRET DE 4 CHOCOLATS">
+                    <b>COFFRET DE 4 CHOCOLATS</b>
+                    <small>46g</small>
+                    <mark>
+                        14,00 €
+                    </mark>
+                    <div>
+                        <div>
+                            <input type="button" class="material-icons-outlined" value="shopping_bag" title="delivery menu" data-panelName="cartHave">
+                        </div>
+                        <a href="itemDetail58.html" class="btn pink">En savoir plus</a>
+                    </div>
+                </li>
+
+                <li>
+                    <img src="images/transparent_item59.png" alt="COFFRET DE CITRONETTES">
+                    <b>COFFRET DE CITRONETTES</b>
+                    <small>160g</small>
+                    <mark>
+                        24,00 €
+                    </mark>
+                    <div>
+                        <div>
+                            <input type="button" class="material-icons-outlined" value="shopping_bag" title="delivery menu" data-panelName="cartHave">
+                        </div>
+                        <a href="itemDetail59.html" class="btn pink">En savoir plus</a>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/transparent_item60.png" alt="COFFRET D’ORANGETTES">
+                    <b>COFFRET D’ORANGETTES</b>
+                    <small>160g</small>
+                    <mark>
+                        24,00 €
+                    </mark>
+                    <div>
+                        <div>
+                            <input type="button" class="material-icons-outlined" value="shopping_bag" title="delivery menu" data-panelName="cartHave">
+                        </div>
+                        <a href="itemDetail60.html" class="btn pink">En savoir plus</a>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/transparent_item61.png" alt="COFFRET DE GINGEMBRETTES">
+                    <b>COFFRET DE GINGEMBRETTES</b>
+                    <small>150g</small>
+                    <mark>
+                        24,00 €
+                    </mark>
+                    <div>
+                        <div>
+                            <input type="button" class="material-icons-outlined" value="shopping_bag" title="delivery menu" data-panelName="cartHave">
+                        </div>
+                        <a href="itemDetail61.html" class="btn pink">En savoir plus</a>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/transparent_item62.png" alt="BALLOTIN DE 9 CARAMELS">
+                    <b>BALLOTIN DE 9 CARAMELS</b>
+                    <small>84g</small>
+                    <mark>
+                        8,00 €
+                    </mark>
+                    <div>
+                        <div>
+                            <input type="button" class="material-icons-outlined" value="shopping_bag" title="delivery menu" data-panelName="cartHave">
+                        </div>
+                        <a href="itemDetail62.html" class="btn pink">En savoir plus</a>
+                    </div>
+                </li>
+
+                <li>
+                    <img src="images/transparent_item63.png" alt="MINI TABLETTE DE CHOCOLAT NOIR">
+                    <b>MINI TABLETTE DE CHOCOLAT NOIR</b>
+                    <small>Chocolat noir 64 % origine Madagascar</small>
+                    <mark>
+                        5,50 €
+                    </mark>
+                    <div>
+                        <div>
+                            <input type="button" class="material-icons-outlined" value="shopping_bag" title="delivery menu" data-panelName="cartHave">
+                        </div>
+                        <a href="itemDetail63.html" class="btn pink">En savoir plus</a>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/transparent_item64.png" alt="MINI TABLETTE DE CHOCOLAT AU LAIT">
+                    <b>MINI TABLETTE DE CHOCOLAT AU LAIT</b>
+                    <small>Chocolat au lait guanaja 41% de cacao</small>
+                    <mark>
+                        5,50 €
+                    </mark>
+                    <div>
+                        <div>
+                            <input type="button" class="material-icons-outlined" value="shopping_bag" title="delivery menu" data-panelName="cartHave">
+                        </div>
+                        <a href="itemDetail64.html" class="btn pink">En savoir plus</a>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/transparent_item65.png" alt="MINI TABLETTE ROSE">
+                    <b>MINI TABLETTE ROSE</b>
+                    <small>Chocolat «Ivoire» parfumé à la rose</small>
+                    <mark>
+                        5,50 €
+                    </mark>
+                    <div>
+                        <div>
+                            <input type="button" class="material-icons-outlined" value="shopping_bag" title="delivery menu" data-panelName="cartHave">
+                        </div>
+                        <a href="itemDetail65.html" class="btn pink">En savoir plus</a>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/transparent_item66.png" alt="BONBONS À LA VIOLETTE">
+                    <b>BONBONS À LA VIOLETTE</b>
+                    <small>100g</small>
+                    <mark>
+                        12,00 €
+                    </mark>
+                    <div>
+                        <div>
+                            <input type="button" class="material-icons-outlined" value="shopping_bag" title="delivery menu" data-panelName="cartHave">
+                        </div>
+                        <a href="itemDetail66.html" class="btn pink">En savoir plus</a>
+                    </div>
+                </li>
+
+                <li>
+                    <img src="images/transparent_item67.png" alt="COFFRET DE 14 CARRÉS DE CHOCOLAT">
+                    <b>COFFRET DE 14 CARRÉS DE CHOCOLAT</b>
+                    <small>70g</small>
+                    <mark>
+                        9,00 €
+                    </mark>
+                    <div>
+                        <div>
+                            <span class="icon new" aria-hidden="true" title="new menu">N</span>
+                            <input type="button" class="material-icons-outlined" value="shopping_bag" title="delivery menu" data-panelName="cartHave">
+                        </div>
+                        <a href="itemDetail67.html" class="btn pink">En savoir plus</a>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/transparent_item68.png" alt="COFFRET DE 28 CARRÉS DE CHOCOLAT">
+                    <b>COFFRET DE 28 CARRÉS DE CHOCOLAT</b>
+                    <small>140g</small>
+                    <mark>
+                        16,50 €
+                    </mark>
+                    <div>
+                        <div>
+                            <span class="icon new" aria-hidden="true" title="new menu">N</span>
+                            <input type="button" class="material-icons-outlined" value="shopping_bag" title="delivery menu" data-panelName="cartHave">
+                        </div>
+                        <a href="itemDetail68.html" class="btn pink">En savoir plus</a>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/transparent_item69.png" alt="COFFRET DE 42 CARRÉS DE CHOCOLAT">
+                    <b>COFFRET DE 42 CARRÉS DE CHOCOLAT</b>
+                    <small>210g</small>
+                    <mark>
+                        25,00 €
+                    </mark>
+                    <div>
+                        <div>
+                            <span class="icon new" aria-hidden="true" title="new menu">N</span>
+                            <input type="button" class="material-icons-outlined" value="shopping_bag" title="delivery menu" data-panelName="cartHave">
+                        </div>
+                        <a href="itemDetail69.html" class="btn pink">En savoir plus</a>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/transparent_item70.png" alt="COFFRET DE PÂTES DE FRUITS">
+                    <b>COFFRET DE PÂTES DE FRUITS</b>
+                    <small>207g</small>
+                    <mark>
+                        18,00 €
+                    </mark>
+                    <div>
+                        <div>
+                            <input type="button" class="material-icons-outlined" value="shopping_bag" title="delivery menu" data-panelName="cartHave">
+                        </div>
+                        <a href="itemDetail70.html" class="btn pink">En savoir plus</a>
+                    </div>
+                </li>
+
+                <li>
+                    <img src="images/transparent_item71.png" alt="COFFRET DE DRAGÉES - ROSE">
+                    <b>COFFRET DE DRAGÉES - ROSE</b>
+                    <small>146g</small>
+                    <mark>
+                        À partir de 12,00 €
+                    </mark>
+                    <div>
+                        <div>
+                            <input type="button" class="material-icons-outlined" value="shopping_bag" title="delivery menu" data-panelName="cartHave">
+                        </div>
+                        <a href="itemDetail71.html" class="btn pink">En savoir plus</a>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/transparent_item72.png" alt="COFFRET DE DRAGÉES - VERT">
+                    <b>COFFRET DE DRAGÉES - VERT</b>
+                    <small>146g</small>
+                    <mark>
+                        À partir de 17,50 €
+                    </mark>
+                    <div>
+                        <div>
+                            <input type="button" class="material-icons-outlined" value="shopping_bag" title="delivery menu" data-panelName="cartHave">
+                        </div>
+                        <a href="itemDetail72.html" class="btn pink">En savoir plus</a>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/transparent_item73.png" alt="COFFRET DE DRAGÉES - IVOIRE">
+                    <b>COFFRET DE DRAGÉES - IVOIRE</b>
+                    <small>146g</small>
+                    <mark>
+                        À partir de 12,00 €
+                    </mark>
+                    <div>
+                        <div>
+                            <input type="button" class="material-icons-outlined" value="shopping_bag" title="delivery menu" data-panelName="cartHave">
+                        </div>
+                        <a href="itemDetail73.html" class="btn pink">En savoir plus</a>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/transparent_item74.png" alt="SACHET DE NINICHES">
+                    <b>SACHET DE NINICHES</b>
+                    <small>160g</small>
+                    <mark>
+                        8,50 €
+                    </mark>
+                    <div>
+                        <div>
+                            <input type="button" class="material-icons-outlined" value="shopping_bag" title="delivery menu" data-panelName="cartHave">
+                        </div>
+                        <a href="itemDetail74.html" class="btn pink">En savoir plus</a>
+                    </div>
+                </li>
+
+                <li>
+                    <img src="images/transparent_item75.png" alt="NOUGAT PARFUMÉ À LA PISTACHE">
+                    <b>NOUGAT PARFUMÉ À LA PISTACHE</b>
+                    <small>100g</small>
+                    <mark>
+                        9,50 €
+                    </mark>
+                    <div>
+                        <div>
+                            <input type="button" class="material-icons-outlined" value="shopping_bag" title="delivery menu" data-panelName="cartHave">
+                        </div>
+                        <a href="itemDetail75.html" class="btn pink">En savoir plus</a>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/transparent_item76.png" alt="NOUGAT AU MIEL">
+                    <b>NOUGAT AU MIEL</b>
+                    <small>100g</small>
+                    <mark>
+                        9,00 €
+                    </mark>
+                    <div>
+                        <div>
+                            <input type="button" class="material-icons-outlined" value="shopping_bag" title="delivery menu" data-panelName="cartHave">
+                        </div>
+                        <a href="itemDetail76.html" class="btn pink">En savoir plus</a>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/transparent_item77.png" alt="NOUGAT PARFUMÉ À LA ROSE">
+                    <b>NOUGAT PARFUMÉ À LA ROSE</b>
+                    <small>100g</small>
+                    <mark>
+                        9,50 €
+                    </mark>
+                    <div>
+                        <div>
+                            <input type="button" class="material-icons-outlined" value="shopping_bag" title="delivery menu" data-panelName="cartHave">
+                        </div>
+                        <a href="itemDetail77.html" class="btn pink">En savoir plus</a>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/transparent_item78.png" alt="GUIMAUVE FLEUR D'ORANGER">
+                    <b>GUIMAUVE FLEUR D'ORANGER</b>
+                    <small>100g</small>
+                    <mark>
+                        8,40 €
+                    </mark>
+                    <div>
+                        <div>
+                            <input type="button" class="material-icons-outlined" value="shopping_bag" title="delivery menu" data-panelName="cartHave">
+                        </div>
+                        <a href="itemDetail78.html" class="btn pink">En savoir plus</a>
+                    </div>
+                </li>
+
+                <li>
+                    <img src="images/transparent_item79.png" alt="GUIMAUVE PÉTALE DE ROSE">
+                    <b>GUIMAUVE PÉTALE DE ROSE</b>
+                    <small>100g</small>
+                    <mark>
+                        8,40 €
+                    </mark>
+                    <div>
+                        <div>
+                            <input type="button" class="material-icons-outlined" value="shopping_bag" title="delivery menu" data-panelName="cartHave">
+                        </div>
+                        <a href="itemDetail79.html" class="btn pink">En savoir plus</a>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/transparent_item80.png" alt="GUIMAUVE FRAISE">
+                    <b>GUIMAUVE FRAISE</b>
+                    <small>100g</small>
+                    <mark>
+                        8,40 €
+                    </mark>
+                    <div>
+                        <div>
+                            <input type="button" class="material-icons-outlined" value="shopping_bag" title="delivery menu" data-panelName="cartHave">
+                        </div>
+                        <a href="itemDetail80.html" class="btn pink">En savoir plus</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="endBox">
+            <h3>Rejoignez notre newsletter</h3>
+            <p>Vous souhaitez en savoir plus sur nos nouvelles douceurs ?</p>
+            <input type="email" title="insert ur email address">
+            <input type="button" value="OK" data-popName="subscribe">
+        </div>
+        
+        <div class="pop"  id="subscribe">
+            <input type="button" value="close" class="material-icons-outlined close">
+            <div>
+                <h3>MERCI!</h3>
+                <p>
+                    Votre demande d'abonnement est terminée. Votre journée sera encore plus douce avec nos nouvelles.
+                </p>
+                <input type="button" value="Retour" class="btn oliveGreen close">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div>
+            <h2>LADURÉE</h2>
+            <ul>
+                <li><a href="listPage15.html">Nos Idées Cadeaux</a></li>
+                <li><a href="pageArticle.html">Nos Actualités</a></li>
+                <li><a href="pageContact.html">Nous contacter</a></li>
+                <li><a href="pageStore.html">Store Locator</a></li>
+                <li><a href="pageFAQ.html">F.A.Q</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <h2>Plus d'informations</h2>
+            <ul>
+                <li><a href="https://www.maisonladuree.com/" target="_blank">Maison Ladurée</a></li>
+                <li><a href="pageTermsAndConditions.html">Conditions générales de vente</a></li>
+                <li><a href="pageLegalNotice.html">Mentions légales</a></li>
+                <li><a href="pageProtection.html">Protection des données personnelles</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <h2>SUIVEZ-NOUS</h2>
+            <ol>
+                <li><a href="https://www.facebook.com/MaisonLaduree" target="_blank">facebook</a></li>
+                <li><a href="https://www.instagram.com/maisonladuree/" target="_blank">instagram</a></li>
+                <li><a href="https://www.pinterest.fr/maisonladuree/" target="_blank">pinterest</a></li>
+                <li><a href="https://www.linkedin.com/company/laduree-paris/" target="_blank">linkedin</a></li>
+            </ol>
+        </div>
+
+        <div>
+            <ol>
+                <li>
+                    <p>
+                        <mark>RETRAIT EN BOUTIQUES</mark>
+                        Commande préparée en 2H ou au créneau de votre choix. Accès coupe-file dans les boutiques éligibles au service.
+                    </p>
+                    RETRAIT EN BOUTIQUES
+                </li>
+                <li>
+                    <p>
+                        <mark>EXPÉDITION À DOMICILE</mark>
+                        En France et en Europe par nos transporteurs spécialisés. Livraison offerte dès 75€ d'achat (France Métropolitaine).
+                    </p>
+                    EXPÉDITION À DOMICILE
+                </li>
+                <li>
+                    <p>
+                        <mark>LIVRAISON PAR COURSIER</mark>
+                        A Paris et en petite couronne (sur créneaux de 2H). Livraison offerte dès 75€ d'achat.
+                    </p>
+                    LIVRAISON PAR COURSIER
+                </li>
+            </ol>
+
+            <p>
+                COMMANDEZ EN TOUTE SÉRÉNITÉ!
+                <span>© Copyright Ladurée Paris 2022</span>
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>

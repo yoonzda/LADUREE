@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LADURÉE</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <div class="cartPanel have" id="cartHave">
+        <input type="button" class="material-icons-outlined close" value="close">
+
+        <ul>
+            <li>
+                <div>
+                    COFFRET DE 42 MACARONS "NUIT"
+                    <b>Coffret à composer</b>
+                    <input type="button" class="material-icons-outlined btn_delete" value="delete" data-panelName="cartEmpty">
+                </div>
+
+                <div>
+                    <div class="countComponent">
+                        <input type="button" value="-">
+                        <span>1</span>
+                        <input type="button" value="+">
+                    </div>
+                    <mark>112,00 €</mark>
+                </div>
+            </li>
+        </ul>
+
+        <div>
+            <strong>TOTAL</strong>
+            <output>112,00</output>€
+        </div>
+        <a href="pageCart.html" class="btn oliveGreen">COMMANDER</a>
+    </div>
+
+    <div class="cartPanel empty" id="cartEmpty">
+        <input type="button" class="material-icons-outlined close" value="close">
+        <h2>Votre panier est vide</h2>
+        <p>Identifiez-vous pour retrouver votre panier enregistré,ou poursuivez vos achats sur le site</p>
+        <input type="button" class="btn oliveGreen close" value="POURSUIVRE MES ACHATS">
+    </div>
+
+    <div class="searchPanel" id="search">
+        <input type="button" class="material-icons-outlined close" value="close">
+        
+        <form>
+            <label for="searchField">SEARCH</label>
+            <input type="search" id="searchField" placeholder="MACARONS">
+        </form>
+        
+        <div>
+            <h3>Nos suggestions</h3>
+            <ul>
+                <li><a href="listPage03.html">MACARONS</a></li>
+                <li><a href="listPage07.html">PÂTISSERIES</a></li>
+                <li><a href="listPage08.html">CHCOLATS</a></li>
+                <li><a href="listPage10.html">THÉS</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- popup -->
+
+    <header>
+        <div class="headBanner">
+            <a href="listPage02.html">CALENDRIER DE L'AVENT 2022 | 24 raisons gourmandes de succomber. Commandez le vôtre</a>
+            <input type="button" class="material-icons-outlined close" value="close">
+        </div>
+
+        <div>
+            <h1>
+                <a href="index_after.html">
+                    <img src="images/logo.svg" alt="welcome to LADUREE">
+                </a>
+            </h1>
+
+            <nav>
+                <ul>
+                    <li><a href="listPage01.html">NOËL</a></li>
+
+                    <li>
+                        MACARONS
+                        <ol>
+                            <li><a href="listPage03.html">Coffrets - Expédition à Domicile</a></li>
+                            <li><a href="listPage04.html">Coffrets - Click&Collect et Coursier</a></li>
+                            <li><a href="listPage05.html">MACARONS EN EXPÉDITION</a></li>
+                            <li><a href="listPage06.html">Parfums iconiques et exclusifs</a></li>
+                        </ol>
+                    </li>
+
+                    <li><a href="listPage07.html">PÂTISSERIES</a></li>
+
+                    <li>
+                        EPICERIE FINE
+                        <ol>
+                            <li><a href="listPage08.html">Chocolats et Confiseries</a></li>
+                            <li><a href="listPage09.html">Cakes et Biscuits</a></li>
+                            <li><a href="listPage10.html">Thés Signature</a></li>
+                            <li><a href="listPage11.html">Confitures et Miels</a></li>
+                        </ol>
+                    </li>
+
+                    <li><a href="listPage12.html">VIENNOISERIES</a></li>
+
+                    <li>
+                        CADEAUX
+                        <ol>
+                            <li><a href="listPage13.html">Toutes nos idées cadeaux</a></li>
+                            <li><a href="listPage14.html">Le nouveau menu de Ladurée</a></li>
+                            <li><a href="listPage15.html">Occasions spéciales</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+    
+            <ul>
+                <li>
+                    <a href="myPage.html">Alan<span class="material-icons-outlined">person</span></a>
+                </li>
+                <li><input type="button" value="shopping_bag" class="material-icons-outlined" data-panelName="cartHave"></li>
+                <li><input type="button" value="search" class="material-icons-outlined" data-panelName="search"></li>
+                <li class="mui"><input type="button" value="menu" class="material-icons-outlined"></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="accordionContainer">
+        <div class="titleBox notice">
+            <h2>
+                Mentions Légales
+            </h2>
+        </div>
+
+        <ul>
+            <li>
+                <details>
+                    <summary>
+                        EDITION / PUBLICATION
+                    </summary>
+                    <div>
+                        <p>
+                            PATISSERIE E.LADUREE <br>
+                            41-43 rue de Varennes - 75007 PARIS Cedex - France <br>
+                            www.laduree.fr
+                            <span>N° de TVA intracommunautaire : FR 22 572 045 540</span>
+                            <span>Directrice de la publication: Laura Lallouette</span>
+                            <span>Hébergement: Google EU</span>
+                            <span>Société par Actions Simplifiées au capital de 372 204 euros immatriculée au Registre du commerce et des sociétés de Paris Métropole sous le numéro RCS 572 045 540</span>
+                        </p>
+                    </div>
+                </details>
+            </li>
+
+            <li>
+                <details>
+                    <summary>
+                        CONDITIONS GÉNÉRALES D'UTILISATION DU SITE
+                    </summary>
+                    <div>
+                        <p>
+                            Les présentes Conditions Générales d’Utilisation (ci-après dénommées CGU) ont pour objet de définir les modalités et conditions dans lesquelles, PATISSERIE E.LADUREE met à la disposition des utilisateurs (ci-après dénommé les Utilisateurs) du site http://laduree.fr, (ci-après dénommé le Site) les services associés et la manière par laquelle les Utilisateurs accèdent au Site et utilisent ses services.
+                            <span>Toute connexion au Site est subordonnée au respect des CGU.</span>
+                            <span>L’Utilisateur reconnaît à ce titre que le simple accès au Site implique l’acceptation de l’ensemble des conditions décrites ci-après.</span>
+                        </p>
+                    </div>
+                </details>
+            </li>
+
+            <li>
+                <details>
+                    <summary>
+                        ACCÈS AU SITE
+                    </summary>
+                    <div>
+                        <p>
+                            L'Utilisateur du Site reconnaît avoir vérifié que la configuration informatique qu’il utilise ne contient aucun virus et qu'elle est en parfait état de fonctionnement.
+                            <span>Il est rappelé que le secret des correspondances n'est pas garanti sur le réseau Internet et qu'il appartient à chaque Utilisateur d'Internet de prendre toutes les mesures appropriées de façon à protéger ses propres données et/ou logiciels de la contamination d'éventuels virus circulant sur Internet.</span>
+                            <span>PATISSERIE E.LADUREE ne saurait être tenue pour responsable d'éventuels dommages, directs ou indirects, pouvant découler de l’accès, de l’utilisation ou de téléchargement de contenu via le Site, notamment, un dommage ou virus qui pourrait infecter l’ordinateur de l’Utilisateur ou tout autre matériel.</span>
+                            <span>PATISSERIE E.LADUREE s’efforce de permettre l’accès au Site 24 heures sur 24, 7 jours sur 7, sauf en cas de force majeure ou d’un événement hors de son contrôle, et sous réserve des éventuelles pannes et interventions de maintenance nécessaires au bon fonctionnement du Site et des services.</span>
+                            <span>Par conséquent, PATISSERIE E.LADUREE ne peut garantir une disponibilité du Site et/ou des services, une fiabilité des transmissions et des performances en termes de temps de réponse ou de qualité. Il n’est prévu aucune assistance technique vis-à-vis de l’Utilisateur que ce soit par des moyens électronique ou téléphonique.</span>
+                            <span>La responsabilité de PATISSERIE E.LADUREE ne saurait être engagée en cas d’impossibilité d’accès à ce Site et/ou d’utilisation des services.</span>
+                            <span>Par ailleurs, PATISSERIE E.LADUREE peut être amenée à interrompre le Site ou une partie des services, à tout moment sans préavis, le tout sans droit à indemnités. L’Utilisateur reconnaît et accepte que PATISSERIE E.LADUREE ne soit pas responsable des interruptions, et des conséquences qui peuvent en découler pour l’Utilisateur ou tout tiers.</span>
+                        </p>
+                    </div>
+                </details>
+            </li>
+
+            <li>
+                <details>
+                    <summary>
+                        CONTENU DU SITE
+                    </summary>
+                    <div>
+                        <p>
+                            Les informations et/ou documents figurant sur le Site et/ou accessibles par le Site proviennent de sources considérées comme étant fiables.
+                            <span>Toutefois, ces informations et/ou documents sont susceptibles de contenir des inexactitudes techniques et des erreurs typographiques.</span>
+                            <span>PATISSERIE E.LADUREE se réserve le droit de les corriger, dès que ces erreurs sont portées à sa connaissance.</span>
+                            <span>Il est fortement recommandé de vérifier l’exactitude et la pertinence des informations et/ou documents mis à disposition sur le Site.</span>
+                            <span>Les informations et/ou documents disponibles sur le Site sont susceptibles d’être modifiés à tout moment, et peuvent avoir fait l’objet de mises à jour. En particulier, ils peuvent avoir fait l’objet d’une mise à jour entre le moment de leur téléchargement et celui où l’Utilisateur en prend connaissance.</span>
+                            <span>L’utilisation des informations et/ou documents disponibles sur le Site se fait sous l’entière et seule responsabilité de l’Utilisateur, qui assume la totalité des conséquences pouvant en découler, sans que la responsabilité de PATISSERIE E.LADUREE puisse être recherchée.</span>
+                            <span>PATISSERIE E.LADUREE ne pourra en aucun cas être tenue responsable de tout dommage de quelque nature qu’il soit résultant de l’interprétation ou de l’utilisation des informations et/ou documents disponibles sur le Site.</span>
+                        </p>
+                    </div>
+                </details>
+            </li>
+
+            <li>
+                <details>
+                    <summary>
+                        PROPRIÉTÉ INTELLECTUELLE
+                    </summary>
+                    <div>
+                        <p>
+                            Le Site est la propriété exclusive de PATISSERIE E.LADUREE.
+                            <span>La structure générale du Site et son contenu sont la propriété exclusive de PATISSERIE E.LADUREE, et font l'objet d'une protection légale au titre de la propriété intellectuelle (droits d'auteur, bases de données, logiciels, marques, etc.).</span>
+                            <span>Toute reproduction, représentation ou adaptation totale ou partielle du Site par une personne physique ou morale, par quelque procédé que ce soit, sans l'autorisation expresse de PATISSERIE E.LADUREE est interdite et constituerait un acte de contrefaçon sanctionné notamment par les articles L. 335-2 et suivants du Code de la propriété intellectuelle.</span>
+                            <span>Toute réutilisation ou extraction totale ou partielle, des bases de données du Site par une personne physique ou morale, par quelque procédé que ce soit, est interdite et constituerait un acte de contrefaçon sanctionné par les articles L. 343-1 et suivants du Code de la propriété intellectuelle.</span>
+                            <span>Toute reproduction totale ou partielle des marques et logos de PATISSERIE E.LADUREE réalisées sans son autorisation expresse est interdite en application des articles L. 713-2 et suivants du Code de la propriété intellectuelle.</span>
+                        </p>
+                    </div>
+                </details>
+            </li>
+
+            <li>
+                <details>
+                    <summary>
+                        PROTECTION DES DONNÉES PERSONNELLES
+                    </summary>
+                    <div>
+                        <p>
+                            Conformément à la loi Informatique et Libertés n°78-17 du 6 janvier 1978 modifiée et au Règlement Général sur la Protection des Données à caractère personnel (ci-après « RGPD ») n° 2016/679/UE du 27 avril 2016, PATISSERIE E.LADUREE, en qualité de responsable de traitement, garantit le respect de la vie privée des Utilisateurs du Site.
+                            <span>Pour en savoir plus :<a href="pageProtection.html">Protection des données personnelles</a></span>
+                        </p>
+                    </div>
+                </details>
+            </li>
+        </ul>
+    </section>
+
+    <footer>
+        <div>
+            <h2>LADURÉE</h2>
+            <ul>
+                <li><a href="listPage15.html">Nos Idées Cadeaux</a></li>
+                <li><a href="pageArticle.html">Nos Actualités</a></li>
+                <li><a href="pageContact.html">Nous contacter</a></li>
+                <li><a href="pageStore.html">Store Locator</a></li>
+                <li><a href="pageFAQ.html">F.A.Q</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <h2>Plus d'informations</h2>
+            <ul>
+                <li><a href="https://www.maisonladuree.com/" target="_blank">Maison Ladurée</a></li>
+                <li><a href="pageTermsAndConditions.html">Conditions générales de vente</a></li>
+                <li><a href="pageLegalNotice.html">Mentions légales</a></li>
+                <li><a href="pageProtection.html">Protection des données personnelles</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <h2>SUIVEZ-NOUS</h2>
+            <ol>
+                <li><a href="https://www.facebook.com/MaisonLaduree" target="_blank">facebook</a></li>
+                <li><a href="https://www.instagram.com/maisonladuree/" target="_blank">instagram</a></li>
+                <li><a href="https://www.pinterest.fr/maisonladuree/" target="_blank">pinterest</a></li>
+                <li><a href="https://www.linkedin.com/company/laduree-paris/" target="_blank">linkedin</a></li>
+            </ol>
+        </div>
+
+        <div>
+            <ol>
+                <li>
+                    <p>
+                        <mark>RETRAIT EN BOUTIQUES</mark>
+                        Commande préparée en 2H ou au créneau de votre choix. Accès coupe-file dans les boutiques éligibles au service.
+                    </p>
+                    RETRAIT EN BOUTIQUES
+                </li>
+                <li>
+                    <p>
+                        <mark>EXPÉDITION À DOMICILE</mark>
+                        En France et en Europe par nos transporteurs spécialisés. Livraison offerte dès 75€ d'achat (France Métropolitaine).
+                    </p>
+                    EXPÉDITION À DOMICILE
+                </li>
+                <li>
+                    <p>
+                        <mark>LIVRAISON PAR COURSIER</mark>
+                        A Paris et en petite couronne (sur créneaux de 2H). Livraison offerte dès 75€ d'achat.
+                    </p>
+                    LIVRAISON PAR COURSIER
+                </li>
+            </ol>
+
+            <p>
+                COMMANDEZ EN TOUTE SÉRÉNITÉ!
+                <span>© Copyright Ladurée Paris 2022</span>
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LADURÉE</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <div class="cartPanel have" id="cartHave">
+        <input type="button" class="material-icons-outlined close" value="close">
+
+        <ul>
+            <li>
+                <div>
+                    COFFRET DE 42 MACARONS "NUIT"
+                    <b>Coffret à composer</b>
+                    <input type="button" class="material-icons-outlined btn_delete" value="delete" data-panelName="cartEmpty">
+                </div>
+
+                <div>
+                    <div class="countComponent">
+                        <input type="button" value="-">
+                        <span>1</span>
+                        <input type="button" value="+">
+                    </div>
+                    <mark>112,00 €</mark>
+                </div>
+            </li>
+        </ul>
+
+        <div>
+            <strong>TOTAL</strong>
+            <output>112,00</output>€
+        </div>
+        <a href="pageCart.html" class="btn oliveGreen">COMMANDER</a>
+    </div>
+
+    <div class="cartPanel empty" id="cartEmpty">
+        <input type="button" class="material-icons-outlined close" value="close">
+        <h2>Votre panier est vide</h2>
+        <p>Identifiez-vous pour retrouver votre panier enregistré,ou poursuivez vos achats sur le site</p>
+        <input type="button" class="btn oliveGreen close" value="POURSUIVRE MES ACHATS">
+    </div>
+
+    <div class="searchPanel" id="search">
+        <input type="button" class="material-icons-outlined close" value="close">
+        
+        <form>
+            <label for="searchField">SEARCH</label>
+            <input type="search" id="searchField" placeholder="MACARONS">
+        </form>
+        
+        <div>
+            <h3>Nos suggestions</h3>
+            <ul>
+                <li><a href="listPage03.html">MACARONS</a></li>
+                <li><a href="listPage07.html">PÂTISSERIES</a></li>
+                <li><a href="listPage08.html">CHCOLATS</a></li>
+                <li><a href="listPage10.html">THÉS</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- popup -->
+
+    <header>
+        <div class="headBanner">
+            <a href="listPage02.html">CALENDRIER DE L'AVENT 2022 | 24 raisons gourmandes de succomber. Commandez le vôtre</a>
+            <input type="button" class="material-icons-outlined close" value="close">
+        </div>
+
+        <div>
+            <h1>
+                <a href="index_after.html">
+                    <img src="images/logo.svg" alt="welcome to LADUREE">
+                </a>
+            </h1>
+
+            <nav>
+                <ul>
+                    <li><a href="listPage01.html">NOËL</a></li>
+
+                    <li>
+                        MACARONS
+                        <ol>
+                            <li><a href="listPage03.html">Coffrets - Expédition à Domicile</a></li>
+                            <li><a href="listPage04.html">Coffrets - Click&Collect et Coursier</a></li>
+                            <li><a href="listPage05.html">MACARONS EN EXPÉDITION</a></li>
+                            <li><a href="listPage06.html">Parfums iconiques et exclusifs</a></li>
+                        </ol>
+                    </li>
+
+                    <li><a href="listPage07.html">PÂTISSERIES</a></li>
+
+                    <li>
+                        EPICERIE FINE
+                        <ol>
+                            <li><a href="listPage08.html">Chocolats et Confiseries</a></li>
+                            <li><a href="listPage09.html">Cakes et Biscuits</a></li>
+                            <li><a href="listPage10.html">Thés Signature</a></li>
+                            <li><a href="listPage11.html">Confitures et Miels</a></li>
+                        </ol>
+                    </li>
+
+                    <li><a href="listPage12.html">VIENNOISERIES</a></li>
+
+                    <li>
+                        CADEAUX
+                        <ol>
+                            <li><a href="listPage13.html">Toutes nos idées cadeaux</a></li>
+                            <li><a href="listPage14.html">Le nouveau menu de Ladurée</a></li>
+                            <li><a href="listPage15.html">Occasions spéciales</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+    
+            <ul>
+                <li>
+                    <a href="myPage.html">Alan<span class="material-icons-outlined">person</span></a>
+                </li>
+                <li><input type="button" value="shopping_bag" class="material-icons-outlined" data-panelName="cartHave"></li>
+                <li><input type="button" value="search" class="material-icons-outlined" data-panelName="search"></li>
+                <li class="mui"><input type="button" value="menu" class="material-icons-outlined"></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="articleContainer">
+        <h2>Notre actualité</h2>
+        <ul>
+            <li data-tabName="article01" class="active">UN NOËL CÉLESTE</li>
+            <li data-tabName="article02">CETTE ANNÉE ENCORE..</li>
+            <li data-tabName="article03">TANDIS QUE LE SOLEIL..</li>
+            <li data-tabName="article04">UN NOUVEL ÉCRIN LADURÉE..</li>
+            <li data-tabName="article05">UN TEA TIME FÊTE DES..</li>
+        </ul>
+
+        <article id="article01" class="articlePage active">
+            <div>
+                <img src="images/articleIMG_01.png" alt="article title image">
+                <div>
+                    <h3>UN NOËL CÉLESTE</h3>
+                    <time datetime="2022-11-02">02/11/2022</time>
+                </div>
+            </div>
+            <p>
+                <b>LADURÉE, LA GOURMANDISE ÉLEVÉE AU RANG D’ART DEPUIS 160 ANS.</b>
+                Depuis les premiers jours et l’ouverture de son iconique boutique de la rue Royale en 1862, notre Maison n’a eu de cesse de réinventer la haute pâtisserie à la française à travers des interprétations délicates et surprenantes de ses grands classiques. Pour les fêtes de fin d’année, Maison Ladurée invite à élever la gourmandise vers de nouveaux sommets. Direction le firmament avec un Noël céleste, habillé de bleu et or. Cette année encore, les fêtes de fin d’année brillent d’un éclat particulier, celui d’un savoir-faire sans cesse renouvelé pour le plus grand plaisir de tous.
+            </p>
+            <p>
+                <b>LES MACARONS DE NOËL</b>
+                Cette année, les iconiques macarons Ladurée combinent audace et réconfort, à travers deux saveurs aussi surprenantes que festives. Un macaron couleur et saveur de sapin en édition limitée composé d’une crème de chocolat blanc Ivoire, relevée par une note d’huile essentielle bio de sapin. L’alliance parfaite entre douceur et pointe de fraîcheur. Son compagnon idéal ? Le macaron brioche, tout en rondeur et gourmandise. Sa coque craquante aux amandes effilées cache une garniture d’une grande richesse gustative : chocolat blanc Opalys-Dulcey aux nuances lactées et à la pointe de vanille, raisin de Corinthe, orange, citron et beurre.
+                <span>Disponibles du 02 novembre au 31 décembre 2022 dans les boutiques Ladurée et sur laduree.fr</span>
+            </p>
+            <p>
+                <b>LES BUCHES SIGNATURE</b>
+                Julien Alvarez, chef pâtissier de la maison Ladurée, rend hommage à l’iconique macaron en s’en inspirant pour créer une bûche signature en trompe l’oeil.
+                <span>
+                    Impératrice Amande. Croustillant à l’amande feuilletine et fleur de sel, biscuit fondant à l’amande brute, compotée de mangue soulignée d’un jus de yuzu, crème légère au lait d’amande et sirop d’orgeat, fine coque de chocolat amandes.
+                    Impératrice Amande pour 6-8 personnes 78€
+                    Disponible à partir du 14 décembre 2022 dans les boutiques Ladurée et également en précommande à partir du 30 novembre 2022 sur laduree.fr, livraison à domicile en France (hors Corse) les 22 et 23 décembre. Frais de livraison offerts.
+                </span>
+                <span>
+                    Reine Saint-Honoré. Fond croustillant aux éclats de feuilletage caramélisé, biscuit fondant pâte à choux, crémeux à la vanille torréfiée et sucre muscovado, caramel au beurre demi-sel coulant, crème légère à la vanille de Madagascar, fine coque de chocolat vanillé.
+                    Reine Saint-Honoré pour 6-8 personnes 78€
+                    Reine Saint-Honoré individuelle 11€
+                    Bûche disponible à partir du 14 décembre 2022 et bûche individuelle disponible à partir du 7 décembre 2022 dans les boutiques Ladurée Paris et Ile de France et sur laduree.fr en click & collect. 
+                </span>
+            </p>
+        </article>
+
+        <article id="article02" class="articlePage">
+            <div>
+                <img src="images/articleIMG_02.png" alt="article title image">
+                <div>
+                    <h3>CETTE ANNÉE ENCORE, L’ATTENTE DE NOËL SERA DOUCE...</h3>
+                    <time datetime="2022-11-01">01/11/2022</time>
+                </div>
+            </div>
+            <p>
+                Chez Ladurée, la magie de Noël opère avec 24 jours d’avance. 24 jours et autant de gourmandises à découvrir et savourer en famille, grâce au calendrier de l’Avent de la Maison. Cette année, les lignes de la boutique historique de la rue Royale sont à l’honneur. Mais une fois les pans écartés, c’est un ciel étoilé qui vous invite à une immersion onirique et sensorielle, où chaque petite case recèle non pas une, mais plusieurs douceurs délicates à partager : nougats et caramels nature ou parfumés, pâtes de fruits, calissons, bonbons, chocolats, confitures et même pot de miel... Chaque envie y trouvera son bonheur et une délicieuse raison de patienter un jour de plus, jusqu’au soir de Noël et sa révélation finale. Que cache la grande et dernière fenêtre ? Chut ! Le mystère en lui-même est un élément clé de ce plaisir rituel... Ne le dévoilons pas !
+                <span>Disponible à partir du 14 novembre 2022 dans les boutiques Ladurée et sur laduree.fr 72€</span>
+            </p>
+        </article>
+
+        <article id="article03" class="articlePage">
+            <div>
+                <img src="images/articleIMG_03.png" alt="article title image">
+                <div>
+                    <h3>TANDIS QUE LE SOLEIL NOUS RÉCHAUFFE, LADURÉE FAIT SOUFFLER UN VENT DE FRAÎCHEUR SUR CET ÉTÉ</h3>
+                    <time datetime="2022-07-01">01/07/2022</time>
+                </div>
+            </div>
+            <p>
+                Pour célébrer le retour des beaux jours, des chapeaux de paille et des lunettes de soleil,
+                Ladurée a imaginé une collection de créations glacées, habillées de très chics rayures
+                vertes et roses, à la fois rafraîchissantes, gourmandes et artisanales.
+                Et si l’accessoire indispensable des looks estivaux était signé Ladurée ?
+            </p>
+            <p>
+                <b>Fondez pour une délicieuse collection glacée</b>
+                Parce que Ladurée adore jouer avec les couleurs et les parfums pour ses macarons, cette saison la Maison en fait autant avec ses créations glacées. Pour réjouir les yeux et les papilles, 4 parfums de sorbets légers et fruités, 7 onctueuses glaces, toutes artisanales, sans colorants artificiels. Recettes imaginées, fabriquées, dégustées et approuvées par Ladurée. Autre nouveauté, un format encore plus généreux, pour permettre de le partager (ou pas…). Des glaces et des sorbets qui n’attendent que de se faire déguster par les cuillères de gourmands en quête de rafraîchissements.
+            </p>
+            <p>
+                <b>Le macaron aussi prend ses quartiers d’été</b>
+                L’emblématique macaron Ladurée se rafraîchit dans deux déclinaisons glacées disponibles tout l’été. Version florale, avec deux coques de macaron rose sublimées d’éclats croquants de rose cristallisées, le tout généreusement garni de glace… à la rose évidemment. Version chocolatée, avec coques de macaron vanille saupoudrées de savoureux éclats de fèves de cacao et garni d’une addictive glace chocolat… Absolument irrésistible.
+            </p>
+        </article>
+        
+        <article id="article04" class="articlePage">
+            <div>
+                <img src="images/articleIMG_04.png" alt="article title image">
+                <div>
+                    <h3>UN NOUVEL ÉCRIN LADURÉE À SAINT-TROPEZ</h3>
+                    <time datetime="2022-06-30">30/06/2022</time>
+                </div>
+            </div>
+            <p>
+                A deux pas de l’incontournable port de plaisance et à l’ombre du mythique clocher de la ville, Ladurée s’installe dans l’une des plus anciennes boutiques du village.
+                <span>Dans cet écrin situé rue Gambetta, en lieu et place de l’ancienne mercerie d’Eugénie, les jolies couleurs pastel des macarons se mêlent aux détails d’inspiration méditerranéenne. Le plafond est ainsi pensé comme un parasol intérieur et le papier peint est illustré de palmiers.Pour une expérience gourmande et conviviale, le service se fait au côté de client, pour accompagner son choix parmi la palette de couleurs et de saveurs.Pour les beaux jours et la saison estivale, Ladurée Saint-Tropez propose également de délicieux parfums de glaces et sorbets, généreusement servis dans de jolis pots aux couleurs de la maison. Une gourmandise pleine de fraicheur à déguster lors d’une balade sur le port sous le soleil tropézien.Enfin, cette nouvelle boutique, la 38ème pour la Maison Ladurée en France, propose une collection de produits exclusifs et en édition limitée : un macaron lavande reprenant le visuel du clocher emblématique de Saint -Tropez et une estampille qui viendra habiller tous les coffrets, un cadeau souvenir idéal à offrir ou à s’offrir.</span>
+                <span>Ouverture le 8 juillet 2022, 20 rue Gambetta 83 990 Saint Tropez </span>
+            </p>
+        </article>
+
+        <article id="article05" class="articlePage">
+            <div>
+                <img src="images/articleIMG_05.png" alt="article title image">
+                <div>
+                    <h3>UN TEA TIME FÊTE DES MÈRES SIGNÉ LADURÉE</h3>
+                    <time datetime="2022-05-06">06/05/2022</time>
+                </div>
+            </div>
+            <span>A l'occasion de la fête des mères, nos restaurants vous accueillent du vendredi 27 au dimanche 29 mai pour un tea-time signé Ladurée. Une expérience mère-fille ou fils, et de jolis moments gourmands passés ensemble, se révèlent être les plus précieux des cadeaux. Rituel chic par excellence, Ladurée a choisi de servir dans ses restaurants un tea-time à l’anglaise avec une touche on ne peut plus parisienne :</span>
+            <ul>
+                <li>une part de cake</li>
+                <li>deux fingers sandwichs</li>
+                <li>deux macarons</li>
+                <li>une pâtisserie à choisir parmi les créations de Julien Alvarez</li>
+                <li>un thé d’exception ou autre boisson chaude.</li>
+            </ul>
+            <p>Ultime attention : les mamans repartiront avec un macaron « Je t’aime Maman » présenté dans l’écrin vert iconique Ladurée.</p>
+        </article>
+
+        <article id="article06" class="articlePage">
+            <div>
+                <img src="images/articleIMG_06.png" alt="article title image">
+                <div>
+                    <h3>FÊTE DES MÈRES : DES MACARONS POUR DIRE JE T’AIME</h3>
+                    <time datetime="2022-05-06">06/05/2022</time>
+                </div>
+            </div>
+            <p>
+                Les macarons addicts ne résisteront pas au potentiel gourmand des créations pâtissières les plus célèbres de Paris : macarons vanille imprimé « Je t’aime Maman » à la rose cardamome, fleur d’oranger, framboise gingembre et rose. Ils se lovent dans le ravissant coffret arabesque signature Ladurée.
+            </p>
+            <p>
+                <b>Un macaron à message </b>
+                Quelques mots d’amour valent toutes les déclarations, à l’instar de ce macaron à la vanille sur lequel est délicatement inscrit « Je t’aime Maman ».
+            </p>
+        </article>
+
+        <article id="article07" class="articlePage">
+            <div>
+                <img src="images/articleIMG_07.png" alt="article title image">
+                <div>
+                    <h3>GIEN X LADURÉE : LA COLLAB’ LIFESTYLE QUI A TOUT BON</h3>
+                    <time datetime="2022-05-06">06/05/2022</time>
+                </div>
+            </div>
+            <p>
+                <b>C’est la collab’ la plus inspirée de la saison qui célèbre les plus beaux savoir-faire français !</b>
+                La Faïencerie de Gien et la Maison Ladurée ont uni leur expérience pour créer une capsule d’art de la table, la Maison Ladurée et la mythique faïencerie Gien déclinent un service très désirable qui semble tout droit sorti d’un tea-time à Versailles. Une faïence imaginée sur un fond poétique aux couleurs pastel mélangeant roses et violettes, fleurs emblématiques de la Maison Ladurée, structurée par une double bordure de bouquets de roses enrubannés et de perles, ainsi qu’un bouquet central issus des archives de la Faïencerie de Gien datant du XIXème siècle. Choisir son thé, l’accompagner d’une exquise pâtisserie et prendre plaisir à déguster, le tout dans un service délicat, créatif et empreint de l’histoire de deux maisons centenaires.
+                <span>En hommage à Madame de Pompadour, la favorite, femme d’arts et de lettres, amatrice d’architecture, de décoration et d’art floral, cette collection nous transporte au XVIIIème siècle avec légèreté et poésie.</span>
+            </p>
+        </article>
+
+        <article id="article08" class="articlePage">
+            <div>
+                <img src="images/articleIMG_08.png" alt="article title image">
+                <div>
+                    <h3>LADURÉE ET SON CHEF PÂTISSIER JULIEN ALVAREZ RÉGALENT LE SALON TASTE OF PARIS</h3>
+                    <time datetime="2022-05-05">05/05/2022</time>
+                </div>
+            </div>
+            <p>
+                Organisé du 12 au 15 mai 2022 au Grand Palais Ephémère, le salon « Taste of Paris » est le rendez-vous incontournable de tous les amateurs de gastronomie. La Maison Ladurée y sera présente, accompagnée de son Chef Pâtissier Julien Alvarez. Nous vous invitons à venir découvrir nos créations exclusivement imaginées pour l’événement et suivre les coulisses des recettes. 
+            </p>
+            <p>
+                <b>Tout au long du salon rendez-vous sur le stand Ladurée</b>
+                A découvrir et à déguster sur place, 4 nouvelles pâtisseries particulièrement gourmandes : « L’Eclair vanille » avec sa languette chocolat blanc Opalys d’une élégance rare et au parfum aromatique saisissant ; le délicieux « Kiwi de l’Adour, pomme verte, herbes fraîches » avec sa crème légère au yaourt vanillé d’une douce fraîcheur ; la surprenante « Pépite pistache fleur d’Oranger » avec son cœur praliné coulant et ultra réconfortant ; et enfin la délicate « Tartelette framboise, doux parfum rose et miel » avec ses framboises fraîches et ses saveurs florales. Créations iconiques de la Maison, les macarons Ladurée seront bien entendu à l’honneur et disponibles dans leurs délicats coffrets aux couleurs tendres.
+            </p>
+        </article>
+
+        <article id="article09" class="articlePage">
+            <div>
+                <img src="images/articleIMG_09.png" alt="article title image">
+                <div>
+                    <h3>LADUREE, 160 ANS D'HISTOIRE GOURMANDE</h3>
+                    <time datetime="2022-04-13">13/04/2022</time>
+                </div>
+            </div>
+            <p>
+                C’est un incroyable destin qu’allait connaître la petite boulangerie créée en 1862 au 16 rue Royale à Paris par Louis-Ernest Ladurée et son épouse Jeanne Souchard.
+                Nullement abattu par un incendie qui détruit l’établissement, Louis-Ernest Ladurée fait alors reconstruire en 1871 la boutique et confie au peintre et illustrateur de l’époque, Jules Chéret, également auteur d’affiches célèbres (Musée Grévin, Grands magasins…) le soin de décorer le lieu dans un style poétique et précieux. Murs peints en vert céladon qui deviendra la couleur emblématique de l’enseigne, plafond décoré de ciel et de chérubins, ange pâtisser figurant au-dessus d’une porte et qui deviendra l’emblème de le maison … tout est légèreté, féminité et poésie.
+                Jeanne a alors l’idée avant-gardiste d’ajouter un espace de dégustation au sein de la boutique, mélangeant ainsi café parisien en vogue et pâtisserie. Le lieu devient alors le rendez-vous élégant et gourmand de la capitale et surtout le premier salon de thé où les femmes peuvent se rendre seules. Une véritable révolution pour l’époque.
+            </p>
+            <p>
+                <b>Nouvelle époque </b>
+                En 1993, Ladurée change de cap sous l’égide de Francis Holder, président du groupe Holder et de son fils David, qui rachètent l’enseigne et lui donneront une aura internationale.
+                Le macaron, se résumant à deux coques nées d’un mélange de poudre d’amande, de sucre glace et de blanc d’oeuf réunis ensuite par une délicieuse ganache, devient le petit gâteau phare du salon de thé, tout comme la religieuse à la rose, le Saint-Honoré rose-framboise, le croissant fourré aux amandes… côté carte salée, le club sandwich, le vol au vent et l’omelette Ladurée deviennent des incontournables.
+                Parallèlement aux douceurs, Ladurée a également inscrit son histoire dans celle des coffrets. Car ici la plus petite boite est un écrin précieux qu’il est impossible de jeter. On les garde, on les collectionne, on leur offre souvent une seconde vie.
+                Dans chaque salon de thé, les décors sophistiqués et poétiques véhiculent au bout du monde la magie de Paris. Car chez Ladurée, le décor est une fête. Chacun raconte une histoire gourmande. Pompons, velours, moulures, tableaux anciens… composent des univers de grande maison, réinterprétés à partir des trois grands âges de l’art décoratif, l’antiquité, le XVIIIe siècle et le Second Empire.
+                C’est ainsi qu’après le salon de la rue Royale, la maison ouvre en 1997 un second salon sur les Champs-Elysées décoré par Jacques Garcia dans le style Second Empire. Suivra en 2002 un nouveau lieu, Rive Gauche cette fois-ci, rue Bonaparte, dans l’ancienne boutique de la décoratrice Madeleine Castaing. D’autres salons verront le jour, de Londres à Tokyo en passant par New York. Chaque fois des lieux qui incarnent l’âme de la maison.
+            </p>
+            <p>
+                <b>2022, une reconversion dans la continuité</b>
+                La maison fête en 2022 ses 160 ans. Pour célébrer cet anniversaire, le chef de la création sucrée Julien Alvarez nous propose de plonger dans les archives de la maison et de réinterpréter quelques-unes des recettes iconiques qui en ont fait sa renommée, comme le Macaron pomme caramel, l’Elysée, le Succès praliné, le Baiser fraise-coquelicot, la Tarte Ananas rôti, le Bayadère, le articlein… Un macaron, le macaron originel à l’amande amère, une version brute et savoureuse de la pâtisserie reine de la maison, sera également proposé tout au long de l’année.
+                Onze pâtisseries emblématiques vont renaitre en 2022, dans le respect des produits de saisons et des gestes d’antan, afin de proposer à nos hôtes une offre de gâteaux et entremets qui représente la créativité et l’excellence de la maison. L’occasion pour nos clients de découvrir ou de redécouvrir des recettes gourmandes et iconiques. Remises au goût du jour par notre Chef.
+                Forte de son patrimoine extraordinaire et de son audace toujours renouvelée, la maison Ladurée demeure plus que jamais une enseigne mythique, une maison de luxe qui continue à véhiculer dans le monde sa vision de la gourmandise, de l’esthétique et de l’élégance à la française.
+            </p>
+        </article>
+
+        <article id="article10" class="articlePage">
+            <div>
+                <img src="images/articleIMG_10.png" alt="article title image">
+                <div>
+                    <h3>JULIEN ALVAREZ REJOINT LA MAISON LADURÉE</h3>
+                    <time datetime="2021-07-01">01/07/2021</time>
+                </div>
+            </div>
+            <p>
+                Après The Peninsula Paris, le Café Pouchkine et le prestigieux palace Parisien Le Bristol, Julien ALVAREZ rejoint la Maison Ladurée en qualité de Chef international de la création pâtissière. Originaire de Bergerac, fils d’un père cuisinier qui lui fait découvrir l’univers de la pâtisserie, c’est auprès de Monsieur Dieumegard, aujourd’hui considéré comme son Mentor, que son intérêt pour les gâteaux va se transformer en véritable passion. 
+                <span>Doté d’une grande créativité et féru de travail, il intègre l’équipe espagnole de pâtisserie aux championnats du monde. Après avoir œuvré passionnément, il obtient le titre de Champion du Monde de Pâtisserie en 2011 puis Meilleur Espoir Pâtissier en 2014. Sa carrière de grand Chef Pâtissier débute lorsqu’il intègre The Peninsula à Paris en 2014 puis lorsqu’il devient Chef Pâtissier Exécutif du Café Pouchkine en 2016. Mais c’est au Bristol, aux côtés d’Éric Frechon, que sa renommée s’installe et qu’il devient l’un des plus talentueux chef de sa génération.</span>
+                <span>Une nouvelle aventure commence pour lui chez Ladurée et nous sommes fiers de l’accueillir. </span>
+                <span>"J’ai toujours eu une admiration particulière pour la Maison Ladurée. Elle symbolise un héritage de savoir-faires historiques et contribue ainsi à la promotion du patrimoine français en France mais aussi à l’international. Je suis aujourd’hui très fier et honoré d’incarner le nouveau visage de la Maison, de contribuer à mon tour à son rayonnement."  Julien Alvarez</span>
+            </p>
+        </article>
+
+        <ul>
+            <li data-tabName="article06">FÊTE DES MÈRES..</li>
+            <li data-tabName="article07">GIEN X LADURÉE..</li>
+            <li data-tabName="article08">LADURÉE ET SON CHEF..</li>
+            <li data-tabName="article09">LADUREE, 160 ANS..</li>
+            <li data-tabName="article10">JULIEN ALVAREZ REJOINT LA..</li>
+        </ul>
+    </section>
+
+    <footer>
+        <div>
+            <h2>LADURÉE</h2>
+            <ul>
+                <li><a href="listPage15.html">Nos Idées Cadeaux</a></li>
+                <li><a href="pageArticle.html">Nos Actualités</a></li>
+                <li><a href="pageContact.html">Nous contacter</a></li>
+                <li><a href="pageStore.html">Store Locator</a></li>
+                <li><a href="pageFAQ.html">F.A.Q</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <h2>Plus d'informations</h2>
+            <ul>
+                <li><a href="https://www.maisonladuree.com/" target="_blank">Maison Ladurée</a></li>
+                <li><a href="pageTermsAndConditions.html">Conditions générales de vente</a></li>
+                <li><a href="pageLegalNotice.html">Mentions légales</a></li>
+                <li><a href="pageProtection.html">Protection des données personnelles</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <h2>SUIVEZ-NOUS</h2>
+            <ol>
+                <li><a href="https://www.facebook.com/MaisonLaduree" target="_blank">facebook</a></li>
+                <li><a href="https://www.instagram.com/maisonladuree/" target="_blank">instagram</a></li>
+                <li><a href="https://www.pinterest.fr/maisonladuree/" target="_blank">pinterest</a></li>
+                <li><a href="https://www.linkedin.com/company/laduree-paris/" target="_blank">linkedin</a></li>
+            </ol>
+        </div>
+
+        <div>
+            <ol>
+                <li>
+                    <p>
+                        <mark>RETRAIT EN BOUTIQUES</mark>
+                        Commande préparée en 2H ou au créneau de votre choix. Accès coupe-file dans les boutiques éligibles au service.
+                    </p>
+                    RETRAIT EN BOUTIQUES
+                </li>
+                <li>
+                    <p>
+                        <mark>EXPÉDITION À DOMICILE</mark>
+                        En France et en Europe par nos transporteurs spécialisés. Livraison offerte dès 75€ d'achat (France Métropolitaine).
+                    </p>
+                    EXPÉDITION À DOMICILE
+                </li>
+                <li>
+                    <p>
+                        <mark>LIVRAISON PAR COURSIER</mark>
+                        A Paris et en petite couronne (sur créneaux de 2H). Livraison offerte dès 75€ d'achat.
+                    </p>
+                    LIVRAISON PAR COURSIER
+                </li>
+            </ol>
+
+            <p>
+                COMMANDEZ EN TOUTE SÉRÉNITÉ!
+                <span>© Copyright Ladurée Paris 2022</span>
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LADURÉE</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <div class="cartPanel have" id="cartHave">
+        <input type="button" class="material-icons-outlined close" value="close">
+
+        <ul>
+            <li>
+                <div>
+                    COFFRET DE 42 MACARONS "NUIT"
+                    <b>Coffret à composer</b>
+                    <input type="button" class="material-icons-outlined btn_delete" value="delete" data-panelName="cartEmpty">
+                </div>
+
+                <div>
+                    <div class="countComponent">
+                        <input type="button" value="-">
+                        <span>1</span>
+                        <input type="button" value="+">
+                    </div>
+                    <mark>112,00 €</mark>
+                </div>
+            </li>
+        </ul>
+
+        <div>
+            <strong>TOTAL</strong>
+            <output>112,00</output>€
+        </div>
+        <a href="pageCart.html" class="btn oliveGreen">COMMANDER</a>
+    </div>
+
+    <div class="cartPanel empty" id="cartEmpty">
+        <input type="button" class="material-icons-outlined close" value="close">
+        <h2>Votre panier est vide</h2>
+        <p>Identifiez-vous pour retrouver votre panier enregistré,ou poursuivez vos achats sur le site</p>
+        <input type="button" class="btn oliveGreen close" value="POURSUIVRE MES ACHATS">
+    </div>
+
+    <div class="searchPanel" id="search">
+        <input type="button" class="material-icons-outlined close" value="close">
+        
+        <form>
+            <label for="searchField">SEARCH</label>
+            <input type="search" id="searchField" placeholder="MACARONS">
+        </form>
+        
+        <div>
+            <h3>Nos suggestions</h3>
+            <ul>
+                <li><a href="listPage03.html">MACARONS</a></li>
+                <li><a href="listPage07.html">PÂTISSERIES</a></li>
+                <li><a href="listPage08.html">CHCOLATS</a></li>
+                <li><a href="listPage10.html">THÉS</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- popup -->
+
+    <header>
+        <div class="headBanner">
+            <a href="listPage02.html">CALENDRIER DE L'AVENT 2022 | 24 raisons gourmandes de succomber. Commandez le vôtre</a>
+            <input type="button" class="material-icons-outlined close" value="close">
+        </div>
+
+        <div>
+            <h1>
+                <a href="index_after.html">
+                    <img src="images/logo.svg" alt="welcome to LADUREE">
+                </a>
+            </h1>
+
+            <nav>
+                <ul>
+                    <li><a href="listPage01.html">NOËL</a></li>
+
+                    <li>
+                        MACARONS
+                        <ol>
+                            <li><a href="listPage03.html">Coffrets - Expédition à Domicile</a></li>
+                            <li><a href="listPage04.html">Coffrets - Click&Collect et Coursier</a></li>
+                            <li><a href="listPage05.html">MACARONS EN EXPÉDITION</a></li>
+                            <li><a href="listPage06.html">Parfums iconiques et exclusifs</a></li>
+                        </ol>
+                    </li>
+
+                    <li><a href="listPage07.html">PÂTISSERIES</a></li>
+
+                    <li>
+                        EPICERIE FINE
+                        <ol>
+                            <li><a href="listPage08.html">Chocolats et Confiseries</a></li>
+                            <li><a href="listPage09.html">Cakes et Biscuits</a></li>
+                            <li><a href="listPage10.html">Thés Signature</a></li>
+                            <li><a href="listPage11.html">Confitures et Miels</a></li>
+                        </ol>
+                    </li>
+
+                    <li><a href="listPage12.html">VIENNOISERIES</a></li>
+
+                    <li>
+                        CADEAUX
+                        <ol>
+                            <li><a href="listPage13.html">Toutes nos idées cadeaux</a></li>
+                            <li><a href="listPage14.html">Le nouveau menu de Ladurée</a></li>
+                            <li><a href="listPage15.html">Occasions spéciales</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+    
+            <ul>
+                <li>
+                    <a href="myPage.html">Alan<span class="material-icons-outlined">person</span></a>
+                </li>
+                <li><input type="button" value="shopping_bag" class="material-icons-outlined" data-panelName="cartHave"></li>
+                <li><input type="button" value="search" class="material-icons-outlined" data-panelName="search"></li>
+                <li class="mui"><input type="button" value="menu" class="material-icons-outlined"></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="listContainer type03">
+        <div class="titleBox">
+            <h2>
+                MACARONS
+                <small>Parfums iconiques et exclusifs</small>
+            </h2>
+        </div>
+
+        <div>
+            <h3>NOS PARFUMS DE MACARONS</h3>
+            <ul>
+                <li>
+                    <img src="images/mac_01.png" alt="FRAMBOISE GINGEMBRE">
+                    <b>FRAMBOISE GINGEMBRE</b>
+                    <input type="button" value="Afficher les détails" class="btn pink">
+                    <div>
+                        <b>FRAMBOISE GINGEMBRE</b>
+                        <p>
+                            Deux coques de macaron roses garnies d’une confiture de framboise et gingembre parfumée à la rose.
+                            <strong>Allergènes</strong>
+                            <span>Oeuf, Amande</span>
+                        </p>
+                        <input type="button" value="Masquer les détails" class="btn close">
+                    </div>
+                </li>
+                <li>
+                    <img src="images/mac_02.png" alt="ROSE CARDAMOME">
+                    <b>ROSE CARDAMOME</b>
+                    <input type="button" value="Afficher les détails" class="btn pink">
+                    <div>
+                        <b>ROSE CARDAMOME</b>
+                        <p>
+                            Deux coques de macarons parsemées de pétales de roses séchées garnies d’un crémeux parfumé aux boutons de roses et d’une touche de cardamome.
+                            <strong>Allergènes</strong>
+                            <span>Oeuf, Amande, Lait, Soja</span>
+                        </p>
+                        <input type="button" value="Masquer les détails" class="btn close">
+                    </div>
+                </li>
+                <li>
+                    <img src="images/mac_03.png" alt="ROSE LITCHI">
+                    <b>ROSE LITCHI</b>
+                    <input type="button" value="Afficher les détails" class="btn pink">
+                    <div>
+                        <b>ROSE LITCHI</b>
+                        <p>
+                            Deux coques de macarons garnies d’une crème parfumée à la rose et au litchi.
+                            <strong>Allergènes</strong>
+                            <span>Oeuf, Amande, Lait, Soja</span>
+                        </p>
+                        <input type="button" value="Masquer les détails" class="btn close">
+                    </div>
+                </li>
+                <li>
+                    <img src="images/mac_04.png" alt="PÉTILLANT FRUITS ROUGES">
+                    <b>PÉTILLANT FRUITS ROUGES</b>
+                    <input type="button" value="Afficher les détails" class="btn pink">
+                    <div>
+                        <b>PÉTILLANT FRUITS ROUGES</b>
+                        <p>
+                            Une coque rose irisée, garnie d’un crémeux réalisé à partir de champagne Ladurée rosé et de framboises.
+                            <strong>Allergènes</strong>
+                            <span>Lait, Oeuf, Soja, Poisson, Amande, Alcool</span>
+                        </p>
+                        <input type="button" value="Masquer les détails" class="btn close">
+                    </div>
+                </li>
+
+                <li>
+                    <img src="images/mac_05.png" alt="NOISETTE">
+                    <b>NOISETTE</b>
+                    <input type="button" value="Afficher les détails" class="btn pink">
+                    <div>
+                        <b>NOISETTE</b>
+                        <p>
+                            Deux coques de macaron végan saupoudrées de poudre de noisette garnies d’une ganache à la noisette du Piémont.
+                            <strong>Allergènes</strong>
+                            <span>Amande, Noisette, Fruits à coque, Oeuf, Soja, Lait, Poisson</span>
+                        </p>
+                        <input type="button" value="Masquer les détails" class="btn close">
+                    </div>
+                </li>
+                <li>
+                    <img src="images/mac_06.png" alt="BRIOCHE DE NOËL">
+                    <b>BRIOCHE DE NOËL</b>
+                    <input type="button" value="Afficher les détails" class="btn pink">
+                    <div>
+                        <b>BRIOCHE DE NOËL</b>
+                        <p>
+                            Deux coques de macaron surmontées d’amandes effilées et garnies d’un crémeux au chocolat dulcey, raisins secs de Corinthe, citrons et oranges confites
+                            <strong>Allergènes</strong>
+                            <span>Oeuf, Lait, Soja, Fruits à coque, Amande</span>
+                        </p>
+                        <input type="button" value="Masquer les détails" class="btn close">
+                    </div>
+                </li>
+                <li>
+                    <img src="images/mac_07.png" alt="SAPIN">
+                    <b>SAPIN</b>
+                    <input type="button" value="Afficher les détails" class="btn pink">
+                    <div>
+                        <b>SAPIN</b>
+                        <p>
+                            Audace et délicatesse pour ce macaron garni d'un crémeux délicatement parfumé d'une note d’huile essentielle de sapin Nordmann et Épicéa
+                            <strong>Allergènes</strong>
+                            <span>Oeuf, Lait, Fruits à coque, Amande</span>
+                        </p>
+                        <input type="button" value="Masquer les détails" class="btn close">
+                    </div>
+                </li>
+                <li>
+                    <img src="images/mac_08.png" alt="NOISETTE ENROBÉ CHOCOLAT AU LAIT">
+                    <b>NOISETTE ENROBÉ CHOCOLAT AU LAIT</b>
+                    <input type="button" value="Afficher les détails" class="btn pink">
+                    <div>
+                        <b>NOISETTE ENROBÉ CHOCOLAT AU LAIT</b>
+                        <p>
+                            Un macaron garni d’un gourmand crémeux noisette, recouvert d’une fine couche de chocolat au lait.
+                            <strong>Allergènes</strong>
+                            <span>Oeuf, Amande, Lait, Soja, Noisette</span>
+                        </p>
+                        <input type="button" value="Masquer les détails" class="btn close">
+                    </div>
+                </li>
+
+                <li>
+                    <img src="images/mac_09.png" alt="VANILLE">
+                    <b>VANILLE</b>
+                    <input type="button" value="Afficher les détails" class="btn pink">
+                    <div>
+                        <b>VANILLE</b>
+                        <p>
+                            Deux coques de macaron amande vanille garnies d'un crémeux parfumé à la vanille.
+                            <strong>Allergènes</strong>
+                            <span>Soja, Oeuf, Lait, Amande</span>
+                        </p>
+                        <input type="button" value="Masquer les détails" class="btn close">
+                    </div>
+                </li>
+                <li>
+                    <img src="images/mac_10.png" alt="CHOCOLAT">
+                    <b>CHOCOLAT</b>
+                    <input type="button" value="Afficher les détails" class="btn pink">
+                    <div>
+                        <b>CHOCOLAT</b>
+                        <p>
+                            Deux coques de macaron amande chocolat garnies de ganache au chocolat.
+                            <strong>Allergènes</strong>
+                            <span>Oeuf, Lait, Soja, Amande</span>
+                        </p>
+                        <input type="button" value="Masquer les détails" class="btn close">
+                    </div>
+                </li>
+                <li>
+                    <img src="images/mac_11.png" alt="PISTACHE">
+                    <b>PISTACHE</b>
+                    <input type="button" value="Afficher les détails" class="btn pink">
+                    <div>
+                        <b>PISTACHE</b>
+                        <p>
+                            Deux coques de macaron amande pistache garnies de crème au beurre parfumée à la pistache.
+                            <strong>Allergènes</strong>
+                            <span>Oeuf, Lait, Amande, Pistache</span>
+                        </p>
+                        <input type="button" value="Masquer les détails" class="btn close">
+                    </div>
+                </li>
+                <li>
+                    <img src="images/mac_12.png" alt="CARAMEL">
+                    <b>CARAMEL</b>
+                    <input type="button" value="Afficher les détails" class="btn pink">
+                    <div>
+                        <b>CARAMEL</b>
+                        <p>
+                            Deux coques de macaron amande garnies de caramel à la fleur de sel.
+                            <strong>Allergènes</strong>
+                            <span>Oeuf, Lait, Amande</span>
+                        </p>
+                        <input type="button" value="Masquer les détails" class="btn close">
+                    </div>
+                </li>
+
+                <li>
+                    <img src="images/mac_13.png" alt="FRAMBOISE">
+                    <b>FRAMBOISE</b>
+                    <input type="button" value="Afficher les détails" class="btn pink">
+                    <div>
+                        <b>FRAMBOISE</b>
+                        <p>
+                            Deux coques de macaron amande garnies de confiture à la framboise.
+                            <strong>Allergènes</strong>
+                            <span>Oeuf, Amande</span>
+                        </p>
+                        <input type="button" value="Masquer les détails" class="btn close">
+                    </div>
+                </li>
+                <li>
+                    <img src="images/mac_14.png" alt="CAFÉ">
+                    <b>CAFÉ</b>
+                    <input type="button" value="Afficher les détails" class="btn pink">
+                    <div>
+                        <b>CAFÉ</b>
+                        <p>
+                            Deux coques de macaron amande café garnies de crème au beurre parfumée au café.
+                            <strong>Allergènes</strong>
+                            <span>Soja, Oeuf, Lait, Amande</span>
+                        </p>
+                        <input type="button" value="Masquer les détails" class="btn close">
+                    </div>
+                </li>
+                <li>
+                    <img src="images/mac_15.png" alt="CITRON">
+                    <b>CITRON</b>
+                    <input type="button" value="Afficher les détails" class="btn pink">
+                    <div>
+                        <b>CITRON</b>
+                        <p>
+                            Deux coques de macaron amande garnies d'un crémeux parfumé au citron.
+                            <strong>Allergènes</strong>
+                            <span>Oeuf, Lait, Soja, Amande</span>
+                        </p>
+                        <input type="button" value="Masquer les détails" class="btn close">
+                    </div>
+                </li>
+                <li>
+                    <img src="images/mac_16.png" alt="ROSE">
+                    <b>ROSE</b>
+                    <input type="button" value="Afficher les détails" class="btn pink">
+                    <div>
+                        <b>ROSE</b>
+                        <p>
+                            Deux coques de macaron amande garnies d’un crémeux parfumée à la rose.
+                            <strong>Allergènes</strong>
+                            <span>Oeuf, Lait, Soja, Amande</span>
+                        </p>
+                        <input type="button" value="Masquer les détails" class="btn close">
+                    </div>
+                </li>
+
+                <li>
+                    <img src="images/mac_17.png" alt="FLEUR D’ORANGER">
+                    <b>FLEUR D’ORANGER</b>
+                    <input type="button" value="Afficher les détails" class="btn pink">
+                    <div>
+                        <b>FLEUR D’ORANGER</b>
+                        <p>
+                            Deux coques de macaron amande garnies d'un crémeux parfumé à la fleur d’oranger.
+                            <strong>Allergènes</strong>
+                            <span>Soja, Oeuf, Lait, Amande</span>
+                        </p>
+                        <input type="button" value="Masquer les détails" class="btn close">
+                    </div>
+                </li>
+                <li>
+                    <img src="images/mac_18.png" alt="THÉ MARIE-ANTOINETTE">
+                    <b>THÉ MARIE-ANTOINETTE</b>
+                    <input type="button" value="Afficher les détails" class="btn pink">
+                    <div>
+                        <b>THÉ MARIE-ANTOINETTE</b>
+                        <p>
+                            Deux coques craquantes garnies d’une crème fondante infusée au thé Marie-Antoinette. La couleur bleue est obtenue grâce à un ingrédient naturel 
+                            <strong>Allergènes</strong>
+                            <span>Lait, Oeuf, Soja, Amande</span>
+                        </p>
+                        <input type="button" value="Masquer les détails" class="btn close">
+                    </div>
+                </li>
+                <li>
+                    <img src="images/mac_19.png" alt="CASSIS VIOLETTE">
+                    <b>CASSIS VIOLETTE</b>
+                    <input type="button" value="Afficher les détails" class="btn pink">
+                    <div>
+                        <b>CASSIS VIOLETTE</b>
+                        <p>
+                            Deux coques délicates garnies d’une confiture de cassis noir de Bourgogne parfumée à l’essence naturelle de violette.
+                            <strong>Allergènes</strong>
+                            <span>Oeuf, Amande</span>
+                        </p>
+                        <input type="button" value="Masquer les détails" class="btn close">
+                    </div>
+                </li>
+                <li>
+                    <img src="images/mac_20.png" alt="CALISSON">
+                    <b>CALISSON</b>
+                    <input type="button" value="Afficher les détails" class="btn pink">
+                    <div>
+                        <b>CALISSON</b>
+                        <p>
+                            Deux coques de macarons saupoudrées de sucre jaune et garnies d’un crémeux à l’orange confite, fleur d’oranger et amande. 
+                            <strong>Allergènes</strong>
+                            <span>Oeuf, Amande</span>
+                        </p>
+                        <input type="button" value="Masquer les détails" class="btn close">
+                    </div>
+                </li>
+
+                <li>
+                    <img src="images/mac_21.png" alt="GRAINES DE COURGE">
+                    <b>GRAINES DE COURGE</b>
+                    <input type="button" value="Afficher les détails" class="btn pink">
+                    <div>
+                        <b>GRAINES DE COURGE</b>
+                        <p>
+                            Deux coques de macaron saupoudrées de poudre de graines de courges et garnies d’une ganache au lait d’amande et à la pâte de courge maison. 
+                            <strong>Allergènes</strong>
+                            <span>Oeuf, Amande</span>
+                        </p>
+                        <input type="button" value="Masquer les détails" class="btn close">
+                    </div>
+                </li>
+                <li>
+                    <img src="images/mac_22.png" alt="AMANDE AMÈRE">
+                    <b>AMANDE AMÈRE</b>
+                    <input type="button" value="Afficher les détails" class="btn pink">
+                    <div>
+                        <b>AMANDE AMÈRE</b>
+                        <p>
+                            A l'occasion de son 160ème anniversaire, la Maison Ladurée à imaginé ce macaron au goût d'amande amère.
+                            <strong>Allergènes</strong>
+                            <span>Oeuf, Amande</span>
+                        </p>
+                        <input type="button" value="Masquer les détails" class="btn close">
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <div>
+            <h2>LADURÉE</h2>
+            <ul>
+                <li><a href="listPage15.html">Nos Idées Cadeaux</a></li>
+                <li><a href="pageArticle.html">Nos Actualités</a></li>
+                <li><a href="pageContact.html">Nous contacter</a></li>
+                <li><a href="pageStore.html">Store Locator</a></li>
+                <li><a href="pageFAQ.html">F.A.Q</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <h2>Plus d'informations</h2>
+            <ul>
+                <li><a href="https://www.maisonladuree.com/" target="_blank">Maison Ladurée</a></li>
+                <li><a href="pageTermsAndConditions.html">Conditions générales de vente</a></li>
+                <li><a href="pageLegalNotice.html">Mentions légales</a></li>
+                <li><a href="pageProtection.html">Protection des données personnelles</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <h2>SUIVEZ-NOUS</h2>
+            <ol>
+                <li><a href="https://www.facebook.com/MaisonLaduree" target="_blank">facebook</a></li>
+                <li><a href="https://www.instagram.com/maisonladuree/" target="_blank">instagram</a></li>
+                <li><a href="https://www.pinterest.fr/maisonladuree/" target="_blank">pinterest</a></li>
+                <li><a href="https://www.linkedin.com/company/laduree-paris/" target="_blank">linkedin</a></li>
+            </ol>
+        </div>
+
+        <div>
+            <ol>
+                <li>
+                    <p>
+                        <mark>RETRAIT EN BOUTIQUES</mark>
+                        Commande préparée en 2H ou au créneau de votre choix. Accès coupe-file dans les boutiques éligibles au service.
+                    </p>
+                    RETRAIT EN BOUTIQUES
+                </li>
+                <li>
+                    <p>
+                        <mark>EXPÉDITION À DOMICILE</mark>
+                        En France et en Europe par nos transporteurs spécialisés. Livraison offerte dès 75€ d'achat (France Métropolitaine).
+                    </p>
+                    EXPÉDITION À DOMICILE
+                </li>
+                <li>
+                    <p>
+                        <mark>LIVRAISON PAR COURSIER</mark>
+                        A Paris et en petite couronne (sur créneaux de 2H). Livraison offerte dès 75€ d'achat.
+                    </p>
+                    LIVRAISON PAR COURSIER
+                </li>
+            </ol>
+
+            <p>
+                COMMANDEZ EN TOUTE SÉRÉNITÉ!
+                <span>© Copyright Ladurée Paris 2022</span>
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>

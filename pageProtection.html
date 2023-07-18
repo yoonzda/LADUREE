@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LADURÉE</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <div class="cartPanel have" id="cartHave">
+        <input type="button" class="material-icons-outlined close" value="close">
+
+        <ul>
+            <li>
+                <div>
+                    COFFRET DE 42 MACARONS "NUIT"
+                    <b>Coffret à composer</b>
+                    <input type="button" class="material-icons-outlined btn_delete" value="delete" data-panelName="cartEmpty">
+                </div>
+
+                <div>
+                    <div class="countComponent">
+                        <input type="button" value="-">
+                        <span>1</span>
+                        <input type="button" value="+">
+                    </div>
+                    <mark>112,00 €</mark>
+                </div>
+            </li>
+        </ul>
+
+        <div>
+            <strong>TOTAL</strong>
+            <output>112,00</output>€
+        </div>
+        <a href="pageCart.html" class="btn oliveGreen">COMMANDER</a>
+    </div>
+
+    <div class="cartPanel empty" id="cartEmpty">
+        <input type="button" class="material-icons-outlined close" value="close">
+        <h2>Votre panier est vide</h2>
+        <p>Identifiez-vous pour retrouver votre panier enregistré,ou poursuivez vos achats sur le site</p>
+        <input type="button" class="btn oliveGreen close" value="POURSUIVRE MES ACHATS">
+    </div>
+
+    <div class="searchPanel" id="search">
+        <input type="button" class="material-icons-outlined close" value="close">
+        
+        <form>
+            <label for="searchField">SEARCH</label>
+            <input type="search" id="searchField" placeholder="MACARONS">
+        </form>
+        
+        <div>
+            <h3>Nos suggestions</h3>
+            <ul>
+                <li><a href="listPage03.html">MACARONS</a></li>
+                <li><a href="listPage07.html">PÂTISSERIES</a></li>
+                <li><a href="listPage08.html">CHCOLATS</a></li>
+                <li><a href="listPage10.html">THÉS</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- popup -->
+
+    <header>
+        <div class="headBanner">
+            <a href="listPage02.html">CALENDRIER DE L'AVENT 2022 | 24 raisons gourmandes de succomber. Commandez le vôtre</a>
+            <input type="button" class="material-icons-outlined close" value="close">
+        </div>
+
+        <div>
+            <h1>
+                <a href="index_after.html">
+                    <img src="images/logo.svg" alt="welcome to LADUREE">
+                </a>
+            </h1>
+
+            <nav>
+                <ul>
+                    <li><a href="listPage01.html">NOËL</a></li>
+
+                    <li>
+                        MACARONS
+                        <ol>
+                            <li><a href="listPage03.html">Coffrets - Expédition à Domicile</a></li>
+                            <li><a href="listPage04.html">Coffrets - Click&Collect et Coursier</a></li>
+                            <li><a href="listPage05.html">MACARONS EN EXPÉDITION</a></li>
+                            <li><a href="listPage06.html">Parfums iconiques et exclusifs</a></li>
+                        </ol>
+                    </li>
+
+                    <li><a href="listPage07.html">PÂTISSERIES</a></li>
+
+                    <li>
+                        EPICERIE FINE
+                        <ol>
+                            <li><a href="listPage08.html">Chocolats et Confiseries</a></li>
+                            <li><a href="listPage09.html">Cakes et Biscuits</a></li>
+                            <li><a href="listPage10.html">Thés Signature</a></li>
+                            <li><a href="listPage11.html">Confitures et Miels</a></li>
+                        </ol>
+                    </li>
+
+                    <li><a href="listPage12.html">VIENNOISERIES</a></li>
+
+                    <li>
+                        CADEAUX
+                        <ol>
+                            <li><a href="listPage13.html">Toutes nos idées cadeaux</a></li>
+                            <li><a href="listPage14.html">Le nouveau menu de Ladurée</a></li>
+                            <li><a href="listPage15.html">Occasions spéciales</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+    
+            <ul>
+                <li>
+                    <a href="myPage.html">Alan<span class="material-icons-outlined">person</span></a>
+                </li>
+                <li><input type="button" value="shopping_bag" class="material-icons-outlined" data-panelName="cartHave"></li>
+                <li><input type="button" value="search" class="material-icons-outlined" data-panelName="search"></li>
+                <li class="mui"><input type="button" value="menu" class="material-icons-outlined"></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="legalContainer">
+        <div class="titleBox protection">
+            <h2>
+                Protection des donnees personnelles
+            </h2>
+        </div>
+        
+        <ol>
+            <li>
+                <h3>POLITIQUE DE CONFIDENTIALITÉ</h3>
+                <p>La société PATISSERIE E. LADUREE (ci-après « Ladurée » ou « nous ») attache une grande importance à la protection des données personnelles vous concernant et plus généralement à votre vie privée.</p>
+                <p>Dans le cadre de l’exploitation du site Internet www.laduree.fr (le « Site »), Ladurée est susceptible de collecter et traiter des données personnelles vous appartenant. A cet égard, la présente Politique de confidentialité décrit la manière dont nous traitons vos données personnelles lors de votre utilisation du Site.</p>
+                <p>Toutes vos données personnelles sont traitées par nos soins conformément à la règlementation applicable en la matière, en particulier celle issue du Règlement européen n°2016/679 du 27 avril 2016 sur la Protection des données personnelles (« RGPD ») ainsi que toute législation ou réglementation qui viendrait en complément ou en substitution de ce Règlement. Les traitements relatifs à vos données personnelles ainsi que leurs caractéristiques sont précisés dans le tableau figurant à la fin de la présente Politique de confidentialité.</p>
+                <p>Qui traite vos données personnelles ?</p>
+                <p>Vos données personnelles sont traitées sous la responsabilité de la société PATISSERIE E. LADUREE, société par actions simplifiée à associé unique, immatriculée au Registre du Commerce et des Sociétés de Paris sous le numéro 572 045 540 et ayant son siège social au 41/43 rue de Varenne - 75007 Paris. Au sens de la réglementation applicable, Ladurée intervient en qualité de responsable des traitements décrits dans la présente Politique de confidentialité.</p>
+            </li>
+
+            <li>
+                <h3>QUELLES SONT LES CATÉGORIES DE DONNÉES PERSONNELLES QUE NOUS COLLECTONS ET POUR QUELLE(S) FINALITÉ(S) ?</h3>
+                <p>Conformément à la règlementation applicable, nous ne traitons vos données personnelles que si l’une des conditions suivantes est remplie :</p>
+                <p>
+                    Le traitement de vos données personnelles est nécessaire à l’exécution d’un contrat auquel vous êtes partie, et notamment l’exécution de votre commande sur notre Site, ou à l’exécution de mesures précontractuelles prises à votre demande ;
+                    Le traitement de vos données personnelles est nécessaire à la poursuite de nos intérêts légitimes ;
+                    Vous avez expressément consenti au traitement de vos données personnelles pour une ou plusieurs finalités spécifiques.
+                </p>
+                <p>Les données personnelles que nous traitons sont listées par finalité dans le tableau figurant à la fin de la présente Politique de confidentialité. Nous ne traitons vos données personnelles que pour les finalités déterminées et au regard des bases légales qui sont portées à votre connaissance.</p>
+                <p>Veuillez noter que pour bénéficier de certains services et fonctionnalités sur notre Site ou afin de pouvoir recevoir des communications de notre part, il vous sera demandé de communiquer certaines données personnelles à titre obligatoire via des formulaires de collecte. Le caractère obligatoire des réponses est signalé au moyen d'un astérisque (*). Les données identifiées comme étant obligatoires sont nécessaires afin de pouvoir bénéficier des fonctionnalités correspondantes du Site. A défaut de remplir ces champs vous ne pourrez pas obtenir le service demandé.</p>
+                <p>Nous ne collectons que les données strictement nécessaires à la poursuite des finalités détaillées ci-après. Ainsi, la communication de vos données personnelles est indispensable à la poursuite de ces finalités et la non-fourniture de ces données est susceptible d’en compromettre la bonne exécution.</p>
+                <p>Par ailleurs, lorsque vous consulter ou naviguez sur le Site, nous pouvons êtres amenés à déposer des cookies sur votre terminal. Pour plus d’informations concernant le traitement de vos données personnelles par le biais de ces cookies, veuillez consulter notre Politique cookies.</p>
+            </li>
+
+            <li>
+                <h3>QUI A ACCÈS À VOS DONNÉES PERSONNELLES ?</h3>
+                <p>Au sein de Ladurée, et au regard de chaque traitement, vos données personnelles ne sont communiquées ou rendues accessibles qu’aux personnes auxquelles il est nécessaire de les communiquer pour les besoins et compte tenu de la finalité du traitement en cause.</p>
+                <p>Vos données personnelles sont également susceptibles d’être communiquées à des tiers au regard de la finalité du traitement correspondant.</p>
+                <p>Les destinataires ou catégories de destinataires de vos données personnelles sont identifiés dans le tableau ci-dessous.</p>
+                <p>Par ailleurs, vos données personnelles sont stockées, par principe, au sein de serveurs localisés dans l’Union Européenne. Toutefois, nous pourrions être amenés à transmettre certaines de vos données personnelles à des destinataires, tiers à Ladurée, situés dans différents pays, y compris en dehors de l’Union Européenne. Dans ce cas, ces transferts de données personnelles vers des pays tiers à l’Union Européenne seront encadrés afin d’assurer un niveau de protection appropriée, soit par une décision de la Commission européenne (décision d’adéquation), soit par le biais d’instruments juridiques tels que des contrats de transferts de données. Pour toute demande concernant les transferts de données personnelles en dehors de l’Union Européenne que nous pourrions être amenés à effectuer, vous pouvez nous contacter aux adresses indiquées dans la rubrique « Nous contacter » ci-dessous.</p>
+                <p>Pour chaque traitement, les éventuels transferts en dehors de l’Union Européenne ainsi que le cadre juridique les régissant sont indiqués dans le tableau ci-dessous.</p>
+            </li>
+
+            <li>
+                <h3>COMBIEN DE TEMPS CONSERVONS-NOUS LES DONNÉES COLLECTÉES ?</h3>
+                <p>Nous ne conservons vos données personnelles que pour la durée qui est strictement nécessaire au regard de la finalité du traitement. Pour chaque traitement, ces durées sont indiquées dans le tableau ci-dessous.</p>
+            </li>
+
+            <li>
+                <h3>COMMENT VOS DONNÉES PERSONNELLES SONT-ELLES PROTÉGÉES ?</h3>
+                <p>Nous nous engageons à protéger vos données personnelles. Pour ce faire, nous veillons à prendre toutes les mesures physiques, techniques et organisationnelles utiles pour faire obstacle à tout traitement non autorisé ou illicite, ainsi qu’à toute perte, destruction ou dégradation accidentelle de vos données personnelles.</p>
+            </li>
+
+            <li>
+                <h3>QUELS SONT VOS DROITS ?</h3>
+                <p>Vous disposez d’un droit d’accès, de rectification, d’effacement, de limitation, d’opposition concernant le traitement de vos données personnelles ainsi que du droit de définir des directives relatives au sort de vos données après votre mort et du droit à la portabilité de vos données personnelles en formulant votre demande aux adresses indiquées dans la rubrique ci-après « Nous contacter », dans les conditions posées par la réglementation applicable. Vous devez indiquer quel droit vous entendez exercer ainsi que l’ensemble des précisions nécessaires pour que nous puissions répondre à votre demande.</p>
+                <p>Ces droits s’exercent dans les conditions posées par la règlementation applicable.</p>
+                <p>Le droit d’accès signifie que vous pouvez nous demander à tout moment de vous indiquer si nous traitons des données personnelles vous concernant et, le cas échéant, de vous indiquer quelles sont les données personnelles concernées ainsi que les caractéristiques du ou des traitements effectués.</p>
+                <p>Le droit de rectification signifie que vous pouvez nous demander la rectification de vos données personnelles lorsqu’elles sont inexactes. Vous pouvez également demander à ce que de vos données personnelles, dès lors qu’incomplètes, soient complétées dans la mesure où cela est pertinent au regard de la finalité du traitement en cause.</p>
+                <p>Le droit à l’effacement signifie que vous pouvez demander d’effacer vos données personnelles notamment lorsque : (i) leur conservation n’est plus nécessaire au regard des finalités pour lesquelles elles ont été collectées (ii) vos données personnelles sont traitées sur le fondement de votre consentement, vous souhaitez retirer ce consentement, et il n’existe pas d'autre fondement juridique susceptible de justifier le traitement (iii) vous vous êtes opposé au traitement de vos données personnelles et vous souhaitez en conséquence qu’elles soient effacées (iv) vos données personnelles ont fait l'objet d'un traitement illicite ; (v) vos données personnelles doivent être effacées pour respecter une obligation légale qui est prévue soit par le droit de l'Union Européenne soit par le droit français.</p>
+                <p>Le droit à la limitation signifie que vous pouvez nous demander de procéder à la limitation du traitement de vos données personnelles (i) lorsque vous contestez l’exactitude de vos données personnelles pendant une durée nous permettant de vérifier l’exactitude de celles-ci, (ii) lorsque suite à un traitement établi comme non conforme, vous préférez la limitation du traitement à l’effacement complet de vos données personnelles (iii) lorsque nous n’avons plus besoin de vos données personnelles aux fins du traitement mais que celles-ci vous sont encore nécessaires pour la constatation, l’exercice ou la défense de droits en justice ; (iv) lorsque vous vous êtes opposé au traitement de vos données personnelles et vous souhaitez une limitation du traitement pendant la durée nous permettant de vérifier si le motif légitime que vous invoquez se justifie. La limitation du traitement signifie que le traitement de vos données personnelles s’entendra alors du seul stockage de vos données personnelles correspondantes. Nous n’effectuerons alors plus aucune autre opération sur les données personnelles considérées.</p>
+                <p>Le droit d’opposition signifie que vous pouvez vous opposer au traitement de vos données personnelles, lorsque ce traitement est fondé sur la poursuite de l’intérêt légitime de Ladurée. Le droit d’opposition s’exerce sous réserve de justifier d’un motif légitime tenant à votre situation particulière. Nous cesserons alors le traitement en cause sauf s’il existe des motifs légitimes et impérieux en justifiant la poursuite en conformité avec la règlementation applicable.</p>
+                <p>Le droit de définir des directives relatives au sort de vos données après votre mort vous permet de faire connaître vos instructions concernant la conservation, l'effacement et la communication de vos données personnelles après votre décès.</p>
+                <p>Le droit à la portabilité signifie que vous pouvez nous demander, dans les conditions posées par la réglementation applicable, de recevoir vos données personnelles dans un format structuré, couramment utilisé et lisible par machine, et de vous les transmettre, ou de nous demander de les transmettre directement à un tiers de votre choix lorsque cela est juridiquement et techniquement possible.</p>
+                <p>Lorsque nous traitons vos données personnelles sur la base de votre consentement, vous disposez de la faculté de retirer votre consentement à tout moment en vous adressant aux adresses indiquées dans la rubrique ci-après « Nous contacter» ou en cliquant sur le lien de désabonnement présent dans chacune de nos communications commerciales. Toutefois, le retrait de votre consentement ne remet pas en cause la validité du traitement effectué avant ce retrait.</p>
+            </li>
+
+            <li>
+                <h3>MODIFICATION DE LA POLITIQUE DE CONFIDENTIALITÉ</h3>
+                <p>La présente Politique de confidentialité peut faire l’objet de mises à jour.</p>
+                <p>Lorsque vous nous avez transmis une adresse e-mail valide, nous vous informons de tout changement substantiel par e-mail de la Politique de confidentialité et vous communiquerons la nouvelle version avant de mettre en œuvre les changements concernés. Nous vous recommandons également de prendre régulièrement connaissance de la présente Politique de confidentialité afin d’avoir une parfaite connaissance de nos engagements en matière de sécurité et de protection de vos données personnelles.</p>
+            </li>
+
+            <li>
+                <h3>NOUS CONTACTER</h3>
+                <p>Pour toute question concernant la présente Politique de confidentialité ainsi que pour l’exercice de vos droits, vous pouvez nous contacter :</p>
+                <ul>
+                    <li>par email : privacy@laduree.com</li>
+                    <li>par courrier : PATISSERIE E. LADUREE, Département Juridique, 41/43 rue de Varenne - 75007 Paris, France.</li>
+                </ul>
+                <p>Si la réponse apportée ne vous satisfait pas, vous disposez du droit d’introduire une réclamation auprès de la Commission Nationale de l’Informatique et des Libertés (« CNIL »)</p>
+                <ul>
+                    <li>par courrier : Commission Nationale de l’Informatique et des Libertés</li>
+                    <li>sur le site Internet de la CNIL : www.cnil.fr</li>
+                </ul>
+            </li>
+            
+            <li>
+                <h3>LES DESTINATAIRES OU CATÉGORIES DE DESTINATAIRES DE VOS DONNÉES PERSONNELLES</h3>
+                <p>Le Vendeur met tout en œuvre afin de satisfaire au mieux sa clientèle. Toutefois, le Client peut adresser ses réclamations au Service Client :</p>
+                <ul>
+                    <li>par courrier : LADUREE - Service Client - 75 avenue des Champs-Elysées - 75008 PARIS - France</li>
+                    <li>par e-mail : contact@laduree.com</li>
+                    <li>par téléphone : pendant les horaires d’ouverture* du Service Client au +33 1 85 56 28 41</li>
+                    <li>en ligne, en remplissant le formulaire ici.</li>
+                </ul>
+                <p>Si Vous n’êtes pas satisfait de la réponse apportée par notre Service Client, Vous pouvez contacter, par la suite, le médiateur suivant :</p>
+                <ul>
+                    <li>par courrier : Médiation Franchise-Consommateurs (MFC), Fédération Française de la Franchise, 29 Boulevard de Courcelles, 75008 PARIS</li>
+                    <li>par téléphone : 01.53.75.22.25</li>
+                    <li>par e-mail : info@franchise-fff.com</li>
+                </ul>
+                <p>Pour des raisons d'hygiène et de sécurité alimentaires, LADUREE n'acceptera aucun retour et aucun échange de denrées alimentaires, sauf accord préalable du service consommateur. En cas d'accord pour le retour, le Produit devra être retourné dans son état et emballage d'origine accompagné de la preuve de son achat. Les frais d’envoi seront remboursés sur la base du tarif facturé et les frais de retour en cas de réclamation (hors exercice du droit de rétractation) seront remboursés par LADUREE sur présentation des justificatifs.</p>
+                <p>Après analyse de la situation, LADUREE déterminera discrétionnairement l'arrangement approprié, le remboursement des sommes payées ou une nouvelle livraison des Produits dans un délai de trente (30) jours à compter de l’annulation de la commande. En acceptant un tel remplacement ou remboursement, le Client ou toute autre partie concernée consent à abandonner toute réclamation additionnelle qui pourrait être faite, incluant notamment le paiement d'intérêts.</p>
+                <p>LADUREE N'EST PAS RESPONSABLE DES DOMMAGES INDIRECTS, INCIDENTS, PUNITIFS OU CONSECUTIFS INCLUANT, SANS AUCUNE LIMITATION, LA PERTE DE PROFITS, DE REVENUS OU BENEFICES DECOULANT OU SE RAPPORTANT A UNE VIOLATION DES PRESENTES CONDITIONS GENERALES DE VENTE OU A UNE RECLAMATION A VOTRE EGARD PAR TOUTE TIERCE PARTIE.</p>
+            </li>
+        </ol>
+    </section>
+
+    <footer>
+        <div>
+            <h2>LADURÉE</h2>
+            <ul>
+                <li><a href="listPage15.html">Nos Idées Cadeaux</a></li>
+                <li><a href="pageArticle.html">Nos Actualités</a></li>
+                <li><a href="pageContact.html">Nous contacter</a></li>
+                <li><a href="pageStore.html">Store Locator</a></li>
+                <li><a href="pageFAQ.html">F.A.Q</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <h2>Plus d'informations</h2>
+            <ul>
+                <li><a href="https://www.maisonladuree.com/" target="_blank">Maison Ladurée</a></li>
+                <li><a href="pageTermsAndConditions.html">Conditions générales de vente</a></li>
+                <li><a href="pageLegalNotice.html">Mentions légales</a></li>
+                <li><a href="pageProtection.html">Protection des données personnelles</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <h2>SUIVEZ-NOUS</h2>
+            <ol>
+                <li><a href="https://www.facebook.com/MaisonLaduree" target="_blank">facebook</a></li>
+                <li><a href="https://www.instagram.com/maisonladuree/" target="_blank">instagram</a></li>
+                <li><a href="https://www.pinterest.fr/maisonladuree/" target="_blank">pinterest</a></li>
+                <li><a href="https://www.linkedin.com/company/laduree-paris/" target="_blank">linkedin</a></li>
+            </ol>
+        </div>
+
+        <div>
+            <ol>
+                <li>
+                    <p>
+                        <mark>RETRAIT EN BOUTIQUES</mark>
+                        Commande préparée en 2H ou au créneau de votre choix. Accès coupe-file dans les boutiques éligibles au service.
+                    </p>
+                    RETRAIT EN BOUTIQUES
+                </li>
+                <li>
+                    <p>
+                        <mark>EXPÉDITION À DOMICILE</mark>
+                        En France et en Europe par nos transporteurs spécialisés. Livraison offerte dès 75€ d'achat (France Métropolitaine).
+                    </p>
+                    EXPÉDITION À DOMICILE
+                </li>
+                <li>
+                    <p>
+                        <mark>LIVRAISON PAR COURSIER</mark>
+                        A Paris et en petite couronne (sur créneaux de 2H). Livraison offerte dès 75€ d'achat.
+                    </p>
+                    LIVRAISON PAR COURSIER
+                </li>
+            </ol>
+
+            <p>
+                COMMANDEZ EN TOUTE SÉRÉNITÉ!
+                <span>© Copyright Ladurée Paris 2022</span>
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>

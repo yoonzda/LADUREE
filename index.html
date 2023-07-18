@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LADURÉE</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <div class="loginPanel" id="login">
+        <input type="button" class="material-icons-outlined close" value="close">
+        <span>Champs obligatoires</span>
+        <h2>CONNEXION</h2>
+
+        <form action="index_after.html">
+            <label for="userID">Votre email *</label>
+            <input type="email" id="userID">
+
+            <label for="userPW">Votre mot de passe *</label>
+            <input type="password" id="userPW">
+
+            <input type="checkbox" id="remember">
+            <label for="remember">Se souvenir de moi</label>
+
+            <input type="submit" class="btn oliveGreen" value="ME CONNECTER">
+        </form>
+
+        <p>PAS ENCORE DE COMPTE ?</p>
+        <a href="pageSignIn.html" class="btn oliveGreen">INSCRIVEZ-VOUS</a>
+    </div>
+
+    <!-- popup -->
+
+    <header>
+        <div class="headBanner">
+            <span data-panelName="login">CALENDRIER DE L'AVENT 2022 | 24 raisons gourmandes de succomber. Commandez le vôtre</span>
+            <input type="button" class="material-icons-outlined close" value="close">
+        </div>
+
+        <div>
+            <h1>
+                <a href="index.html">
+                    <img src="images/logo.svg" alt="welcome to LADUREE">
+                </a>
+            </h1>
+
+            <nav>
+                <ul>
+                    <li data-panelName="login">NOËL</li>
+
+                    <li>
+                        MACARONS
+                        <ol>
+                            <li data-panelName="login">Coffrets - Expédition à Domicile</li>
+                            <li data-panelName="login">Coffrets - Click&Collect et Coursier</li>
+                            <li data-panelName="login">MACARONS EN EXPÉDITION</li>
+                            <li data-panelName="login">Parfums iconiques et exclusifs</li>
+                        </ol>
+                    </li>
+
+                    <li data-panelName="login">PÂTISSERIES</li>
+
+                    <li>
+                        EPICERIE FINE
+                        <ol>
+                            <li data-panelName="login">Chocolats et Confiseries</li>
+                            <li data-panelName="login">Cakes et Biscuits</li>
+                            <li data-panelName="login">Thés Signature</li>
+                            <li data-panelName="login">Confitures et Miels</li>
+                        </ol>
+                    </li>
+
+                    <li data-panelName="login">VIENNOISERIES</li>
+
+                    <li>
+                        CADEAUX
+                        <ol>
+                            <li data-panelName="login">Toutes nos idées cadeaux</li>
+                            <li data-panelName="login">Le nouveau menu de Ladurée</li>
+                            <li data-panelName="login">Occasions spéciales</li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+    
+            <ul>
+                <li><input type="button" value="person" class="material-icons-outlined" data-panelName="login"></li>
+                <li><input type="button" value="shopping_bag" class="material-icons-outlined" data-panelName="login"></li>
+                <li><input type="button" value="search" class="material-icons-outlined" data-panelName="login"></li>
+                <li class="mui"><input type="button" value="menu" class="material-icons-outlined"></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="mainContainer">
+        <div>
+            <h2>UNE IDÉE CADEAU UNIQUE</h2>
+            <p>Votre coffret de macarons sur-mesure choisissez la couleur de l'écrin et la sélection des parfums</p>
+            <input type="button" class="btn pink" data-panelName="login" value="CRÉER LE VÔTRE">
+        </div>
+
+        <div>
+            <figure>
+                <img src="images/index_item01.png" alt="item image 'CALENDRIER DE L'AVENT CÉLESTE'">
+                <figcaption>
+                    <strong>UN NOËL CÉLESTE</strong>
+                    <small>NOS CRÉATIONS EXCLUSIVES POUR DES FETES D'EXCEPTION</small>
+                    <input type="button" data-panelName="login" class="btn small" value="DÉCOUVRIR">
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="images/index_item02.png" alt="itme image 'COFFRET DE 8 MACARONS CÉLESTE'">
+                <figcaption>
+                    <strong>Notre nouveau menu</strong>
+                    <small>Découvrez le bonheur avec de nouvelles choses maintenant</small>
+                    <input type="button" data-panelName="login" class="btn small" value="DÉCOUVRIR">
+                </figcaption>
+            </figure>
+        </div>
+
+        <ul class="eventSlider">
+            <li>
+                <img src="images/eventSlider_01.png" alt="slide image">
+                <div>
+                    <h3>Anniversaire avec Ladurée</h3>
+                    <p>
+                        Offrez un voyage au sein de l'univers de la Maison Ladurée avec nos sélections d'idées cadeaux.
+                    </p>
+                    <input type="button" data-panelName="login" class="btn pink" value="DÉCOUVRIR">
+                </div>
+            </li>
+            <li>
+                <img src="images/eventSlider_02.png" alt="slide image">
+                <div>
+                    <h3>Anniversaires à célébrer</h3>
+                    <p>
+                        Découvrez les douceurs Maison Ladurée pour souhaiter un joyeux anniversaire tout en gourmandise. Une valeur sûre pour faire plaisir.
+                    </p>
+                    <input type="button" data-panelName="login" class="btn pink" value="DÉCOUVRIR">
+                </div>
+            </li>
+            <li>
+                <img src="images/eventSlider_03.png" alt="slide image">
+                <div>
+                    <h3>Mariages, Naissances à féliciter</h3>
+                    <p>
+                        Une naissance à célébrer ? Des heureux mariés à féliciter ? La Maison Ladurée vous propose une sélection des plus beaux cadeaux de naissance et de mariage, pour un jour si spécial. 
+                    </p>
+                    <input type="button" data-panelName="login" class="btn pink" value="DÉCOUVRIR">
+                </div>
+            </li>
+            <li>
+                <img src="images/eventSlider_04.png" alt="slide image">
+                <div>
+                    <h3>Dire Merci !</h3>
+                    <p>
+                        Un pot de départ ? Un remerciement à faire ? Dites "Merci" avec nos idées de cadeaux Maison Ladurée. Coffrets de macarons, chocolats, thés... Une sélection de douceurs qui raviront les papilles des plus gourmands.
+                    </p>
+                    <input type="button" data-panelName="login" class="btn pink" value="DÉCOUVRIR">
+                </div>
+            </li>
+            <li>
+                <img src="images/eventSlider_05.png" alt="slide image">
+                <div>
+                    <h3>Toutes les occasions</h3>
+                    <p>
+                        Vous souhaitez trouver une idée de cadeau inoubliable et originale pour une occasion spéciale ? La Maison Ladurée célèbre avec vous des instants de vie de la plus belle des manières, avec nos sélections d'idées cadeaux. 
+                    </p>
+                    <input type="button" data-panelName="login" class="btn pink" value="DÉCOUVRIR">
+                </div>
+            </li>
+        </ul>
+
+        <div>
+            <figure>
+                <img src="images/index_item03.png" alt="item image 'CALENDRIER DE L'AVENT CÉLESTE'">
+                <figcaption>
+                    <strong>Anniversaires à célébrer</strong>
+                    <small>Préparez votre anniversaire avec Ladurée.</small>
+                    <input type="button" data-panelName="login" class="btn small" value="DÉCOUVRIR">
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="images/index_item04.png" alt="itme image 'COFFRET DE 8 MACARONS CÉLESTE'">
+                <figcaption>
+                    <strong>MACARONS EN EXPÉDITION</strong>
+                    <small>NOS COFFRETS DE MACARONS EN EXPÉDITION</small>
+                    <input type="button" data-panelName="login" class="btn small" value="DÉCOUVRIR">
+                </figcaption>
+            </figure>
+        </div>
+    
+        <ul class="itemSlider">
+            <li class="active">
+                <img src="images/itemDetail13.png" alt="slide image">
+                <div>
+                    <strong>MACARONS</strong>
+                    <span>NOS COFFRETS DE MACARONS EN EXPÉDITION</span>
+                    <p>Découvrez les douceurs Maison Ladurée pour souhaiter un joyeux anniversaire tout en gourmandise. Une valeur sûre pour faire plaisir. </p>
+                    <input type="button" data-panelName="login" class="btn small" value="DÉCOUVRIR">
+                </div>
+            </li>
+            <li>
+                <img src="images/itemDetail30.png" alt="slide image">
+                <div>
+                    <strong>NOS PÂTISSERIES</strong>
+                    <span>NOS PÂTISSERIES</span>
+                    <p>De l'Ispahan au Plaisir Sucré, de notre chef pâtissier Julien Alvarez, découvrez nos créations alliant passion, gourmandise et savoir-faire à la Française.</p>
+                    <input type="button" data-panelName="login" class="btn small" value="DÉCOUVRIR">
+                </div>
+            </li>
+            <li>
+                <img src="images/itemDetail27.png" alt="slide image">
+                <div>
+                    <strong>CHOCOLATS ET CONFISERIES</strong>
+                    <span>NOS CHOCOLATS ET CONFISERIES</span>
+                    <p>Croquants, onctueux, gourmands... Succombez pour nos chocolats et nos confiseries, disponibles en livraison à domicile. Des gourmandises à partager, pour se faire plaisir ou à offrir !</p>
+                    <input type="button" data-panelName="login" class="btn small" value="DÉCOUVRIR">
+                </div>
+            </li>
+            <li>
+                <img src="images/itemDetail42.png" alt="slide image">
+                <div>
+                    <strong>THÉS</strong>
+                    <span>NOS THÉS SIGNATURE</span>
+                    <p>Du thé emblématique Marie-Antoinette au thé création Jardin Bleu Royal. Voyagez dans l’univers du salon de thé Maison Ladurée avec nos élégantes associations.</p>
+                    <input type="button" data-panelName="login" class="btn small" value="DÉCOUVRIR">
+                </div>
+            </li>
+            <li>
+                <img src="images/itemDetail45.png" alt="slide image">
+                <div>
+                    <strong>CONFITURES ET MIELS</strong>
+                    <span>NOS MIELS ET CONFITURES</span>
+                    <p>Accordez-vous une pause gourmande avec notre collection de confitures et de miels, réalisés avec passion, selon le savoir-faire français et entièrement naturel.</p>
+                    <input type="button" data-panelName="login" class="btn small" value="DÉCOUVRIR">
+                </div>
+            </li>
+            <li>
+                <img src="images/itemDetail46.png" alt="slide image">
+                <div>
+                    <strong>CAKES</strong>
+                    <span>NOS VIENNOISERIES</span>
+                    <p>Compositions sur-mesure et Assortiments. Composez votre propre sélection de parfums ou optez pour les iconiques de la maison en coffrets assortis. </p>
+                    <input type="button" data-panelName="login" class="btn small" value="DÉCOUVRIR">
+                </div>
+            </li>
+            <li>
+                <img src="images/itemDetail49.png" alt="slide image">
+                <div>
+                    <strong>CADEAUX</strong>
+                    <span>COMPOSEZ VOTRE COFFRET CADEAU</span>
+                    <p>Petite ou grande occasion, vous aurez le choix parmi deux tailles de coffrets cadeaux, chacun correspondant à un nombre défini de douceurs.</p>
+                    <input type="button" data-panelName="login" class="btn small" value="DÉCOUVRIR">
+                </div>
+            </li>
+        </ul>
+    
+        <div>
+            <h3>OFFREZ LES ICONIQUES DE LA MAISON</h3>
+            <ul>
+                <li>
+                    <img src="images/index_article01.png" alt="title image">
+                    <dl>
+                        <dt>L’art du cadeau et de l'évènement</dt>
+                        <dd>Notre équipe commerciale vous accompagne dans le choix de vos cadeaux d'affaires, dans l'organisation de vos évènements...</dd>
+                    </dl>
+                </li>
+                <li>
+                    <img src="images/index_article02.png" alt="title image">
+                    <dl>
+                        <dt>Maison Ladurée</dt>
+                        <dd>Reconnue comme ambassadrice du macaron parisien, la Maison Ladurée est aussi l’inventeur du...</dd>
+                    </dl>
+                </li>
+                <li>
+                    <img src="images/index_article03.png" alt="title image">
+                    <dl>
+                        <dt>24 jours magiques</dt>
+                        <dd>découvrez une sélection de surprises gourmandes. Chocolats, confiseries, épicerie fine : 24 belles raisons de s'émerveiller. </dd>
+                    </dl>
+                </li>
+                <li>
+                    <img src="images/index_article04.png" alt="title image">
+                    <dl>
+                        <dt>160 ans de gourmandise</dt>
+                        <dd>Une collection Anniversaire exclusive, composée de coffrets de macarons aux frises or, en édition limitée. </dd>
+                    </dl>
+                </li>
+                <li>
+                    <img src="images/index_article05.png" alt="title image">
+                    <dl>
+                        <dt>Nos boutiques et restaurants</dt>
+                        <dd>Pour une occasion ou par plaisir, laissez vous séduire par notre style affirmé.</dd>
+                    </dl>
+                </li>
+            </ul>
+        </div>
+    
+        <div class="endBox">
+            <h3>Rejoignez notre newsletter</h3>
+            <p>Vous souhaitez en savoir plus sur nos nouvelles douceurs ?</p>
+            <input type="email" title="insert ur email address">
+            <input type="button" value="OK" data-popName="subscribe">
+        </div>
+        
+        <div class="pop"  id="subscribe">
+            <input type="button" value="close" class="material-icons-outlined close">
+            <div>
+                <h3>MERCI!</h3>
+                <p>
+                    Votre demande d'abonnement est terminée. Votre journée sera encore plus douce avec nos nouvelles.
+                </p>
+                <input type="button" value="Retour" class="btn oliveGreen close">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div>
+            <h2>LADURÉE</h2>
+            <ul>
+                <li data-panelName="login">Nos Idées Cadeaux</li>
+                <li><a href="pageArticle.html">Nos Actualités</a></li>
+                <li><a href="pageContact.html">Nous contacter</a></li>
+                <li><a href="pageStore.html">Store Locator</a></li>
+                <li><a href="pageFAQ.html">F.A.Q</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <h2>Plus d'informations</h2>
+            <ul>
+                <li><a href="https://www.maisonladuree.com/" target="_blank">Maison Ladurée</a></li>
+                <li><a href="pageTermsAndConditions.html">Conditions générales de vente</a></li>
+                <li><a href="pageLegalNotice.html">Mentions légales</a></li>
+                <li><a href="pageProtection.html">Protection des données personnelles</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <h2>SUIVEZ-NOUS</h2>
+            <ol>
+                <li><a href="https://www.facebook.com/MaisonLaduree" target="_blank">facebook</a></li>
+                <li><a href="https://www.instagram.com/maisonladuree/" target="_blank">instagram</a></li>
+                <li><a href="https://www.pinterest.fr/maisonladuree/" target="_blank">pinterest</a></li>
+                <li><a href="https://www.linkedin.com/company/laduree-paris/" target="_blank">linkedin</a></li>
+            </ol>
+        </div>
+
+        <div>
+            <ol>
+                <li>
+                    <p>
+                        <mark>RETRAIT EN BOUTIQUES</mark>
+                        Commande préparée en 2H ou au créneau de votre choix. Accès coupe-file dans les boutiques éligibles au service.
+                    </p>
+                    RETRAIT EN BOUTIQUES
+                </li>
+
+                <li>
+                    <p>
+                        <mark>EXPÉDITION À DOMICILE</mark>
+                        En France et en Europe par nos transporteurs spécialisés. Livraison offerte dès 75€ d'achat (France Métropolitaine).
+                    </p>
+                    EXPÉDITION À DOMICILE
+                </li>
+
+                <li>
+                    <p>
+                        <mark>LIVRAISON PAR COURSIER</mark>
+                        A Paris et en petite couronne (sur créneaux de 2H). Livraison offerte dès 75€ d'achat.
+                    </p>
+                    LIVRAISON PAR COURSIER
+                </li>
+            </ol>
+
+            <p>
+                COMMANDEZ EN TOUTE SÉRÉNITÉ!
+                <span>© Copyright Ladurée Paris 2022</span>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

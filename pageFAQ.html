@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LADURÉE</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <div class="cartPanel have" id="cartHave">
+        <input type="button" class="material-icons-outlined close" value="close">
+
+        <ul>
+            <li>
+                <div>
+                    COFFRET DE 42 MACARONS "NUIT"
+                    <b>Coffret à composer</b>
+                    <input type="button" class="material-icons-outlined btn_delete" value="delete" data-panelName="cartEmpty">
+                </div>
+
+                <div>
+                    <div class="countComponent">
+                        <input type="button" value="-">
+                        <span>1</span>
+                        <input type="button" value="+">
+                    </div>
+                    <mark>112,00 €</mark>
+                </div>
+            </li>
+        </ul>
+
+        <div>
+            <strong>TOTAL</strong>
+            <output>112,00</output>€
+        </div>
+        <a href="pageCart.html" class="btn oliveGreen">COMMANDER</a>
+    </div>
+
+    <div class="cartPanel empty" id="cartEmpty">
+        <input type="button" class="material-icons-outlined close" value="close">
+        <h2>Votre panier est vide</h2>
+        <p>Identifiez-vous pour retrouver votre panier enregistré,ou poursuivez vos achats sur le site</p>
+        <input type="button" class="btn oliveGreen close" value="POURSUIVRE MES ACHATS">
+    </div>
+
+    <div class="searchPanel" id="search">
+        <input type="button" class="material-icons-outlined close" value="close">
+        
+        <form>
+            <label for="searchField">SEARCH</label>
+            <input type="search" id="searchField" placeholder="MACARONS">
+        </form>
+        
+        <div>
+            <h3>Nos suggestions</h3>
+            <ul>
+                <li><a href="listPage03.html">MACARONS</a></li>
+                <li><a href="listPage07.html">PÂTISSERIES</a></li>
+                <li><a href="listPage08.html">CHCOLATS</a></li>
+                <li><a href="listPage10.html">THÉS</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- popup -->
+
+    <header>
+        <div class="headBanner">
+            <a href="listPage02.html">CALENDRIER DE L'AVENT 2022 | 24 raisons gourmandes de succomber. Commandez le vôtre</a>
+            <input type="button" class="material-icons-outlined close" value="close">
+        </div>
+
+        <div>
+            <h1>
+                <a href="index_after.html">
+                    <img src="images/logo.svg" alt="welcome to LADUREE">
+                </a>
+            </h1>
+
+            <nav>
+                <ul>
+                    <li><a href="listPage01.html">NOËL</a></li>
+
+                    <li>
+                        MACARONS
+                        <ol>
+                            <li><a href="listPage03.html">Coffrets - Expédition à Domicile</a></li>
+                            <li><a href="listPage04.html">Coffrets - Click&Collect et Coursier</a></li>
+                            <li><a href="listPage05.html">MACARONS EN EXPÉDITION</a></li>
+                            <li><a href="listPage06.html">Parfums iconiques et exclusifs</a></li>
+                        </ol>
+                    </li>
+
+                    <li><a href="listPage07.html">PÂTISSERIES</a></li>
+
+                    <li>
+                        EPICERIE FINE
+                        <ol>
+                            <li><a href="listPage08.html">Chocolats et Confiseries</a></li>
+                            <li><a href="listPage09.html">Cakes et Biscuits</a></li>
+                            <li><a href="listPage10.html">Thés Signature</a></li>
+                            <li><a href="listPage11.html">Confitures et Miels</a></li>
+                        </ol>
+                    </li>
+
+                    <li><a href="listPage12.html">VIENNOISERIES</a></li>
+
+                    <li>
+                        CADEAUX
+                        <ol>
+                            <li><a href="listPage13.html">Toutes nos idées cadeaux</a></li>
+                            <li><a href="listPage14.html">Le nouveau menu de Ladurée</a></li>
+                            <li><a href="listPage15.html">Occasions spéciales</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+    
+            <ul>
+                <li>
+                    <a href="myPage.html">Alan<span class="material-icons-outlined">person</span></a>
+                </li>
+                <li><input type="button" value="shopping_bag" class="material-icons-outlined" data-panelName="cartHave"></li>
+                <li><input type="button" value="search" class="material-icons-outlined" data-panelName="search"></li>
+                <li class="mui"><input type="button" value="menu" class="material-icons-outlined"></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="accordionContainer">
+        <div class="titleBox faq">
+            <h2>
+                Foire Aux Questions
+            </h2>
+        </div>
+
+        <ul>
+            <li>
+                <details>
+                    <summary>
+                        Informations Produits
+                    </summary>
+                    <div>
+                        <p>
+                            <b>Pendant combien de temps puis-je consommer les macarons et comment les conserver ?</b>
+                            Pour une meilleure dégustation, les macarons Ladurée se conservent au frais et à l’abri de la lumière pendant 4 jours suivant la date de la préparation de votre boîte. Cette date figure sur un dépliant remis avec ladite boîte de macarons. Nos macarons se dégustent 15 à 20 minutes après la sortie du réfrigérateur. Les macarons ne doivent pas être congelés.
+                        </p>
+                        
+                        <p>
+                            <b>Quels sont les allergènes présents dans vos produits ?</b>
+                            Vous pouvez retrouver le détail des allergènes des produits alimentaires précisés sur les fiches produits de ce site internet. Dans la section "Allergènes".
+                        </p>
+                        
+                        <p>
+                            <b>Puis-je consommer un produit après sa date limite de consommation (DLC) ?</b>
+                            Pour une dégustation dans les meilleures conditions, nous vous recommandons de respecter les dates limites de consommation indiquées sur vos produits.
+                        </p>
+                    
+                        <p>
+                            <b>Avez-vous des produits sans gluten ou sans lactose ?</b>
+                            Vous pouvez retrouver sur notre site internet les allergènes présents dans chaque produit sur sa fiche correspondante. Nous vous offrons également la possibilité d'affiner votre sélection de produits en excluant les allergènes de votre choix.
+                        </p>
+                    </div>
+                </details>
+            </li>
+
+            <li>
+                <details>
+                    <summary>
+                        Compte Client
+                    </summary>
+                    <div>
+                        <p>
+                            <b>Comment créer un compte ?</b>
+                            Afin de vous inscrire, nous vous invitons à remplir le formulaire en cliquant ici. Vous pouvez également accéder à ce formulaire après le récapitulatif de votre panier.
+                        </p>
+                        <p>
+                            <b>Pourquoi dois-je créer un compte ?</b>
+                            Créer un compte permet de suivre l'état de vos commandes, modifier vos informations personnelles, gérer votre mot de passe et bénéficier du suivi de nos produits et nouveautés via nos newsletters.
+                        </p>
+                        <p>
+                            <b>Comment actualiser mes informations personnelles ?</b>
+                            Pour modifier vos données personnelles, vous devez vous connecter via votre identifiant et mot de passe, puis dans la rubrique "Mon Compte" - "Mes informations"
+                        </p>
+                        <p>
+                            <b>J’ai oublié mon mot de passe, comment accéder à mon compte ?</b>
+                            Il vous suffit de cliquer sur le lien « Mot de passe oublié ? » sur la page de connexion et de saisir l’adresse e-mail utilisée pour votre compte. Un lien vous sera envoyé afin que vous puissiez configurer à nouveau votre mot de passe.
+                        </p>
+                        <p>
+                            <b>Comment me désincrire des newsletters Ladurée ?</b>
+                            Vous avez la possibilité de ne plus recevoir notre newsletter Ladurée en cliquant sur le lien « Se désinscrire » figurant au bas de chaque email que vous recevez de notre part. Vous pouvez également vous désinscrire depuis votre compte sur l'icone "Mon compte" puis "Mes abonnements".
+                        </p>
+                    </div>
+                </details>
+            </li>
+
+            <li>
+                <details>
+                    <summary>
+                        Commandes
+                    </summary>
+                    <div>
+                        <p>
+                            <b>Comment passer commande ?</b>
+                            Vous pouvez commander nos produits depuis le site internet en cliquant sur l’onglet « Boutique en ligne ». Après avoir fait votre choix de livraison et de produits, vous devez les ajouter à votre panier. Il vous faut ensuite vous connecter à votre compte en entrant votre adresse e-mail et votre mot de passe. Si vous ne disposez pas encore d’un compte, remplissez le formulaire de création de compte. Indiquez votre adresse de livraison ainsi que votre adresse de facturation. Après nous avoir indiqué si vous souhaitez qu’un message personnel soit joint à votre commande, vous devez accepter les Conditions Générales de Vente pour pouvoir procéder au paiement sécurisé de votre commande. Une fois votre commande validée et votre paiement en ligne effectué, un e-mail vous est envoyé à votre adresse e-mail. Il contient votre numéro de commande.
+                        </p>
+                        <p>
+                            <b>Est-il possible de composer mon propre assortiment ?</b>
+                            Vous pouvez composer votre propre assortiment. Après avoir fait votre choix de coffret de macarons, sélectionnez « composer ma boîte ». Faites glisser le macaron souhaité et déposer le dans la boîte sur votre droite puis indiquer le nombre de macarons désiré pour chaque parfum.
+                        </p>
+                        <p>
+                            <b>Comment puis-je ajouter un message à ma commande ?</b>
+                            Nous vous proposons d’ajouter gratuitement un message personnel à votre commande. Cette option est accessible après le récapitulatif de votre panier.
+                        </p>
+                        <p>
+                            <b>Je n'ai pas reçu d'email confirmant ma commande.</b>
+                            Si vous n’avez pas reçu d’email confirmant votre commande, il se peut que votre messagerie électronique ait considéré cet email comme un courrier indésirable. Si le problème persiste, contactez-nous via le formulaire de contact. Vous pouvez également retrouver le statut de votre commande via l'icône "Mon compte" puis la rubrique " Mes commandes".
+                        </p>
+                        <p>
+                            <b>Où puis-je trouver mon numéro de commande ?</b>
+                            Votre numéro de commande se trouve dans votre mail de confirmation. Vous pouvez aussi le retrouver dans "Mon compte" --> "Mes commandes".
+                        </p>
+                        <p>
+                            <b>Puis-je modifier le contenu de ma commande ?</b>
+                            Dès lors que le paiement de votre commande n’est pas encore enregistré, vous pouvez modifier son contenu en accédant à votre panier. Une fois le paiement enregistré et validé, aucun rajout ou changement d'article ne pourra être effectué, sauf pour un article similaire au même tarif (par exemple : remplacer une boîte de 8 macarons pampille par une boîte de 8 macarons arabesque), en utilisant notre formulaire de contact. Votre demande de modification doit nous parvenir au minimum 48 heures avant la date prévue de livraison.
+                        </p>
+                    </div>
+                </details>
+            </li>
+
+            <li>
+                <details>
+                    <summary>
+                        Paiement
+                    </summary>
+                    <div>
+                        <p>
+                            <b>Quels modes de paiement sont acceptés sur le site ?</b>
+                            Seuls les paiements par cartes bancaires sont acceptés pour le paiement en ligne. Nous acceptons les paiements via Visa, Carte Bleue, Mastercard et American Express. Les Bons Cadeaux Ladurée ne peuvent être utilisés pour les paiements en ligne.
+                        </p>
+                        <p>
+                            <b>Mon paiement est-il sécurisé ?</b>
+                            Les paiements effectués sur notre site et les informations liées à la commande sont sécurisés. Ces dernières sont cryptées et protégées par notre service de paiement en ligne.
+                        </p>
+                        <p>
+                            <b>À quel moment le paiement est-t-il pris en compte ?</b>
+                            Votre compte bancaire sera débité au moment de l’expédition du colis. À cette occasion, vous recevrez un mail de confirmation d’expédition de votre commande accompagné de votre facture.
+                        </p>
+                        <p>
+                            <b>Que faire si le paiement a été refusé ?</b>
+                            En cas de refus de paiement, votre commande est automatiquement annulée. Nous vous invitons à retourner dans la rubrique "Mes commandes", puis sélectionnez "Renouvelez".
+                        </p>
+                        <p>
+                            <b>Comment obtenir un exemplaire de ma facture ?</b>
+                            Votre facture se trouve dans votre suivi de commande via votre espace "Mon compte" - "Mes commandes".  Vous pouvez également en faire la demande via notre formulaire de contact accessible ici.
+                        </p>
+                    </div>
+                </details>
+            </li>
+
+            <li>
+                <details>
+                    <summary>
+                        Livraison
+                    </summary>
+                    <div>
+                        <p>
+                            <b>Comment sont expédiés les macarons ?</b>
+                            Nos macarons sont expédiés dans des emballages avec des propriétés isolantes pour maintenir une température idéale jusqu'à la réception.
+                        </p>
+                        <p>
+                            <b>Quelles sont les zones d'expédition et de livraison ?</b>
+                            Les produits sont expédiés en France métropolitaine et certains pays d'Europe (Allemagne, Luxembourg, Belgique, Pays-Bas, Espagne, Italie, Suède, Grèce, Portugal, Autriche, Danemark, Finlande, Hongrie, Pologne, République Tchèque, Slovaquie, Slovénie, Estonie, Bulgarie, Lettonie, Lituanie.)
+                        </p>
+                        <p>
+                            <b>Quelles informations dois-je fournir pour une livraison ?</b>
+                            Afin d’assurer le bon déroulement de la livraison de votre commande, il est essentiel de nous transmettre le maximum d’informations lors de la saisie de l’adresse de livraison et de vous assurer au préalable de la présence du destinataire : toute la journée pour une expédition et dans le créneau commandé pour les livraisons par coursier. Pour les sociétés, le colis est remis à l'accueil. Nous attirons votre attention sur le refus de certains hôpitaux à réceptionner les colis destinés aux patients et aux médecins.
+                        </p>
+                        <p>
+                            <b>Puis-je récupérer ma commande directement en magasin ?</b>
+                            Vous pouvez commander nos produits sur notre site Internet et venir les retirer dans la boutique de votre choix.
+                        </p>
+                        <p>
+                            <b>Comment suivre l’acheminement et la livraison de ma commande ?</b>
+                            L’acheminement de votre commande est pris en charge par Chronopost. À l’expédition de votre commande, un email contenant votre numéro de suivi vous est envoyé. Vous êtes averti par mail du suivi de votre colis (colis livré ou livraison différée en cas d'absence).
+                        </p>
+                    </div>
+                </details>
+            </li>
+            
+            <li>
+                <details>
+                    <summary>
+                        Autres
+                    </summary>
+                    <div>
+                        <p>
+                            <b>Comment retrouver les boutiques Ladurée ?</b>
+                            Vous pouvez retrouver l'ensemble de nos boutiques et restaurants en cliquant ici.
+                        </p>
+                        <p>
+                            <b>Je souhaite distribuer les produits Ladurée, qui puis-je contacter ?</b>
+                            Nous vous invitons à contacter notre service dédié : lid@laduree.com
+                        </p>
+                        <p>
+                            <b>Puis-je retrouver l'ensemble des produits sur le site internet ?</b>
+                            Notre site internet vous propose un large choix des produits disponibles en boutique. Cependant, certains produits sont réservés aux expéditions et d'autres peuvent uniquement être commandés par téléphone ou directement dans nos boutiques (viennoiseries, entremets personnalisés ...).
+                        </p>
+                    </div>
+                </details>
+            </li>
+        </ul>
+    </section>
+
+    <footer>
+        <div>
+            <h2>LADURÉE</h2>
+            <ul>
+                <li><a href="listPage15.html">Nos Idées Cadeaux</a></li>
+                <li><a href="pageArticle.html">Nos Actualités</a></li>
+                <li><a href="pageContact.html">Nous contacter</a></li>
+                <li><a href="pageStore.html">Store Locator</a></li>
+                <li><a href="pageFAQ.html">F.A.Q</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <h2>Plus d'informations</h2>
+            <ul>
+                <li><a href="https://www.maisonladuree.com/" target="_blank">Maison Ladurée</a></li>
+                <li><a href="pageTermsAndConditions.html">Conditions générales de vente</a></li>
+                <li><a href="pageLegalNotice.html">Mentions légales</a></li>
+                <li><a href="pageProtection.html">Protection des données personnelles</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <h2>SUIVEZ-NOUS</h2>
+            <ol>
+                <li><a href="https://www.facebook.com/MaisonLaduree" target="_blank">facebook</a></li>
+                <li><a href="https://www.instagram.com/maisonladuree/" target="_blank">instagram</a></li>
+                <li><a href="https://www.pinterest.fr/maisonladuree/" target="_blank">pinterest</a></li>
+                <li><a href="https://www.linkedin.com/company/laduree-paris/" target="_blank">linkedin</a></li>
+            </ol>
+        </div>
+
+        <div>
+            <ol>
+                <li>
+                    <p>
+                        <mark>RETRAIT EN BOUTIQUES</mark>
+                        Commande préparée en 2H ou au créneau de votre choix. Accès coupe-file dans les boutiques éligibles au service.
+                    </p>
+                    RETRAIT EN BOUTIQUES
+                </li>
+                <li>
+                    <p>
+                        <mark>EXPÉDITION À DOMICILE</mark>
+                        En France et en Europe par nos transporteurs spécialisés. Livraison offerte dès 75€ d'achat (France Métropolitaine).
+                    </p>
+                    EXPÉDITION À DOMICILE
+                </li>
+                <li>
+                    <p>
+                        <mark>LIVRAISON PAR COURSIER</mark>
+                        A Paris et en petite couronne (sur créneaux de 2H). Livraison offerte dès 75€ d'achat.
+                    </p>
+                    LIVRAISON PAR COURSIER
+                </li>
+            </ol>
+
+            <p>
+                COMMANDEZ EN TOUTE SÉRÉNITÉ!
+                <span>© Copyright Ladurée Paris 2022</span>
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>

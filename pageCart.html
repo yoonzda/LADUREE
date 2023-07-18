@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LADURÉE</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <div class="cartPanel cartOnly" id="cartOnly">
+        <input type="button" class="material-icons-outlined close" value="close">
+
+        <ul>
+            <li>
+                <div>
+                    COFFRET DE 42 MACARONS "NUIT"
+                    <b>Coffret à composer</b>
+                    <span>x 1</span>
+                </div>
+
+                <div>
+                    <mark>112,00 €</mark>
+                </div>
+            </li>
+        </ul>
+
+        <div>
+            <strong>TOTAL : <span>112,00 €</span></strong>
+        </div>
+    </div>
+
+    <div class="searchPanel" id="search">
+        <input type="button" class="material-icons-outlined close" value="close">
+        
+        <form>
+            <label for="searchField">SEARCH</label>
+            <input type="search" id="searchField" placeholder="MACARONS">
+        </form>
+        
+        <div>
+            <h3>Nos suggestions</h3>
+            <ul>
+                <li><a href="listPage03.html">MACARONS</a></li>
+                <li><a href="listPage07.html">PÂTISSERIES</a></li>
+                <li><a href="listPage08.html">CHCOLATS</a></li>
+                <li><a href="listPage10.html">THÉS</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- popup -->
+
+    <header>
+        <div class="headBanner">
+            <a href="listPage02.html">CALENDRIER DE L'AVENT 2022 | 24 raisons gourmandes de succomber. Commandez le vôtre</a>
+            <input type="button" class="material-icons-outlined close" value="close">
+        </div>
+
+        <div>
+            <h1>
+                <a href="index_after.html">
+                    <img src="images/logo.svg" alt="welcome to LADUREE">
+                </a>
+            </h1>
+
+            <nav>
+                <ul>
+                    <li><a href="listPage01.html">NOËL</a></li>
+
+                    <li>
+                        MACARONS
+                        <ol>
+                            <li><a href="listPage03.html">Coffrets - Expédition à Domicile</a></li>
+                            <li><a href="listPage04.html">Coffrets - Click&Collect et Coursier</a></li>
+                            <li><a href="listPage05.html">MACARONS EN EXPÉDITION</a></li>
+                            <li><a href="listPage06.html">Parfums iconiques et exclusifs</a></li>
+                        </ol>
+                    </li>
+
+                    <li><a href="listPage07.html">PÂTISSERIES</a></li>
+
+                    <li>
+                        EPICERIE FINE
+                        <ol>
+                            <li><a href="listPage08.html">Chocolats et Confiseries</a></li>
+                            <li><a href="listPage09.html">Cakes et Biscuits</a></li>
+                            <li><a href="listPage10.html">Thés Signature</a></li>
+                            <li><a href="listPage11.html">Confitures et Miels</a></li>
+                        </ol>
+                    </li>
+
+                    <li><a href="listPage12.html">VIENNOISERIES</a></li>
+
+                    <li>
+                        CADEAUX
+                        <ol>
+                            <li><a href="listPage13.html">Toutes nos idées cadeaux</a></li>
+                            <li><a href="listPage14.html">Le nouveau menu de Ladurée</a></li>
+                            <li><a href="listPage15.html">Occasions spéciales</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+    
+            <ul>
+                <li>
+                    <a href="myPage.html">Alan<span class="material-icons-outlined">person</span></a>
+                </li>
+                <li><input type="button" value="shopping_bag" class="material-icons-outlined" data-panelName="cartOnly"></li>
+                <li><input type="button" value="search" class="material-icons-outlined" data-panelName="search"></li>
+                <li class="mui"><input type="button" value="menu" class="material-icons-outlined"></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="cartContainer">
+        <div class="pop" id="orderEmpty">
+            <input type="button" value="close" class="material-icons-outlined close">
+            <div>
+                <h3>Vérifiez encore</h3>
+                <p>
+                    C'est le dernier élément. Est-ce qu'on supprime vraiment ?
+                </p>
+                <input type="button" value="supprimer" class="btn oliveGreen listDelete" data-orderStep="emptyBox">
+            </div>
+        </div>
+
+        <div class="pop" id="orderComplete">
+            <input type="button" value="close" class="material-icons-outlined close">
+            <div>
+                <h3>Merci!</h3>
+                <p>
+                    Le paiement est terminé. Il est livré avec soin pour vous.
+                </p>
+                <a href="index_after.html" class="btn oliveGreen">Retour à la maison</a>
+            </div>
+        </div>
+
+        <ol>
+            <li class="active">panier</li>
+            <li>livraison</li>
+            <li>cadeaux</li>
+            <li>paiement</li>
+        </ol>
+        
+        <div id="panier" class="active">
+            <div id="listBox" class="active">
+                <h2>MON PANIER</h2>
+                <ul>
+                    <li>
+                        <div>
+                            <h3>COFFRET DE 42 MACARONS "NUIT"</h3>
+                            <b>Coffret à composer</b>
+                            <input type="button" class="material-icons-outlined btn_delete" value="delete" data-popName="orderEmpty">
+                        </div>
+        
+                        <div>
+                            <small>112,00 €</small>
+                            <div class="countComponent">
+                                <input type="button" value="-">
+                                <span>1</span>
+                                <input type="button" value="+">
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+        
+                <div>
+                    <strong>TOTAL :</strong>
+                    <output>112,00</output>€
+                </div>
+    
+                <input type="button" value="continuer" class="btn pink" data-orderStep="livraison">
+            </div>
+    
+            <div id="emptyBox">
+                <h2>MON PANIER</h2>
+                <p>
+                    Aucun élément n'a été trouvé Ajoutez des macarons à votre panier.
+                </p>
+                <a href="index_after.html" class="btn pink">Retour à la maison</a>
+            </div>
+        </div>
+
+        <div id="livraison">
+            <h2>Expédition à l'adresse</h2>
+            <form>
+                <div class="flexContainer">
+                    <label for="adresseID">Nom de l'adresse *</label>
+                    <input type="text" id="adresseID">
+    
+                    <label for="userNation">Pays *</label>
+                    <div class="component select">
+                        <select id="userNation">
+                            <option>Pays</option>
+                            <option>France</option>
+                            <option>Irlande</option>
+                            <option>Kazakhstan</option>
+                            <option>Royaume-Uni</option>
+                            <option>Suisse</option>
+                        </select>
+                    </div>
+    
+                    <label for="userAdresse">Adresse *</label>
+                    <input type="text" id="userAdresse">
+    
+                    <label for="userGender">Civilité</label>
+                    <div class="component select">
+                        <select id="userGender">
+                            <option>Monsieur</option>
+                            <option>Madame</option>
+                        </select>
+                    </div>
+    
+                    <label for="firstName">Prénom *</label>
+                    <input type="text" id="firstName" value="Alan">
+    
+                    <label for="lastName">Nom *</label>
+                    <input type="text" id="lastName" value="Dale">
+    
+                    <label for="userTel">Téléphone *</label>
+                    <input type="tel" id="userTel">
+
+                    <input type="button" value="utiliser cette adresse" class="btn pink" data-orderStep="cadeaux">
+                </div>
+
+            </form>
+        </div>
+
+        <div id="cadeaux">
+            <h2>écrire mon message cadeaux</h2>
+
+            <form>
+                <textarea id="messageBox" placeholder="entrée..." title="entrée..."></textarea>
+                <input type="button" value="continuer" class="btn pink" data-orderStep="paiement">
+            </form>
+        </div>
+
+        <div id="paiement">
+            <h2>Finalisation de la commande</h2>
+
+            <form>
+                <div class="flexContainer">
+                    <label for="cardNumb">Numéro de la carte</label>
+                    <input type="text" id="cardNumb">
+
+                    <label for="cvcDate">Date d'expiration</label>
+                    <input type="text" id="cvcDate">
+
+                    <label for="cvcNumb">CVC / CVV</label>
+                    <input type="text" id="cvcNumb">
+
+                    <label for="cardLocate">Nom sur la carte</label>
+                    <input type="text" id="cardLocate">
+
+                    <input type="button" value="payer 112,00 €" class="btn pink" data-popName="orderComplete">
+                </div>
+            </form>
+        </div>
+
+        <div>
+            <div class="step panier">
+                <strong>Alan Dale</strong>
+                <small>dale805312@gmail.com</small>
+            </div>
+
+            <div class="step livraison">
+                <strong data-numb="0">Mon panier</strong>
+                <ul>
+                    <li>
+                        <div>
+                            COFFRET DE 42 MACARONS "NUIT"
+                            <small>Coffret à composer</small>
+                            <b>112,00 €</b>
+                        </div>
+                        <span>x 1</span>
+                    </li>
+                </ul>
+                <strong>total :<span>112,00 €</span></strong>
+            </div>
+
+            <div class="step cadeaux">
+                <strong data-numb="1">Adresse selectionnée</strong>
+                <address>
+                    Monsieur Alan Dale <br>
+                    adresse name <br>
+                    code ville <br>
+                    pays <br>
+                    +93789451236 <br>
+                </address> 
+            </div>
+
+            <div class="step paiement">
+                <strong data-numb="2">message cadeau</strong>
+                <ul>
+                    <li>Messages cadeaux : 1</li>
+                    <li>Frais supplémentaires : 0</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div>
+            <h2>LADURÉE</h2>
+            <ul>
+                <li><a href="listPage15.html">Nos Idées Cadeaux</a></li>
+                <li><a href="pageArticle.html">Nos Actualités</a></li>
+                <li><a href="pageContact.html">Nous contacter</a></li>
+                <li><a href="pageStore.html">Store Locator</a></li>
+                <li><a href="pageFAQ.html">F.A.Q</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <h2>Plus d'informations</h2>
+            <ul>
+                <li><a href="https://www.maisonladuree.com/" target="_blank">Maison Ladurée</a></li>
+                <li><a href="pageTermsAndConditions.html">Conditions générales de vente</a></li>
+                <li><a href="pageLegalNotice.html">Mentions légales</a></li>
+                <li><a href="pageProtection.html">Protection des données personnelles</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <h2>SUIVEZ-NOUS</h2>
+            <ol>
+                <li><a href="https://www.facebook.com/MaisonLaduree" target="_blank">facebook</a></li>
+                <li><a href="https://www.instagram.com/maisonladuree/" target="_blank">instagram</a></li>
+                <li><a href="https://www.pinterest.fr/maisonladuree/" target="_blank">pinterest</a></li>
+                <li><a href="https://www.linkedin.com/company/laduree-paris/" target="_blank">linkedin</a></li>
+            </ol>
+        </div>
+
+        <div>
+            <ol>
+                <li>
+                    <p>
+                        <mark>RETRAIT EN BOUTIQUES</mark>
+                        Commande préparée en 2H ou au créneau de votre choix. Accès coupe-file dans les boutiques éligibles au service.
+                    </p>
+                    RETRAIT EN BOUTIQUES
+                </li>
+                <li>
+                    <p>
+                        <mark>EXPÉDITION À DOMICILE</mark>
+                        En France et en Europe par nos transporteurs spécialisés. Livraison offerte dès 75€ d'achat (France Métropolitaine).
+                    </p>
+                    EXPÉDITION À DOMICILE
+                </li>
+                <li>
+                    <p>
+                        <mark>LIVRAISON PAR COURSIER</mark>
+                        A Paris et en petite couronne (sur créneaux de 2H). Livraison offerte dès 75€ d'achat.
+                    </p>
+                    LIVRAISON PAR COURSIER
+                </li>
+            </ol>
+
+            <p>
+                COMMANDEZ EN TOUTE SÉRÉNITÉ!
+                <span>© Copyright Ladurée Paris 2022</span>
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
