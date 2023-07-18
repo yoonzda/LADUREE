@@ -49,7 +49,7 @@ $(document).ready(function(){
     
     countNumb('#cartHave .countComponent span','#cartHave ul li mark',"#cartHave .countComponent input[type='button']",'#cartHave output');
     countNumb('#panier #listBox .countComponent span','#panier #listBox small',"#panier #listBox .countComponent input[type='button']",'#panier #listBox output');
-    // macSet();
+
     macSetMe();
 
     macHref();
@@ -200,12 +200,6 @@ function submitActive(formID){
     $(formID).on("submit", function(e){
         e.preventDefault();
     });
-    
-    // $("#test").on("submit",false);
-
-    // $("#test").submit(function(){
-    //     return false;
-    // })
 }
 
 function detailImage(){
@@ -215,7 +209,6 @@ function detailImage(){
     });
 }
 
-// tablet
 function muiClick(){
     var state = 0;
     $('.mui').click(function(){
@@ -306,9 +299,6 @@ function countNumb(numbOfItem,priceVal,targetB,targetP){
     var inputValue = '';
 
     $(targetB).click(function(){
-        // console.log(onePrice); //112,00 €
-        // console.log(price); // 112.00
-
         inputValue = $(this).val();
 
         if(inputValue == '+' && currentNumber < limitNumber){
@@ -324,13 +314,9 @@ function countNumb(numbOfItem,priceVal,targetB,targetP){
 
         priceFront = onePrice.slice(0,-5);
         priceBack = onePrice.slice(-4,-2);
-        // console.log(priceFront);
-        // console.log(priceBack);
 
         priceFront = (currentNumber*priceFront);
         priceBack = (currentNumber*priceBack);
-        // console.log(priceFront);
-        // console.log(priceBack);
         
         if(priceBack > 99){
             priceBack = priceBack.toString();
@@ -338,42 +324,13 @@ function countNumb(numbOfItem,priceVal,targetB,targetP){
             priceBack = priceBack.slice(-2);
             priceFront = priceFront + addPrice;
         }
-        // console.log(typeof(priceFront)); //number
-        // console.log(typeof(priceBack)); //string
         finalPrice = priceFront + '.' + priceBack;
-        // console.log(finalPrice);
-        // console.log(typeof(finalPrice)); // string
 
-        finalPrice = parseFloat(finalPrice).toFixed(2).replace('.',','); // toFixed 는 소수점 고정한 뒤에 문자로 변환
-        // console.log(finalPrice);
-        // console.log(typeof(finalPrice)); // string
+        finalPrice = parseFloat(finalPrice).toFixed(2).replace('.',',');
         
         $(targetP).val(finalPrice.toString().replace(/\B(?=(\d{3})+(?!\d))/g, "."));
     });
 }
-
-// function macSet(){
-//     var addForm = $(".macList");
-//     var mName = '';
-//     var maxCount = 0;
-//     var currentCount = 0;
-
-//     $(".choiceSlider input[value='+ ADD']").on('click',function(){
-//         currentCount = $(".macList").length;
-//         console.log(currentCount);
-//         $(".macCount .addCount").text(currentCount);
-//         mName = $(this).siblings("span").text();
-//         $(addForm).children("small").text(mName);
-//         $(addForm).clone().appendTo($("#choice .macSelected"));
-        
-//         $(".macList .btn_delete").on('click',function(){
-//             $(this).closest(".macList").remove();
-//             currentCount = $(".macList").length-1;
-//             $(".macCount .addCount").text(currentCount);
-//             console.log(currentCount);
-//         });
-//     });
-// }
 
 function macSetMe(){
     var addForm = $(".macList");
@@ -385,7 +342,6 @@ function macSetMe(){
     var mIdName = '';
 
     $(".choiceSlider input[value='+ ADD']").on('click',function(){
-        // totalCount = $(".macList").length;
         totalCount = parseInt($(".macCount .addCount").text())+1;
         maxCount = parseInt($(".macCount .limitCount").text());
         
