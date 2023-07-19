@@ -76,7 +76,9 @@ function closeBtn(){
     var parent = $(this).parent();
     var buttonRetour = $(this).attr('value');
     var parentClass = $(parent).attr('class');
+
     var headerHeight = $("header div:last-of-type").height();
+    var headerMargin = parseInt($("header div:last-of-type").css('margin-top'));
 
     if(buttonRetour=='Retour'){
         parent = parent.parent();
@@ -84,7 +86,7 @@ function closeBtn(){
 
     if(parentClass=='headBanner'){
         $(parent).css('display','none');
-        $("section").css('margin-top',headerHeight);
+        $("section").css('margin-top',headerHeight+headerMargin*2-1);
     }else{
         $(parent).removeClass('active');
     }
