@@ -912,7 +912,7 @@ footer div:last-of-type>p span{
         margin-bottom: 5px;
     }
     header>div:last-of-type>ul{
-        width: 50%; max-width: 130px; padding-top: 20px;
+        width: 60%; max-width: 140px; padding-top: 20px;
         line-height: 20px; top: 0; right: 7.14%;
     }
     header>div:last-of-type>ul li{
