@@ -176,6 +176,9 @@ ul.itemBox li>div div{
 ul.itemBox li>div div>*{
     width: 10%;
 }
+ul.itemBox li>div div>*:not(:last-child){
+    display: block;
+}
 ul.itemBox li>div div span.new{
     font-family: 'Caveat'; font-weight: 700; color: #bab784;
 }
@@ -1268,6 +1271,9 @@ div.component.select select,
     ul.itemBox li>div div>*:not(:first-child){
         margin-left: 1%;
     }
+    ul.itemBox li>div div>*:not(:last-child){
+        padding-top: 2px;
+    }
     ul.itemBox li>div div span.new{
         font-size: 15px;
     }
@@ -2090,6 +2096,9 @@ div.component.select select,
     }
     ul.itemBox li>div div>*:not(:first-child){
         margin-left: 0.5%;
+    }
+    ul.itemBox li>div div>*:not(:last-child){
+        padding-top: 3px;
     }
     ul.itemBox li>div div span.new{
         font-size: 20px; 
