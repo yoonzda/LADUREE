@@ -53,8 +53,9 @@ $(document).ready(function(){
     macSetMe();
 
     macHref();
-    toTop('.cartContainer>div:not(#paiement) .pink');
-    toTop('.cartContainer>div:last-of-type>div:not(first-of-type)>strong:first-of-type');
+    toTop('.cartContainer>div:not(#paiement) .pink',0);
+    toTop('.cartContainer>div:last-of-type>div:not(first-of-type)>strong:first-of-type',0);
+    toTop('.articleContainer>ul:last-of-type li','.articleContainer>ul:first-of-type li');
 });
 
 function headerBG(){
@@ -427,9 +428,14 @@ function macHref(){
     });
 }
 
-function toTop(target){
+function toTop(target,targetH){
     $(target).click(function(e){
         e.preventDefault();
-        $("html, body").animate({scrollTop : 0},400);
+        
+        if(targetH == 0){
+            $("html, body").animate({scrollTop : 0},600);
+        }else{
+            $("html, body").animate({scrollTop : $(targetH).offset().top},600);
+        }
     });
 }
