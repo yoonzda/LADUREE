@@ -2207,7 +2207,7 @@ div.component.select select,
     .cartContainer textarea,
     div.component.select select,
     .signContainer input:not(.pink,[type='radio'],[value='close'],[type='checkbox']){
-        font-size: 20px; line-height: 52px; padding: 0 2.6%;
+        font-size: 20px; line-height: 52px; padding: 0 2.6%; width: 100%;
     }
     .contactContainer label,
     .cartContainer label,
