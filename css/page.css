@@ -1245,7 +1245,6 @@ div.component.select select,
     }
     ul.itemBox li{
         display: block; width: 100%; padding: 0 7% 60px;
-        /* min-height: 61vh; */
     }
     ul.itemBox li:not(:last-of-type){
         margin-bottom: 20px;
@@ -1270,9 +1269,6 @@ div.component.select select,
     }
     ul.itemBox li>div div>*:not(:first-child){
         margin-left: 1%;
-    }
-    ul.itemBox li>div div>*:not(:last-child){
-        padding-top: 2px;
     }
     ul.itemBox li>div div span.new{
         font-size: 15px;
@@ -2096,9 +2092,6 @@ div.component.select select,
     }
     ul.itemBox li>div div>*:not(:first-child){
         margin-left: 0.5%;
-    }
-    ul.itemBox li>div div>*:not(:last-child){
-        padding-top: 3px;
     }
     ul.itemBox li>div div span.new{
         font-size: 20px; 
