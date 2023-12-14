@@ -153,6 +153,18 @@ ul.itemBox li>div div input[type='button'].active,
 .informationContainer #subscriptionTab label{
     color: #2d2c33;
 }
+.listContainer.type02>div:nth-of-type(2)>p,
+.informationContainer h2 small,
+.cartContainer .step.panier small,
+.cartContainer .step.livraison ul li div,
+.cartContainer .step.livraison ul li>span,
+.cartContainer .step.cadeaux address,
+.cartContainer .step.paiement ul li,
+#cartOnly ul li>div:first-of-type b,
+#cartOnly ul li>div:last-of-type mark,
+#cartOnly ul li span{
+    color: #303325;
+}
 .articleContainer>ul li,
 .signContainer h2,
 .informationContainer p,

@@ -3,7 +3,6 @@
     display: none;
 }
 
-
 .mainContainer>div:first-of-type{
     text-align: center;
 }
@@ -24,9 +23,7 @@
 .mainContainer figure img{
     width: 100%;
 }
-.mainContainer figure figcaption strong{
-    display: block; font-weight: 400; 
-}
+.mainContainer figure figcaption strong,
 .mainContainer figure figcaption small{
     display: block; font-weight: 400;
 }
@@ -76,9 +73,7 @@
     position: absolute; top: 0; height: 100%; box-sizing: border-box; 
     display: flex; flex-flow: column; justify-content: center;
 }
-.bx-wrapper .bx-viewport ul.itemSlider div strong{
-    display: block; font-weight: 400;
-}
+.bx-wrapper .bx-viewport ul.itemSlider div strong,
 .bx-wrapper .bx-viewport ul.itemSlider div span{
     display: block; font-weight: 400;
 }
@@ -132,7 +127,7 @@
     font-weight: 400; display: block;
 }
 .listContainer.type02>div:nth-of-type(2)>p{
-    font-weight: 400; color: #303325;
+    font-weight: 400;
 }
 .listContainer.type02>div:nth-of-type(2)>div.component.select{
     float: right; margin-bottom: 40px; width: 100%; box-sizing: border-box; 
@@ -745,7 +740,7 @@ div.component.select select,
     font-weight: 500; text-align: center;
 }
 .informationContainer h2 small{
-    display: block; font-weight: 400; color: #303325;
+    display: block; font-weight: 400;
 }
 .informationContainer ul li{
     font-weight: 500; border-radius: 5px 5px 0 0;
@@ -918,7 +913,7 @@ div.component.select select,
 
 
 .cartContainer .step.panier small{
-    display: inline-block; font-weight: 400; color: #303325;
+    display: inline-block; font-weight: 400;
 }
 .cartContainer .step.livraison ul{
     box-shadow: 2px 2px 25px rgba(186, 184, 166); margin-bottom: 20px;
@@ -928,7 +923,7 @@ div.component.select select,
     background: url('../images/transparent_item01.png') no-repeat;
 }
 .cartContainer .step.livraison ul li div{
-    font-weight: 400; color: #303325;
+    font-weight: 400;
 }
 .cartContainer .step.livraison ul li div small{
     display: block; font-weight: 500;
@@ -937,7 +932,7 @@ div.component.select select,
     font-weight: 500;
 }
 .cartContainer .step.livraison ul li>span{
-    position: absolute; top: 20px; right: 4%; font-weight: 500; color: #303325;
+    position: absolute; top: 20px; right: 4%; font-weight: 500;
 }
 .cartContainer .step.livraison strong:last-of-type{
     display: block; text-align: right; font-weight: 500;
@@ -951,7 +946,7 @@ div.component.select select,
 }
 .cartContainer .step.cadeaux address,
 .cartContainer .step.paiement ul li{
-    font-weight: 400; color: #303325;
+    font-weight: 400;
 }
 .cartContainer .step.paiement ul li{
     display: block;
@@ -1041,14 +1036,14 @@ div.component.select select,
     font-weight: 400; 
 }
 #cartOnly ul li>div:first-of-type b{
-    display: block; color: #303325;
+    display: block;
 }
 #cartOnly ul li>div:last-of-type mark{
-    font-weight: 400; color: #303325;
+    font-weight: 400;
     display: block;
 }
 #cartOnly ul li span{
-    position: absolute; right: 0; color: #303325; font-size: 25px; font-weight: 500;
+    position: absolute; right: 0; font-size: 25px; font-weight: 500;
 }
 #cartOnly>div{
     margin-top: auto; font-size: 20px; text-align: right;
