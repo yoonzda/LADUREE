@@ -3,7 +3,33 @@
     display: none;
 }
 
-.mainContainer>div:first-of-type{
+.mainContainer>div:first-of-type,
+.listContainer.type01>div:first-of-type,
+.bx-wrapper .bx-viewport ul.eventSlider div,
+ul.itemBox,
+.listContainer.type03>div:nth-of-type(2) h3,
+.listContainer.type03>div:nth-of-type(2) ul,
+#choice ul.choiceSlider li figure figcaption span,
+.macSelected .countComponent span,
+.detailContainer #choice h3,
+.detailContainer .recommend h3,
+.articleContainer h2,
+.contactContainer>div:last-of-type>p,
+.contactContainer>div:last-of-type>ul,
+.signContainer h2,
+.signContainer div.signUp >div label,
+.signContainer>p,
+.signContainer>a,
+.informationContainer h2,
+.informationContainer ul li,
+.informationContainer p,
+.informationContainer>div h3,
+.informationContainer>div fieldset legend,
+.informationContainer fieldset:first-of-type input[type='checkbox']+label,
+.cartContainer>ol li,
+.cartContainer>div h2,
+.cartContainer>div#panier .countComponent span,
+.cartContainer>div#panier #emptyBox p{
     text-align: center;
 }
 .mainContainer>div:first-of-type h2,
@@ -20,9 +46,6 @@
 .mainContainer>div:first-of-type a{
     display: block; width: 100%; margin: 0 auto; padding: 0;
 }
-.mainContainer figure img{
-    width: 100%;
-}
 .mainContainer figure figcaption strong,
 .mainContainer figure figcaption small{
     display: block; font-weight: 400;
@@ -34,7 +57,9 @@
 .mainContainer>div:nth-of-type(6) ul li{
     display: inline-block; vertical-align: top;
 }
-.mainContainer>div:nth-of-type(6) ul li img{
+.mainContainer figure img,
+.mainContainer>div:nth-of-type(6) ul li img,
+.bx-wrapper .bx-viewport ul.eventSlider img{
     width: 100%;
 }
 .mainContainer>div:nth-of-type(6) ul li dl dt{
@@ -50,11 +75,8 @@
     margin-right: 4%; right: 0;
 }
 
-.bx-wrapper .bx-viewport ul.eventSlider img{
-    width: 100%; 
-}
 .bx-wrapper .bx-viewport ul.eventSlider div{
-    width: 100%; height: 100%; text-align: center;
+    width: 100%; height: 100%;
     position: absolute; top: 0;
     display: flex; flex-flow: column; justify-content: center;
 }
@@ -85,21 +107,15 @@
     margin-left: auto;
 }
 
-.listContainer.type01>div:first-of-type{
-    text-align: center; 
-}
 .listContainer.type01>div:first-of-type h2{
-    font-weight: 300; 
+    font-weight: 300;
 }
 .listContainer.type01>div:first-of-type p{
-    margin: 0 auto; font-weight: 700; 
+    margin: 0 auto; font-weight: 700;
 }
 
 .listContainer.type01 ul li{
-    width: 100%; 
-}
-.listContainer.type01 ul li h3{
-    font-weight: 400; 
+    width: 100%;
 }
 .listContainer.type01 ul li p{
     font-weight: 500;
@@ -120,14 +136,45 @@
     text-shadow: 2px 2px 2px rgba(237, 199, 199, 0.75);
     box-sizing: border-box;
 }
-.listContainer .titleBox h2 small{
+.listContainer.type01 ul li h3,
+.listContainer .titleBox h2 small,
+.listContainer.type02>div:nth-of-type(2)>mark,
+.listContainer.type02>div:nth-of-type(2)>p,
+ul.itemBox li small,
+.listContainer.type03>div:nth-of-type(2) ul li div p,
+.detailContainer .pop:not(:last-of-type) h3,
+.detailContainer .pop:not(:last-of-type) div ul li p,
+.detailContainer .titleBox>div h2,
+.contactContainer>div:last-of-type>ul li,
+.storeContainer .pop h3,
+.storeContainer .pop span,
+.storeContainer .pop ul,
+.storeContainer .pop p,
+.storeContainer .pop span strong,
+.accordionContainer ul li details div p,
+.signContainer h2,
+.signContainer label[for*=professional],
+.signContainer label[for*=male],
+.signContainer>p,
+.signContainer>a,
+.informationContainer h2 small,
+.informationContainer #correctionTab p,
+.informationContainer #subscriptionTab p,
+.informationContainer>div:last-of-type p,
+.informationContainer fieldset:first-of-type input[type='checkbox']+label,
+.cartContainer>div#panier #listBox ul li>div:first-of-type h3,
+.cartContainer>div#panier small,
+.cartContainer>div#panier #emptyBox p,
+.cartContainer .step.panier small,
+.cartContainer .step.livraison ul li div,
+.cartContainer .step.cadeaux address,
+.cartContainer .step.paiement ul li,
+#cartOnly ul li>div:first-of-type,
+#cartOnly ul li>div:last-of-type mark{
     font-weight: 400;
 }
 .listContainer.type02>div:nth-of-type(2)>mark{
-    font-weight: 400; display: block;
-}
-.listContainer.type02>div:nth-of-type(2)>p{
-    font-weight: 400;
+    display: block;
 }
 .listContainer.type02>div:nth-of-type(2)>div.component.select{
     float: right; margin-bottom: 40px; width: 100%; box-sizing: border-box; 
@@ -139,9 +186,6 @@
     content: ''; display: block; clear: both;
 }
 
-ul.itemBox{
-    text-align: center;
-}
 ul.itemBox li{
     position: relative; transition: box-shadow ease 0.5s;
     box-sizing: border-box; border-radius: 5px;
@@ -154,9 +198,6 @@ ul.itemBox li img{
 }
 ul.itemBox li b{
     font-weight: 700;
-}
-ul.itemBox li small{
-    font-weight: 400;
 }
 ul.itemBox li mark{
     font-weight: 700; color: #e0838a; 
@@ -175,7 +216,7 @@ ul.itemBox li>div div>*:not(:last-child){
     display: block;
 }
 ul.itemBox li>div div span.new{
-    font-family: 'Caveat'; font-weight: 700; color: #bab784;
+    font-weight: 700; color: #bab784;
 }
 ul.itemBox li>div div input[type='button'],
 ul.itemBox li>div div span.store{
@@ -189,10 +230,7 @@ ul.itemBox li>div div input[type='button'].active{
 }
 
 .listContainer.type03>div:nth-of-type(2) h3{
-    font-weight: 300; text-align: center;
-}
-.listContainer.type03>div:nth-of-type(2) ul{
-    text-align: center;
+    font-weight: 300;
 }
 .listContainer.type03>div:nth-of-type(2) ul li{
     display: block; box-sizing: border-box; position: relative;
@@ -213,7 +251,6 @@ ul.itemBox li>div div input[type='button'].active{
 .listContainer.type03>div:nth-of-type(2) ul li.active{
     border-color: #f5f5f5; 
     box-shadow: 2px 2px 10px rgba(186, 184, 166, 0.75);
-
     transform: rotateY(180deg);
     transition-property: border, box-shadow, transform;
 }
@@ -223,12 +260,8 @@ ul.itemBox li>div div input[type='button'].active{
     border-radius: 10px; background-color: #f5f5f5; 
     padding-left: 3%; padding-right: 3%;
     border-style: solid; border-width: 5px;
-    
     transform: rotateY(180deg);
     backface-visibility: hidden;
-}
-.listContainer.type03>div:nth-of-type(2) ul li div p{
-    font-weight: 400;
 }
 .listContainer.type03>div:nth-of-type(2) ul li div strong{
     display: block;
@@ -320,16 +353,13 @@ ul.itemBox li>div div input[type='button'].active{
     top: 50%; left: 50%; transform: translate(-50%,-50%);
 }
 .detailContainer .pop:not(:last-of-type) h3{
-    font-weight: 400; word-break: break-all;
+    word-break: break-all;
 }
 .detailContainer .pop:not(:last-of-type) div ul li{
     display: block;
 }
 .detailContainer .pop:not(:last-of-type) div ul li span{
     display: block; font-weight: 500; margin-bottom: 10px; color: #54534b;
-}
-.detailContainer .pop:not(:last-of-type) div ul li p{
-    font-weight: 400;
 }
 .detailContainer>a{
     font-weight: 500; display: block;
@@ -342,9 +372,6 @@ ul.itemBox li>div div input[type='button'].active{
 }
 .detailContainer .titleBox>div ol li img{
     width: 100%;
-}
-.detailContainer .titleBox>div h2{
-    font-weight: 400;
 }
 .detailContainer .titleBox>div h2 small{
     display: block; font-weight: 500;
@@ -377,7 +404,7 @@ ul.itemBox li>div div input[type='button'].active{
     font-weight: 500; color: #e5e3cb;
 }
 #choice ul.choiceSlider li figure figcaption span{
-    font-weight: 500; text-align: center;
+    font-weight: 500;
 }
 #choice ul.choiceSlider li figure:hover figcaption,
 #choice ul.choiceSlider li figure.active figcaption{
@@ -419,7 +446,7 @@ ul.itemBox li>div div input[type='button'].active{
 }
 .macSelected .countComponent span{
     width: 30%; display: inline-block; border-left: none; margin-left: -6px;
-    text-align: center; vertical-align: middle;
+    vertical-align: middle;
 }
 #choice>input[type='button']{
     display: block; background-color: transparent; 
@@ -429,11 +456,11 @@ ul.itemBox li>div div input[type='button'].active{
 }
 .detailContainer #choice h3,
 .detailContainer .recommend h3{
-    text-align: center; font-weight: 300;
+    font-weight: 300;
 }
 
 .articleContainer h2{
-    font-weight: 300; text-align: center; 
+    font-weight: 300;
 }
 .articleContainer>ul li{
     display: inline-block; vertical-align: top;
@@ -488,10 +515,7 @@ article ul li{
     content: ''; display: block; clear: both;
 }
 .contactContainer>div:last-of-type>p{
-    font-weight: 700; text-align: center; width: 100%; 
-}
-.contactContainer>div:last-of-type>ul{
-    text-align: center;
+    font-weight: 700; width: 100%; 
 }
 .contactContainer>div:last-of-type>ul li:nth-of-type(1){background-image: url('../images/icon_macYe.png');}
 .contactContainer>div:last-of-type>ul li:nth-of-type(2){background-image: url('../images/icon_macIv.png');}
@@ -500,7 +524,6 @@ article ul li{
 .contactContainer>div:last-of-type>ul li{
     background-repeat: no-repeat; background-position: center top;
     background-size: 8%;
-    font-weight: 400; 
     display: block; position: relative;
 }
 .contactContainer>div:last-of-type>ul li a{
@@ -545,13 +568,10 @@ div.component.select select,
     display: block; margin: 0 auto; width: 70%;
 }
 
-.storeContainer .pop h3{
-    font-weight: 400;
-}
 .storeContainer .pop span,
 .storeContainer .pop ul,
 .storeContainer .pop p{
-    font-weight: 400; color: #33332d;
+    color: #33332d;
 }
 .storeContainer .pop ul li{
     display: block;
@@ -577,7 +597,7 @@ div.component.select select,
     position: relative; width: 100%; display: block;
 }
 .storeContainer .pop span strong{
-    position: absolute; right: 0; text-align: right; font-weight: 400; color: #33332d;
+    position: absolute; right: 0; text-align: right; color: #33332d;
 }
 .storeContainer{
     position: relative;
@@ -611,9 +631,6 @@ div.component.select select,
 }
 .accordionContainer ul li details div b{
     display: block; font-weight: 700; 
-}
-.accordionContainer ul li details div p{
-    font-weight: 400; 
 }
 .accordionContainer ul li details div p span{
     display: block; margin-top: 15px;
@@ -682,15 +699,8 @@ div.component.select select,
     display: inline-block;
 }
 
-.signContainer h2{
-    font-weight: 400; text-align: center;
-}
 .signContainer label{
     display: block; margin: 0 auto;
-}
-.signContainer label[for*=professional],
-.signContainer label[for*=male]{
-    font-weight: 400;
 }
 .signContainer label:not([for*=professional],[for*=male]){
     font-weight: 500;
@@ -710,7 +720,7 @@ div.component.select select,
     content: ''; display: block; clear: both;
 }
 .signContainer div.signUp >div label{
-    width: 48%; max-width: 120px; text-align: center; box-sizing: border-box;
+    width: 48%; max-width: 120px; box-sizing: border-box;
     background: url('../images/icon_circle.svg') left center / 20% no-repeat;
 }
 .signContainer div.signUp >div label:first-of-type{
@@ -723,10 +733,10 @@ div.component.select select,
     background-image: url('../images/icon_checked.svg');
 }
 .signContainer>p{
-    text-align: center; margin: 0 auto 30px; font-weight: 400; color: #878787;
+    margin: 0 auto 30px; color: #878787;
 }
 .signContainer>a{
-    display: block; margin: 0 auto; font-weight: 400; text-align: center;
+    display: block; margin: 0 auto;
     transition: color .3s ease; color: #878787;
 }
 .signContainer input[type='checkbox']+label{
@@ -737,14 +747,13 @@ div.component.select select,
 }
 
 .informationContainer h2{
-    font-weight: 500; text-align: center;
+    font-weight: 500;
 }
 .informationContainer h2 small{
-    display: block; font-weight: 400;
+    display: block;
 }
 .informationContainer ul li{
-    font-weight: 500; border-radius: 5px 5px 0 0;
-    text-align: center; box-sizing: border-box;
+    font-weight: 500; border-radius: 5px 5px 0 0; box-sizing: border-box;
 }
 .informationContainer>div[id$='Tab']:not(.active){
     display: none;
@@ -752,31 +761,23 @@ div.component.select select,
 .informationContainer>div[id$='Tab']{
     border: 1px solid #4f543d;
 }
-.informationContainer p{
-    text-align: center;
-}
-.informationContainer #correctionTab p{
-    font-weight: 400;
-}
 .informationContainer>div h3{
-    font-weight: 500; text-align: center; margin-bottom: 25px;
+    font-weight: 500; margin-bottom: 25px;
 }
 .informationContainer #subscriptionTab p{
-    margin-bottom: 35px; font-weight: 400;
+    margin-bottom: 35px;
 }
 .informationContainer>div:last-of-type p{
-    font-weight: 400; background: url('../images/icon_macIv.svg') center top no-repeat;
+    background: url('../images/icon_macIv.svg') center top no-repeat;
 }
-.informationContainer>a{
-    display: block; 
-}
+.informationContainer>a,
 .informationContainer #registrationTab input[type='submit'],
 .informationContainer #subscriptionTab input[type='submit'],
 .informationContainer fieldset input[type='submit']{
     display: block; 
 }
 .informationContainer>div fieldset legend{
-    font-weight: 500; text-align: center; 
+    font-weight: 500;
 }
 .informationContainer fieldset:first-of-type label:not([for*=Account]),
 .informationContainer fieldset:last-of-type label,
@@ -784,8 +785,7 @@ div.component.select select,
     display: block;
 }
 .informationContainer fieldset:first-of-type input[type='checkbox']+label{
-    display: block; width: 35%; margin: 0 auto 20px; 
-    font-weight: 400; text-align: center;
+    display: block; width: 35%; margin: 0 auto 20px;
     background: url('../images/icon_box.svg') left center no-repeat;
 }
 .informationContainer #correctionTab input[type='checkbox']:checked+label{
@@ -806,7 +806,7 @@ div.component.select select,
 }
 .cartContainer>ol li{
     display: block; float: left; width: 22%; 
-    font-weight: 500; text-align: center; word-break: break-all;
+    font-weight: 500; word-break: break-all;
     background-repeat: no-repeat; background-position: center top;
 }
 .cartContainer>ol li.active{
@@ -826,7 +826,7 @@ div.component.select select,
     box-shadow: 2px 2px 25px rgba(186, 184, 166);
 }
 .cartContainer>div h2{
-    font-weight: 500; text-align: center; color: #333224;
+    font-weight: 500; color: #333224;
 }
 .cartContainer .pink{
     display: block; 
@@ -848,7 +848,7 @@ div.component.select select,
     background-repeat: no-repeat;
 }
 .cartContainer>div#panier #listBox ul li>div:first-of-type h3{
-    font-weight: 400; padding-top: 30px; margin-bottom: 5px;
+    padding-top: 30px; margin-bottom: 5px;
 }
 .cartContainer>div#panier #listBox ul li>div:first-of-type b{
     display: block; font-weight: 500; 
@@ -859,7 +859,7 @@ div.component.select select,
     max-width: 20px; padding: 0;
 }
 .cartContainer>div#panier small{
-    display: block; font-weight: 400;
+    display: block;
 }
 .cartContainer>div#panier .countComponent{
     position: absolute; bottom: 0; right: 0;
@@ -868,7 +868,7 @@ div.component.select select,
     display: block; float: left;
 }
 .cartContainer>div#panier .countComponent span{
-    width: 33.33%; border-left: none; text-align: center; box-sizing: border-box;
+    width: 33.33%; border-left: none; box-sizing: border-box;
 }
 .cartContainer>div#panier .countComponent input{
     width: 33.33%; background-color: transparent;
@@ -885,7 +885,6 @@ div.component.select select,
 .cartContainer>div#panier #emptyBox p{
     margin: 0 auto; 
     background: url('../images/icon_macIv.svg') center top no-repeat;
-    font-weight: 400; text-align: center;
 }
 .cartContainer textarea{
     resize: none; width: 100%;
@@ -913,7 +912,7 @@ div.component.select select,
 
 
 .cartContainer .step.panier small{
-    display: inline-block; font-weight: 400;
+    display: inline-block;
 }
 .cartContainer .step.livraison ul{
     box-shadow: 2px 2px 25px rgba(186, 184, 166); margin-bottom: 20px;
@@ -921,9 +920,6 @@ div.component.select select,
 .cartContainer .step.livraison ul li{
     position: relative; display: block; 
     background: url('../images/transparent_item01.png') no-repeat;
-}
-.cartContainer .step.livraison ul li div{
-    font-weight: 400;
 }
 .cartContainer .step.livraison ul li div small{
     display: block; font-weight: 500;
@@ -943,10 +939,6 @@ div.component.select select,
 }
 .cartContainer .step.cadeaux address{
     font-style: normal;
-}
-.cartContainer .step.cadeaux address,
-.cartContainer .step.paiement ul li{
-    font-weight: 400;
 }
 .cartContainer .step.paiement ul li{
     display: block;
@@ -1033,13 +1025,11 @@ div.component.select select,
 }
 #cartOnly ul li>div:first-of-type{
     margin-bottom: 20px; margin-right: 8%;
-    font-weight: 400; 
 }
 #cartOnly ul li>div:first-of-type b{
     display: block;
 }
 #cartOnly ul li>div:last-of-type mark{
-    font-weight: 400;
     display: block;
 }
 #cartOnly ul li span{

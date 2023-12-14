@@ -8,7 +8,8 @@ footer div:last-of-type>p,
 .listContainer.type03 .titleBox h2,
 .contactContainer .titleBox h2,
 .accordionContainer .titleBox h2,
-.legalContainer .titleBox h2{
+.legalContainer .titleBox h2,
+ul.itemBox li>div div span.new{
     font-family: 'Caveat';
 }
 header>div:last-of-type,
