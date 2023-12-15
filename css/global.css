@@ -265,6 +265,10 @@ footer mark,
 .articleContainer h2{
     color: #878678;
 }
+.signContainer>p,
+.signContainer>a{
+    color: #878787;
+}
 .mainContainer figure figcaption small{
     color: #8b8954;
 }

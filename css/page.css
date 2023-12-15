@@ -108,7 +108,10 @@ ul.itemBox li small,
 .macCount,
 .macSelected li small,
 article p,
-article b{
+article b,
+.signContainer label:not([for*=professional],[for*=male]),
+.informationContainer h2,
+.informationContainer ul li{
     font-weight: 500;
 }
 .bx-wrapper .bx-viewport ul.eventSlider div *:not(:last-child),
@@ -671,9 +674,6 @@ div.component.select select,
 .signContainer label{
     display: block; margin: 0 auto;
 }
-.signContainer label:not([for*=professional],[for*=male]){
-    font-weight: 500;
-}
 .signContainer div>label:not(:last-of-type),
 .signContainer label[for*=user]{
     margin-bottom: 5px;
@@ -702,11 +702,10 @@ div.component.select select,
     background-image: url('../images/icon_checked.svg');
 }
 .signContainer>p{
-    margin: 0 auto 30px; color: #878787;
+    margin: 0 auto 30px;
 }
 .signContainer>a{
-    display: block; margin: 0 auto;
-    transition: color .3s ease; color: #878787;
+    display: block; margin: 0 auto; transition: color .3s ease;
 }
 .signContainer input[type='checkbox']+label{
     background: url('../images/icon_box.svg') no-repeat; box-sizing: border-box; text-align: center;  
@@ -715,14 +714,11 @@ div.component.select select,
     background-image: url('../images/icon_box_active.svg');
 }
 
-.informationContainer h2{
-    font-weight: 500;
-}
 .informationContainer h2 small{
     display: block;
 }
 .informationContainer ul li{
-    font-weight: 500; border-radius: 5px 5px 0 0; box-sizing: border-box;
+    border-radius: 5px 5px 0 0; box-sizing: border-box;
 }
 .informationContainer>div[id$='Tab']:not(.active){
     display: none;
