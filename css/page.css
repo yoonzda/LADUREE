@@ -22,6 +22,7 @@ ul.itemBox,
 .detailContainer #choice h3,
 .detailContainer .recommend h3,
 .articleContainer h2,
+.articleContainer>ul li,
 .contactContainer>div:last-of-type>*:not(:last-child),
 section[class^='s'] h2,
 .signContainer>*:not(div,form),
@@ -70,17 +71,12 @@ ul.itemBox li small,
 .signContainer>p,
 .signContainer>a,
 .informationContainer h2 small,
-.informationContainer #correctionTab p,
-.informationContainer #subscriptionTab p,
-.informationContainer>div:last-of-type p,
+.informationContainer>div:not(.pop) p,
 .informationContainer fieldset:first-of-type input[type='checkbox']+label,
 .cartContainer>div#panier #listBox ul li>div:first-of-type h3,
 .cartContainer>div#panier small,
 .cartContainer>div#panier #emptyBox p,
-.cartContainer .step.panier small,
-.cartContainer .step.livraison ul li div,
-.cartContainer .step.cadeaux address,
-.cartContainer .step.paiement ul li,
+.cartContainer .step *:not(span,strong),
 #cartOnly ul li>div:first-of-type,
 #cartOnly ul li>div:last-of-type mark{
     font-weight: 400;
@@ -97,11 +93,27 @@ ul.itemBox li small,
 #choice ul.choiceSlider li figure figcaption span,
 .macCount,
 .macSelected li small,
+.articleContainer>ul li,
 article p,
 article b,
 .signContainer label:not([for*=professional],[for*=male]),
 .informationContainer h2,
-.informationContainer ul li{
+.informationContainer ul li,
+.informationContainer>div h3,
+.informationContainer>div fieldset legend,
+.accordionContainer ul li details summary,
+.legalContainer>ol li h3,
+.cartContainer>ol li,
+.cartContainer>div h2,
+.cartContainer>div#panier #listBox ul li>div:first-of-type b,
+.cartContainer>div#panier #listBox>div,
+.cartContainer>div#panier strong,
+.cartContainer .step strong,
+.cartContainer .step.livraison ul li div small,
+.cartContainer .step.livraison ul li div b,
+.cartContainer .step.livraison ul li>span,
+#cartOnly ul li span,
+#cartOnly>div strong{
     font-weight: 500;
 }
 .bx-wrapper .bx-viewport ul.eventSlider div *:not(:last-child),
@@ -437,8 +449,7 @@ ul.itemBox li>div div input[type='button'].active{
 
 .articleContainer>ul li{
     display: inline-block; vertical-align: top;
-    background-repeat: no-repeat; background-size: 100%; box-sizing: border-box;
-    font-weight: 500; text-align: center; opacity: 0.6;
+    background-repeat: no-repeat; background-size: 100%; box-sizing: border-box; opacity: 0.6;
     border: 10px solid #fff;
 }
 .articleContainer>ul:first-of-type li:nth-of-type(1){background-image: url('../images/articleIMG_01.png');}
@@ -562,7 +573,7 @@ div.component.select select,
     position: relative; width: 100%; display: block;
 }
 .storeContainer .pop span strong{
-    position: absolute; right: 0; text-align: right; color: #33332d;
+    position: absolute; right: 0; text-align: right;
 }
 .storeContainer{
     position: relative;
@@ -575,7 +586,6 @@ div.component.select select,
     display: block;
 }
 .accordionContainer ul li details summary{
-    font-weight: 500; color: #878560;
     border-bottom: 1px solid #3c3b45;
     list-style: none; position: relative; 
 }
@@ -588,24 +598,18 @@ div.component.select select,
 .accordionContainer ul li details[open] summary:before{
     content: '-'; transform: rotate(360deg);
 }
-.accordionContainer ul li details div{
-    color: #999888; 
-}
 .accordionContainer ul li details div b{
     display: block; font-weight: 700; 
 }
 .accordionContainer ul li details div p span{
     display: block; margin-top: 15px;
 }
-.accordionContainer ul li details div p span a{
-    color: #78776b;
-}
 
 .legalContainer>ol>li{
     display: block; 
 }
 .legalContainer>ol li h3{
-    font-weight: 500; border-bottom: 1px solid #ccc991; 
+    border-bottom: 1px solid #ccc991; 
 }
 .legalContainer>ol li ul li:before{
     content: ' - ';
@@ -717,7 +721,7 @@ div.component.select select,
     border: 1px solid #4f543d;
 }
 .informationContainer>div h3{
-    font-weight: 500; margin-bottom: 25px;
+    margin-bottom: 25px;
 }
 .informationContainer #subscriptionTab p{
     margin-bottom: 35px;
@@ -730,9 +734,6 @@ div.component.select select,
 .informationContainer #subscriptionTab input[type='submit'],
 .informationContainer fieldset input[type='submit']{
     display: block; 
-}
-.informationContainer>div fieldset legend{
-    font-weight: 500;
 }
 .informationContainer fieldset:first-of-type label:not([for*=Account]),
 .informationContainer fieldset:last-of-type label,
@@ -760,8 +761,7 @@ div.component.select select,
     content: ''; display: block; clear: both;
 }
 .cartContainer>ol li{
-    display: block; float: left; width: 22%; 
-    font-weight: 500; word-break: break-all;
+    display: block; float: left; width: 22%; word-break: break-all;
     background-repeat: no-repeat; background-position: center top;
 }
 .cartContainer>ol li.active{
@@ -779,9 +779,6 @@ div.component.select select,
 .cartContainer>ol~div:not(:last-of-type){
     box-sizing: border-box; position: relative;
     box-shadow: 2px 2px 25px rgba(186, 184, 166);
-}
-.cartContainer>div h2{
-    font-weight: 500; color: #333224;
 }
 .cartContainer .pink{
     display: block; 
@@ -806,7 +803,7 @@ div.component.select select,
     padding-top: 30px; margin-bottom: 5px;
 }
 .cartContainer>div#panier #listBox ul li>div:first-of-type b{
-    display: block; font-weight: 500; 
+    display: block;
 }
 .cartContainer>div#panier #listBox ul li>div:first-of-type input[type='button']{
     position: absolute; top: 0; right: 0;
@@ -832,10 +829,7 @@ div.component.select select,
     border-left: none;
 }
 .cartContainer>div#panier #listBox>div{
-    font-weight: 500; text-align: right;
-}
-.cartContainer>div#panier strong{
-    font-weight: 500;
+    text-align: right;
 }
 .cartContainer>div#panier #emptyBox p{
     margin: 0 auto; 
@@ -857,8 +851,7 @@ div.component.select select,
     margin-bottom: 30px;
 }
 .cartContainer .step strong:first-of-type{
-    display: inline-block; font-weight: 500; 
-    background-repeat: no-repeat; background-size: contain;
+    display: inline-block; background-repeat: no-repeat; background-size: contain;
 }
 .cartContainer .step.panier strong{background-image: url('../images/icon_cart_01.svg');}
 .cartContainer .step.livraison strong:first-of-type{background-image: url('../images/icon_cart_02.svg');}
@@ -877,16 +870,13 @@ div.component.select select,
     background: url('../images/transparent_item01.png') no-repeat;
 }
 .cartContainer .step.livraison ul li div small{
-    display: block; font-weight: 500;
-}
-.cartContainer .step.livraison ul li div b{
-    font-weight: 500;
+    display: block;
 }
 .cartContainer .step.livraison ul li>span{
-    position: absolute; top: 20px; right: 4%; font-weight: 500;
+    position: absolute; top: 20px; right: 4%;
 }
 .cartContainer .step.livraison strong:last-of-type{
-    display: block; text-align: right; font-weight: 500;
+    display: block; text-align: right;
 }
 .cartContainer .step.cadeaux address,
 .cartContainer .step.paiement ul{
@@ -988,13 +978,10 @@ div.component.select select,
     display: block;
 }
 #cartOnly ul li span{
-    position: absolute; right: 0; font-size: 25px; font-weight: 500;
+    position: absolute; right: 0; font-size: 25px;
 }
 #cartOnly>div{
     margin-top: auto; font-size: 20px; text-align: right;
-}
-#cartOnly>div strong{
-    font-weight: 500;
 }
 
 /* mob */

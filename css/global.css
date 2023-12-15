@@ -166,6 +166,12 @@ ul.itemBox li>div div input[type='button'].active,
 #cartOnly ul li span{
     color: #303325;
 }
+.cartContainer>div h2{
+    color: #333224;
+}
+.storeContainer .pop span strong{
+    color: #33332d;
+}
 .articleContainer>ul li,
 .signContainer h2,
 .informationContainer p,
@@ -242,12 +248,9 @@ header>div:last-of-type>ul li input[type='button'],
 header>div:last-of-type>ul li:first-of-type a,
 [class*=Panel]>input[type='button']:first-of-type,
 #search label,
-.listContainer.type02 .titleBox,
-.listContainer.type03 .titleBox,
-.contactContainer .titleBox,
 .detailContainer>a,
-.accordionContainer .titleBox,
-.legalContainer .titleBox{
+section:not(.detailContainer) .titleBox,
+.accordionContainer ul li details div p span a{
     color: #78776b;
 }
 .legalContainer>ol li h3,
@@ -257,6 +260,9 @@ header>div:last-of-type>ul li:first-of-type a,
 .listContainer.type02>div:nth-of-type(2)>mark,
 .listContainer.type03 h3{
     color: #808761;
+}
+.accordionContainer ul li details summary{
+    color: #878560;
 }
 footer mark,
 .listContainer.type01 h2,
@@ -273,7 +279,8 @@ footer mark,
     color: #8b8954;
 }
 .detailContainer .pop:not(#subscribe) h3,
-.storeContainer .pop h3{
+.storeContainer .pop h3,
+.accordionContainer ul li details div{
     color: #999888;
 }
 .bx-wrapper .bx-viewport ul.eventSlider div h3{
