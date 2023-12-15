@@ -2,6 +2,15 @@
 .macSelected li:first-child{
     display: none;
 }
+.mainContainer figure img,
+.mainContainer>div:nth-of-type(6) ul li img,
+.bx-wrapper .bx-viewport ul.eventSlider img,
+.listContainer.type03>div:nth-of-type(2) ul li img,
+ul.itemBox li img,
+.detailContainer .titleBox>div ol li img,
+#choice ul.choiceSlider li figure img{
+    width: 100%;
+}
 
 .mainContainer>div:first-of-type,
 .listContainer.type01>div:first-of-type,
@@ -53,11 +62,6 @@ ul.itemBox,
 }
 .mainContainer>div:nth-of-type(6) ul li{
     display: inline-block; vertical-align: top;
-}
-.mainContainer figure img,
-.mainContainer>div:nth-of-type(6) ul li img,
-.bx-wrapper .bx-viewport ul.eventSlider img{
-    width: 100%;
 }
 .mainContainer>div:nth-of-type(6) ul li dl{
     font-weight: 500;
@@ -183,9 +187,6 @@ ul.itemBox li{
 ul.itemBox li > *:not(div){
     display: block;
 }
-ul.itemBox li img{
-    width: 100%;
-}
 ul.itemBox li b{
     font-weight: 700;
 }
@@ -230,7 +231,7 @@ ul.itemBox li>div div input[type='button'].active{
     transform-style: preserve-3d;
 }
 .listContainer.type03>div:nth-of-type(2) ul li img{
-    width: 100%; box-sizing: border-box;
+    box-sizing: border-box;
 }
 .listContainer.type03>div:nth-of-type(2) ul li b{
     display: block; font-weight: 700;
@@ -360,9 +361,6 @@ ul.itemBox li>div div input[type='button'].active{
 .detailContainer .titleBox{
     position: relative;
 }
-.detailContainer .titleBox>div ol li img{
-    width: 100%;
-}
 .detailContainer .titleBox>div h2 small{
     display: block; font-weight: 500;
 }
@@ -381,9 +379,6 @@ ul.itemBox li>div div input[type='button'].active{
     position: relative;
     border: 1px solid #bab8a6; box-sizing: border-box; 
     margin-bottom: 20px;
-}
-#choice ul.choiceSlider li figure img{
-    width: 100%;
 }
 #choice ul.choiceSlider li figure figcaption{
     display: none; flex-flow: column; justify-content: center;
