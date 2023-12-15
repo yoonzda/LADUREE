@@ -217,6 +217,12 @@ textarea,
 .signContainer input:not(.pink,[type='radio'],[value='close'],[type='checkbox']){
     color: #5a5a66;
 }
+.mainContainer>div:nth-of-type(6) ul li dl dt{
+    color: #5b5b5b;
+}
+.mainContainer>div:nth-of-type(6) ul li dl dd{
+    color: #5d5b6a;
+}
 .detailContainer .titleBox>div h2,
 .macCount,
 article p,
@@ -265,6 +271,18 @@ footer mark,
 .detailContainer .pop:not(#subscribe) h3,
 .storeContainer .pop h3{
     color: #999888;
+}
+.bx-wrapper .bx-viewport ul.eventSlider div h3{
+    color: #f6e4d4;
+}
+.mainContainer>div:first-of-type h2{
+    color: #ffd6d6; 
+}
+.mainContainer>div:first-of-type p{
+    color: #fffc99;
+}
+.bx-wrapper .bx-viewport ul.eventSlider div p{
+    color: #fff;
 }
 header,
 [class*=Panel]{
@@ -1209,13 +1227,11 @@ footer div:last-of-type>p span{
     }
     section:not(.detailContainer, .storeContainer) .pop h3,
     #subscribe h3{
-        font-size: 40px; font-weight: 400; color: #999888;
-        margin-bottom: 25px;
+        font-size: 40px; margin-bottom: 25px;
     }
     section:not(.detailContainer, .storeContainer) .pop p,
     #subscribe p{
-        width: 100%; 
-        max-width: 500px; 
+        width: 100%; max-width: 500px; 
     }
     section:not(.detailContainer, .storeContainer) .pop a,
     section:not(.detailContainer, .storeContainer) .pop div input,

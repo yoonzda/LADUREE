@@ -37,21 +37,18 @@ ul.itemBox,
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 .mainContainer>div:first-of-type h2{
-    font-weight: 300; color: #ffd6d6; 
+    font-weight: 300;
 }
 .mainContainer>div:first-of-type p{
-    font-weight: 500; color: #fffc99;
+    font-weight: 500;
 }
-.mainContainer>div:first-of-type input[type='button'],
-.mainContainer>div:first-of-type a{
+.mainContainer>div:first-of-type *:last-child{
     display: block; width: 100%; margin: 0 auto; padding: 0;
 }
-.mainContainer figure figcaption strong,
-.mainContainer figure figcaption small{
-    display: block; font-weight: 400;
+.mainContainer figure figcaption *:not(:last-child){
+    display: block;
 }
-.mainContainer figure figcaption a,
-.mainContainer figure figcaption input[type='button']{
+.mainContainer figure figcaption *:last-child{
     float: right;
 }
 .mainContainer>div:nth-of-type(6) ul li{
@@ -62,11 +59,8 @@ ul.itemBox,
 .bx-wrapper .bx-viewport ul.eventSlider img{
     width: 100%;
 }
-.mainContainer>div:nth-of-type(6) ul li dl dt{
-    font-weight: 500; color: #5b5b5b;
-}
-.mainContainer>div:nth-of-type(6) ul li dl dd{
-    font-weight: 500; color: #5d5b6a;
+.mainContainer>div:nth-of-type(6) ul li dl{
+    font-weight: 500;
 }
 .mainContainer .bx-wrapper .bx-controls-direction a.bx-prev{
     margin-left: 4%; left: 0;
@@ -80,30 +74,30 @@ ul.itemBox,
     position: absolute; top: 0;
     display: flex; flex-flow: column; justify-content: center;
 }
-.bx-wrapper .bx-viewport ul.eventSlider div h3{
-    font-weight: 700; color: #f6e4d4; margin-bottom: 20px;
+.bx-wrapper .bx-viewport ul.eventSlider div *:not(:last-child){
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    font-weight: 700;
+}
+.bx-wrapper .bx-viewport ul.eventSlider div h3{
+    margin-bottom: 20px;
 }
 .bx-wrapper .bx-viewport ul.eventSlider div p{
-    font-weight: 700; color: #fff; width: 70%; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    width: 70%;
 }
-.bx-wrapper .bx-viewport ul.eventSlider div a,
-.bx-wrapper .bx-viewport ul.eventSlider div input[type='button']{
+.bx-wrapper .bx-viewport ul.eventSlider div *:last-child{
     margin: 0 auto; min-width: 200px;
 }
 .bx-wrapper .bx-viewport ul.itemSlider div{
     position: absolute; top: 0; height: 100%; box-sizing: border-box; 
     display: flex; flex-flow: column; justify-content: center;
 }
-.bx-wrapper .bx-viewport ul.itemSlider div strong,
-.bx-wrapper .bx-viewport ul.itemSlider div span{
-    display: block; font-weight: 400;
+.bx-wrapper .bx-viewport ul.itemSlider div *{
+    display: block;
 }
 .bx-wrapper .bx-viewport ul.itemSlider div p{
     font-weight: 500; 
 }
-.bx-wrapper .bx-viewport ul.itemSlider div a,
-.bx-wrapper .bx-viewport ul.itemSlider div input[type='button']{
+.bx-wrapper .bx-viewport ul.itemSlider div *:last-child{
     margin-left: auto;
 }
 
@@ -120,22 +114,18 @@ ul.itemBox,
 .listContainer.type01 ul li p{
     font-weight: 500;
 }
-
-.listContainer .titleBox,
-.contactContainer .titleBox,
-.accordionContainer .titleBox,
-.legalContainer .titleBox{
+section:not(.detailContainer) .titleBox{
     background-repeat: no-repeat;
 }
-.listContainer .titleBox h2,
-.contactContainer .titleBox h2,
-.accordionContainer .titleBox h2,
-.legalContainer .titleBox h2{
+section:not(.detailContainer) .titleBox h2{
     background-color: #fff;
-    font-weight: 400; 
     text-shadow: 2px 2px 2px rgba(237, 199, 199, 0.75);
     box-sizing: border-box;
 }
+.mainContainer figure figcaption *:not(:last-child),
+.mainContainer>div:nth-of-type(6) h3,
+.bx-wrapper .bx-viewport ul.itemSlider div *:not(p,input,a),
+section:not(.detailContainer) .titleBox h2,
 .listContainer.type01 ul li h3,
 .listContainer .titleBox h2 small,
 .listContainer.type02>div:nth-of-type(2)>mark,
@@ -1042,6 +1032,7 @@ div.component.select select,
     font-weight: 500;
 }
 
+/* mob */
 @media screen and (max-width:767px){
     section{
         margin-top: 118px;
@@ -1094,7 +1085,7 @@ div.component.select select,
         margin-bottom: 100px;
     }
     .mainContainer>div:nth-of-type(6) h3{
-        font-size: 19px; text-align: center; margin-bottom: 30px;
+        font-size: 19px; margin-bottom: 30px;
     }
     .mainContainer>div:nth-of-type(6) ul li{
         width: 100%;
@@ -1936,7 +1927,11 @@ div.component.select select,
     }
 }
 
+/* tab mob */
 @media screen and (max-width:1279px){
+    .mainContainer>div:nth-of-type(6) h3{
+        text-align: center;
+    }
     .listContainer.type02 .titleBox.list02{background-image: url('../images/itemDetail03.png');}
     .listContainer.type02 .titleBox.list03{background-image: url('../images/itemDetail06.png');}
     .listContainer.type02 .titleBox.list04{background-image: url('../images/itemDetail18.png');}
@@ -1962,6 +1957,7 @@ div.component.select select,
     .legalContainer .titleBox.protection{background-image: url('../images/itemDetail45.png');}
 }
 
+/* desk tab */
 @media screen and (min-width:768px){
     .mainContainer>div:first-of-type input[type='button'],
     .mainContainer>div:first-of-type a{
@@ -1977,7 +1973,7 @@ div.component.select select,
         font-size: 18px; line-height: 24px;
     }
     .mainContainer>div:nth-of-type(6) h3{
-        font-weight: 400; margin-bottom: 50px;
+        margin-bottom: 50px;
     }
     .mainContainer>div:nth-of-type(6) ul li img{
         margin-bottom: 10px;
@@ -2434,6 +2430,7 @@ div.component.select select,
     }
 }
 
+/* tab only */
 @media screen and (min-width:768px) and (max-width:1279px){
     section{
         margin-top: 127px;
@@ -2474,7 +2471,7 @@ div.component.select select,
         margin-bottom: 120px;
     }
     .mainContainer>div:nth-of-type(6) h3{
-        font-size: 29px; text-align: center;
+        font-size: 29px;
     }
     .mainContainer>div:nth-of-type(6) ul li{
         width: 47%; margin-bottom: 40px;
@@ -3058,6 +3055,7 @@ div.component.select select,
     }
 }
 
+/* desktop only */
 @media screen and (min-width:1280px){
     section{
         margin-top: 130px;
