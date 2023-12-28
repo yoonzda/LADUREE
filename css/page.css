@@ -1255,8 +1255,7 @@ div.component.select select,
         width: 92.86%; height: 82%; padding: 40px 6%; overflow: scroll;
     }
     .detailContainer .pop>input[type='button']{
-        width: 15px; line-height: 15px; font-size: 15px;
-        position: absolute; right: 4%; top: 15px; color: #78776b;
+        width: 15px; line-height: 15px; font-size: 15px; right: 4%; top: 15px;
     }
     .detailContainer .pop:not(:last-of-type) img{
         width: 100%; margin-bottom: 20px;
@@ -2607,8 +2606,7 @@ div.component.select select,
         width: 93.75%; height: 95%; padding: 8%; overflow: scroll;
     }
     .detailContainer .pop>input[type='button']{
-        width: 30px; line-height: 30px; font-size: 30px;
-        position: absolute; right: 25px; top: 25px; color: #78776b;
+        width: 30px; line-height: 30px; font-size: 30px; right: 25px; top: 25px;
     }
     .detailContainer .pop:not(:last-of-type) img{
         width: 100%; margin-bottom: 30px;
