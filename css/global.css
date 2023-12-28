@@ -161,6 +161,7 @@ ul.itemBox li>div div input[type='button'].active,
 .cartContainer .step.livraison ul li>span,
 .cartContainer .step.cadeaux address,
 .cartContainer .step.paiement ul li,
+#cartHave ul li>div:first-of-type b,
 #cartOnly ul li>div:first-of-type b,
 #cartOnly ul li>div:last-of-type mark,
 #cartOnly ul li span{
@@ -506,7 +507,7 @@ section:not(.detailContainer, .storeContainer) .pop div input,
     font-weight: 400; margin-bottom: 40px;
 }
 #cartHave ul li>div:first-of-type b{
-    display: block; color: #303325;
+    display: block;
 }
 #cartHave ul li>div:first-of-type input[type='button']{
     background-color: transparent; border: none; color: #999;
