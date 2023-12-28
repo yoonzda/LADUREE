@@ -294,20 +294,24 @@ footer mark,
     color: #f6e4d4;
 }
 .mainContainer>div:first-of-type h2{
-    color: #ffd6d6; 
+    color: #ffd6d6;
 }
 .mainContainer>div:first-of-type p{
     color: #fffc99;
 }
-.bx-wrapper .bx-viewport ul.eventSlider div p{
+.endBox input[type='button'],
+.bx-wrapper .bx-viewport ul.eventSlider div p,
+.listContainer.type03>div:nth-of-type(2) ul li div input[type='button']{
     color: #fff;
 }
 header,
+nav,
 [class*=Panel]{
     background-color: #e5e3cb;
 }
 .detailContainer,
-.detailContainer+footer{
+.detailContainer+footer,
+#choice .bx-wrapper .bx-viewport{
     background-color: #fff5ed;
 }
 
@@ -673,9 +677,8 @@ header>div:last-of-type>ul li span{
     outline: none;
 }
 .endBox input[type='button']{
-    border-width: 1px 1px 1px 0; 
-    border-radius: 0 5px 5px 0; 
-    background-color: #665656; color: #fff; padding: 5px 0; 
+    border-width: 1px 1px 1px 0; border-radius: 0 5px 5px 0; 
+    background-color: #665656; padding: 5px 0; 
 }
 
 footer:after{
@@ -931,8 +934,7 @@ footer div:last-of-type>p span{
         max-width: 100px; 
     }
     header>div:last-of-type nav{
-        display: none; padding-top: 60px;
-        background-color: #e5e3cb; width: 100%; text-align: right;
+        display: none; padding-top: 60px; width: 100%; text-align: right;
     }
     header>div:last-of-type nav ul li{
         font-size: 15px; 
@@ -1290,9 +1292,7 @@ footer div:last-of-type>p span{
     }
 
     header>div:last-of-type nav{
-        display: none;
-        background-color: #e5e3cb; width: 100%; text-align: right;
-        padding-top: 60px;
+        display: none; width: 100%; text-align: right; padding-top: 60px;
     }
     header>div:last-of-type nav ul li{
         line-height: 50px;
