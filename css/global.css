@@ -286,8 +286,7 @@ footer mark,
 .mainContainer figure figcaption small{
     color: #8b8954;
 }
-.detailContainer .pop:not(#subscribe) h3,
-.storeContainer .pop h3,
+.pop h3,
 .accordionContainer ul li details div{
     color: #999888;
 }
@@ -430,7 +429,7 @@ section:not(.detailContainer, .storeContainer) .pop,
 }
 section:not(.detailContainer, .storeContainer) .pop h3,
 #subscribe h3{
-    font-weight: 400; color: #999888;
+    font-weight: 400;
 }
 section:not(.detailContainer, .storeContainer) .pop p,
 #subscribe p{
