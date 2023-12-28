@@ -570,7 +570,7 @@ div.component.select select,
     position: relative;
 }
 .storeContainer>input[type='button']{
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
 
 .accordionContainer ul li{
