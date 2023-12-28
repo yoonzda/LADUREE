@@ -170,7 +170,12 @@ ul.itemBox li>div div input[type='button'].active,
 .cartContainer>div h2{
     color: #333224;
 }
-.storeContainer .pop span strong{
+section:not(.detailContainer, .storeContainer) .pop p,
+#subscribe p,
+.storeContainer .pop span strong,
+.storeContainer .pop span,
+.storeContainer .pop ul,
+.storeContainer .pop p{
     color: #33332d;
 }
 .articleContainer>ul li,
@@ -215,6 +220,7 @@ ul.itemBox li small,
 footer a,
 footer li,
 footer div:last-of-type ol li p,
+.bx-wrapper .bx-viewport ul.itemSlider div strong,
 .listContainer.type01 ul li h3,
 .endBox input[type='email'],
 textarea,
@@ -249,6 +255,7 @@ header>div:last-of-type>ul li input[type='button'],
 header>div:last-of-type>ul li:first-of-type a,
 [class*=Panel]>input[type='button']:first-of-type,
 #search label,
+.pop>input[type='button'],
 .detailContainer>a,
 section:not(.detailContainer) .titleBox,
 .accordionContainer ul li details div p span a{
@@ -419,7 +426,7 @@ section:not(.detailContainer, .storeContainer) .pop,
     text-align: center;
 }
 .pop>input[type='button']{
-    position: absolute; color: #78776b;
+    position: absolute;
 }
 section:not(.detailContainer, .storeContainer) .pop h3,
 #subscribe h3{
@@ -427,7 +434,7 @@ section:not(.detailContainer, .storeContainer) .pop h3,
 }
 section:not(.detailContainer, .storeContainer) .pop p,
 #subscribe p{
-    font-weight: 400; color: #33332d;
+    font-weight: 400;
 }
 section:not(.detailContainer, .storeContainer) .pop a,
 section:not(.detailContainer, .storeContainer) .pop div input,

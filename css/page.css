@@ -544,11 +544,6 @@ div.component.select select,
     display: block; margin: 0 auto; width: 70%;
 }
 
-.storeContainer .pop span,
-.storeContainer .pop ul,
-.storeContainer .pop p{
-    color: #33332d;
-}
 .storeContainer .pop ul li{
     display: block;
 }
@@ -984,7 +979,7 @@ div.component.select select,
     margin-top: auto; font-size: 20px; text-align: right;
 }
 
-/* mob */
+/* mob only */
 @media screen and (max-width:767px){
     section{
         margin-top: 118px;
