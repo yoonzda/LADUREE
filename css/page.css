@@ -1941,10 +1941,9 @@ div.component.select select,
     .listContainer.type01>div.list15{background-image: url('../images/listPage15.png');}
     
     .listContainer.type01>div:first-of-type{
-        background-position: bottom; background-size: contain; background-repeat: no-repeat;
-    }
-    .listContainer.type01>div:first-of-type h2{
-        padding-top: 60px;
+        background-position: bottom; 
+        /* background-size: contain;  */
+        background-repeat: no-repeat;
     }
     .listContainer.type01>div:first-of-type p{
         font-size: 20px; line-height: 30px;
@@ -2455,7 +2454,7 @@ div.component.select select,
     }
 
     .listContainer.type01>div:first-of-type{
-        margin-bottom: 80px; min-height: 600px;
+        margin-bottom: 80px; padding: 70px 0 600px;
     }
     .listContainer.type01>div:first-of-type h2{
         width: 90%; font-size: 40px; line-height: 50px; margin: 0 auto 30px;
@@ -3092,7 +3091,7 @@ div.component.select select,
     }
 
     .listContainer.type01>div:first-of-type{
-        margin-bottom: 100px; min-height: 820px;
+        margin-bottom: 100px; padding: 70px 0 600px;
     }
     .listContainer.type01>div:first-of-type h2{
         font-size: 50px; margin-bottom: 45px; 
